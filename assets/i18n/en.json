@@ -1,0 +1,258 @@
+{
+  "skip_to_main": "Skip to main content",
+  "learn_more": "Learn More",
+  "read_more": "Read More",
+  "view_all": "View All",
+  "close": "Close",
+  "loading": "Loading...",
+  "error": "An error occurred",
+  "no_results": "No results found",
+  
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "programmes": "Programmes",
+    "impact": "Impact",
+    "members": "Members",
+    "blog": "Blog",
+    "resources": "Resources",
+    "community": "Community",
+    "contact": "Contact",
+    "programmes": {
+      "tech_camps": "Technology Camps",
+      "digital_education": "Digital Education",
+      "green_environment": "Green Environment",
+      "mental_health": "Mental Health",
+      "volunteering": "Volunteering"
+    }
+  },
+  
+  "home": {
+    "title": "ScriptySphere - Building Tomorrow's Bangladesh Through Technology",
+    "hero": {
+      "title": "Building Tomorrow's Bangladesh Through Technology",
+      "subtitle": "প্রযুক্তির আলোয় আগামীর বাংলাদেশ নির্মাণে অঙ্গীকারবদ্ধ।",
+      "cta_primary": "Explore Programmes",
+      "cta_secondary": "Join Community"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "tech": {
+        "title": "Technology Education",
+        "desc": "Empowering youth with cutting-edge technology skills through hands-on workshops and training camps."
+      },
+      "leadership": {
+        "title": "Youth Leadership",
+        "desc": "Developing confident leaders who can drive positive change in their communities."
+      },
+      "environment": {
+        "title": "Environmental Awareness",
+        "desc": "Promoting environmental consciousness through technology-driven solutions and community action."
+      },
+      "mental_health": {
+        "title": "Mental Well-being",
+        "desc": "Supporting mental health awareness and providing resources for student well-being."
+      }
+    },
+    "impact": {
+      "title": "Our Impact",
+      "students": "Students Reached",
+      "programmes": "Programmes Conducted",
+      "districts": "Districts Covered",
+      "volunteers": "Active Volunteers"
+    },
+    "programmes": {
+      "title": "Our Programmes",
+      "view_all": "View All Programmes",
+      "tech_camp": {
+        "title": "Technology Camps",
+        "desc": "Hands-on technology workshops for students across Bangladesh."
+      },
+      "digital_education": {
+        "title": "Digital Education",
+        "desc": "Online learning platforms and digital literacy programmes."
+      },
+      "green_environment": {
+        "title": "Green Environment",
+        "desc": "Environmental monitoring and conservation initiatives."
+      }
+    }
+  },
+  
+  "about": {
+    "title": "About ScriptySphere - Our Vision and Mission",
+    "hero": {
+      "title": "About ScriptySphere",
+      "subtitle": "A youth-driven organization committed to building tomorrow's Bangladesh through technology, education, and social development."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "We envision a Bangladesh where every young person has access to technology education and the opportunity to drive positive change in their communities."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To integrate technology education, youth leadership development, environmental awareness, and mental well-being through innovative programmes and community engagement."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "desc": "Embracing new technologies and creative solutions."
+      },
+      "inclusion": {
+        "title": "Inclusion",
+        "desc": "Ensuring equal opportunities for all youth."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "desc": "Building for the long-term future of Bangladesh."
+      },
+      "community": {
+        "title": "Community",
+        "desc": "Fostering collaboration and mutual support."
+      }
+    }
+  },
+  
+  "members": {
+    "title": "Members Directory - ScriptySphere Community",
+    "hero": {
+      "title": "Our Members",
+      "subtitle": "Meet the passionate youth driving change across Bangladesh"
+    },
+    "filters": {
+      "search_placeholder": "Search members by name...",
+      "division": "Division",
+      "district": "District",
+      "upazila": "Sub-district",
+      "role": "Role",
+      "all": "All",
+      "clear": "Clear Filters"
+    },
+    "sort": {
+      "label": "Sort by",
+      "name": "Name (A-Z)",
+      "recent": "Recently Joined",
+      "role": "Role"
+    },
+    "no_results": "It looks like there's no member yet. Be the first one.",
+    "loading": "Loading members...",
+    "member_count": "{{count}} members found",
+    "view_profile": "View Profile"
+  },
+  
+  "programmes": {
+    "title": "Programmes - ScriptySphere Initiatives",
+    "hero": {
+      "title": "Our Programmes",
+      "subtitle": "Comprehensive initiatives designed to empower youth and build stronger communities"
+    }
+  },
+  
+  "impact": {
+    "title": "Impact - ScriptySphere Results",
+    "hero": {
+      "title": "Our Impact",
+      "subtitle": "Measuring the positive change we're creating across Bangladesh"
+    }
+  },
+  
+  "blog": {
+    "title": "Blog - ScriptySphere Insights",
+    "hero": {
+      "title": "Blog & Insights",
+      "subtitle": "Stories, updates, and insights from our community"
+    }
+  },
+  
+  "resources": {
+    "title": "Resources - ScriptySphere Downloads",
+    "hero": {
+      "title": "Resources",
+      "subtitle": "Download brochures, media kits, and educational materials"
+    }
+  },
+  
+  "community": {
+    "title": "Community - Join ScriptySphere",
+    "hero": {
+      "title": "Join Our Community",
+      "subtitle": "Be part of building tomorrow's Bangladesh"
+    }
+  },
+  
+  "contact": {
+    "title": "Contact - Get in Touch with ScriptySphere",
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "We'd love to hear from you"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We'll get back to you soon.",
+      "error": "Sorry, there was an error sending your message."
+    }
+  },
+  
+  "footer": {
+    "tagline": "Building tomorrow's Bangladesh through technology",
+    "quick_links": "Quick Links",
+    "about": "About Us",
+    "programmes": "Programmes", 
+    "impact": "Impact",
+    "members": "Members",
+    "blog": "Blog",
+    "get_involved": "Get Involved",
+    "volunteer": "Volunteer",
+    "partner": "Partner",
+    "support": "Support Us",
+    "resources": "Resources",
+    "contact": "Contact",
+    "contact_info": "Contact Info",
+    "location": "Dhaka, Bangladesh",
+    "newsletter": {
+      "title": "Stay Updated",
+      "placeholder": "Enter your email"
+    },
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  
+  "cta": {
+    "title": "Ready to Make a Difference?",
+    "description": "Join ScriptySphere and be part of building tomorrow's Bangladesh through technology, education, and community action.",
+    "join_us": "Join Us Today",
+    "explore_programmes": "Explore Programmes"
+  },
+  
+  "cookie": {
+    "title": "Cookie Consent",
+    "description": "We use cookies to enhance your browsing experience and analyze site traffic. You can choose which types of cookies to accept.",
+    "essential": "Essential",
+    "essential_desc": "Required for basic functionality",
+    "analytics": "Analytics",
+    "analytics_desc": "Help us improve the website",
+    "accept": "Accept Selected",
+    "accept_all": "Accept All",
+    "decline": "Decline All"
+  },
+  
+  "search": {
+    "placeholder": "Search...",
+    "no_results": "No results found for your search.",
+    "results_count": "{{count}} result(s) found"
+  },
+  
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  }
+}

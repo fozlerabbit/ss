@@ -1,0 +1,109 @@
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
+    <div class="cookie-banner__content">
+        <div class="cookie-banner__text">
+            <h3 id="cookie-title" data-i18n="cookie.title">Cookie Consent</h3>
+            <p id="cookie-description" data-i18n="cookie.description">
+                We use cookies to enhance your browsing experience and analyze site traffic. 
+                You can choose which types of cookies to accept.
+            </p>
+        </div>
+        
+        <div class="cookie-banner__actions">
+            <!-- Cookie Categories -->
+            <div class="cookie-categories">
+                <label class="cookie-category">
+                    <input type="checkbox" checked disabled>
+                    <span class="cookie-category__label" data-i18n="cookie.essential">Essential</span>
+                    <span class="cookie-category__desc" data-i18n="cookie.essential_desc">Required for basic functionality</span>
+                </label>
+                
+                <label class="cookie-category">
+                    <input type="checkbox" id="analytics-cookies" name="analytics">
+                    <span class="cookie-category__label" data-i18n="cookie.analytics">Analytics</span>
+                    <span class="cookie-category__desc" data-i18n="cookie.analytics_desc">Help us improve the website</span>
+                </label>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="cookie-banner__buttons">
+                <button class="btn btn--secondary btn--small" data-cookie-decline data-i18n="cookie.decline">
+                    Decline All
+                </button>
+                <button class="btn btn--primary btn--small" data-cookie-accept data-i18n="cookie.accept">
+                    Accept Selected
+                </button>
+                <button class="btn btn--outline btn--small" data-cookie-accept-all data-i18n="cookie.accept_all">
+                    Accept All
+                </button>
+            </div>
+        </div>
+        
+        <!-- Close Button -->
+        <button class="cookie-banner__close" aria-label="Close cookie banner" data-cookie-close>
+            <svg><use href="/assets/img/icons.svg#x"></use></svg>
+        </button>
+    </div>
+</div>
+
+<script>
+(function() {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = banner.querySelector('[data-cookie-accept]');
+    const acceptAllBtn = banner.querySelector('[data-cookie-accept-all]');
+    const declineBtn = banner.querySelector('[data-cookie-decline]');
+    const closeBtn = banner.querySelector('[data-cookie-close]');
+    const analyticsCheckbox = banner.querySelector('#analytics-cookies');
+
+    // Check if consent already given
+    const consent = localStorage.getItem('cookie-consent');
+    if (!consent) {
+        setTimeout(() => banner.classList.add('cookie-banner--visible'), 1000);
+    } else {
+        // Apply saved preferences
+        const preferences = JSON.parse(consent);
+        if (preferences.analytics && window.analytics) {
+            window.analytics.init();
+        }
+    }
+
+    function saveConsent(analytics = false) {
+        const preferences = {
+            essential: true,
+            analytics: analytics,
+            timestamp: Date.now()
+        };
+        localStorage.setItem('cookie-consent', JSON.stringify(preferences));
+        banner.classList.remove('cookie-banner--visible');
+        
+        // Initialize analytics if accepted
+        if (analytics && window.analytics) {
+            window.analytics.init();
+        }
+    }
+
+    acceptBtn.addEventListener('click', () => {
+        saveConsent(analyticsCheckbox.checked);
+    });
+
+    acceptAllBtn.addEventListener('click', () => {
+        analyticsCheckbox.checked = true;
+        saveConsent(true);
+    });
+
+    declineBtn.addEventListener('click', () => {
+        analyticsCheckbox.checked = false;
+        saveConsent(false);
+    });
+
+    closeBtn.addEventListener('click', () => {
+        banner.classList.remove('cookie-banner--visible');
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && banner.classList.contains('cookie-banner--visible')) {
+            banner.classList.remove('cookie-banner--visible');
+        }
+    });
+})();
+</script>
