@@ -1,0 +1,45 @@
+<header class="header" role="banner">
+    <div class="container">
+        <div class="header__content">
+            <!-- Logo -->
+            <div class="header__logo">
+                <a href="/" aria-label="ScriptySphere Home">
+                    <img src="/assets/img/logo.svg" alt="ScriptySphere" width="180" height="40">
+                </a>
+            </div>
+            
+            <!-- Header Actions -->
+            <div class="header__actions">
+                <!-- Language Toggle -->
+                <div class="language-toggle">
+                    <button class="language-toggle__btn" aria-label="Change Language" data-language-toggle>
+                        <span class="language-toggle__current" data-current-lang>EN</span>
+                        <svg class="language-toggle__icon" width="16" height="16">
+                            <use href="/assets/img/icons.svg#globe"></use>
+                        </svg>
+                    </button>
+                    <div class="language-toggle__dropdown" data-language-dropdown>
+                        <button data-lang="en" class="language-toggle__option">
+                            <span class="language-toggle__flag">🇺🇸</span>
+                            English
+                        </button>
+                        <button data-lang="bn" class="language-toggle__option">
+                            <span class="language-toggle__flag">🇧🇩</span>
+                            বাংলা
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" aria-label="Toggle theme" data-theme-toggle>
+                    <svg class="theme-toggle__icon theme-toggle__icon--light" width="20" height="20">
+                        <use href="/assets/img/icons.svg#sun"></use>
+                    </svg>
+                    <svg class="theme-toggle__icon theme-toggle__icon--dark" width="20" height="20">
+                        <use href="/assets/img/icons.svg#moon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
