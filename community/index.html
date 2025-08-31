@@ -1,0 +1,1005 @@
+<div class="form-step form-step--active" data-step="1">
+                            <h3>Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vol-name">Full Name *</label>
+                                    <input type="text" id="vol-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vol-email">Email Address *</label>
+                                    <input type="email" id="vol-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vol-phone">Phone Number</label>
+                                    <input type="tel" id="vol-phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="vol-age">Age</label>
+                                    <input type="number" id="vol-age" name="age" min="15" max="35">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vol-division">Division *</label>
+                                    <select id="vol-division" name="division" required>
+                                        <option value="">Select Division</option>
+                                        <option value="Dhaka">Dhaka</option>
+                                        <option value="Chittagong">Chittagong</option>
+                                        <option value="Sylhet">Sylhet</option>
+                                        <option value="Khulna">Khulna</option>
+                                        <option value="Barisal">Barisal</option>
+                                        <option value="Rangpur">Rangpur</option>
+                                        <option value="Rajshahi">Rajshahi</option>
+                                        <option value="Mymensingh">Mymensingh</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vol-district">District *</label>
+                                    <input type="text" id="vol-district" name="district" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-step" data-step="2">
+                            <h3>Skills & Interests</h3>
+                            <div class="form-group">
+                                <label for="vol-skills">Technical Skills</label>
+                                <textarea id="vol-skills" name="skills" rows="3" placeholder="e.g., Programming, Web Design, Data Analysis"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-interests">Areas of Interest *</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="technology-camps">
+                                        Technology Camps
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="digital-education">
+                                        Digital Education
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="green-environment">
+                                        Green Environment
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="mental-health">
+                                        Mental Health
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="content-creation">
+                                        Content Creation
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="interests[]" value="event-management">
+                                        Event Management
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-availability">Availability *</label>
+                                <select id="vol-availability" name="availability" required>
+                                    <option value="">Select your availability</option>
+                                    <option value="weekends">Weekends only</option>
+                                    <option value="evenings">Weekday evenings</option>
+                                    <option value="flexible">Flexible schedule</option>
+                                    <option value="specific">Specific days (mention in message)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-step" data-step="3">
+                            <h3>Tell Us More</h3>
+                            <div class="form-group">
+                                <label for="vol-experience">Previous Experience</label>
+                                <textarea id="vol-experience" name="experience" rows="3" placeholder="Any relevant experience in volunteering, teaching, or technology"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-motivation">Why do you want to join ScriptySphere? *</label>
+                                <textarea id="vol-motivation" name="motivation" rows="4" required placeholder="Tell us about your motivation and what you hope to contribute"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-additional">Additional Information</label>
+                                <textarea id="vol-additional" name="additional" rows="2" placeholder="Anything else you'd like us to know"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn--secondary" data-form-prev style="display: none;">Previous</button>
+                            <button type="button" class="btn btn--primary" data-form-next>Next</button>
+                            <button type="submit" class="btn btn--primary" style="display: none;">Submit Application</button>
+                        </div>
+                        
+                        <div class="form-progress">
+                            <div class="step-indicator">
+                                <div class="step-indicator__step step-indicator__step--active">1</div>
+                                <div class="step-indicator__line"></div>
+                                <div class="step-indicator__step">2</div>
+                                <div class="step-indicator__line"></div>
+                                <div class="step-indicator__step">3</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Partner Application Modal -->
+        <div class="modal" id="partner-modal" role="dialog" aria-labelledby="partner-modal-title">
+            <div class="modal__overlay"></div>
+            <div class="modal__container modal__container--large">
+                <div class="modal__header">
+                    <h2 id="partner-modal-title">Partnership Application</h2>
+                    <button class="modal__close" aria-label="Close modal">
+                        <svg><use href="/assets/img/icons.svg#x"></use></svg>
+                    </button>
+                </div>
+                <div class="modal__body">
+                    <form class="partner-form" name="partner" method="POST" data-netlify="true">
+                        <div style="display: none;">
+                            <input name="bot-field">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="partner-org">Organization Name *</label>
+                                <input type="text" id="partner-org" name="organization" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="partner-type">Organization Type *</label>
+                                <select id="partner-type" name="type" required>
+                                    <option value="">Select type</option>
+                                    <option value="educational">Educational Institution</option>
+                                    <option value="ngo">NGO/Non-profit</option>
+                                    <option value="corporate">Corporate</option>
+                                    <option value="government">Government Agency</option>
+                                    <option value="startup">Startup/Tech Company</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="partner-contact-name">Contact Person *</label>
+                                <input type="text" id="partner-contact-name" name="contact_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="partner-contact-email">Contact Email *</label>
+                                <input type="email" id="partner-contact-email" name="contact_email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="partner-website">Website</label>
+                            <input type="url" id="partner-website" name="website" placeholder="https://example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="partner-collaboration">Collaboration Interest *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="collaboration[]" value="funding">
+                                    Programme Funding
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="collaboration[]" value="venue">
+                                    Venue Sharing
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="collaboration[]" value="expertise">
+                                    Technical Expertise
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="collaboration[]" value="internships">
+                                    Internship Opportunities
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="collaboration[]" value="mentorship">
+                                    Mentorship Programme
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="collaboration[]" value="joint-programmes">
+                                    Joint Programme Development
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="partner-message">Partnership Proposal *</label>
+                            <textarea id="partner-message" name="message" rows="5" required placeholder="Describe your organization and how you'd like to collaborate with ScriptySphere"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--large">Submit Partnership Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Student Registration Modal -->
+        <div class="modal" id="student-modal" role="dialog" aria-labelledby="student-modal-title">
+            <div class="modal__overlay"></div>
+            <div class="modal__container">
+                <div class="modal__header">
+                    <h2 id="student-modal-title">Student Registration</h2>
+                    <button class="modal__close" aria-label="Close modal">
+                        <svg><use href="/assets/img/icons.svg#x"></use></svg>
+                    </button>
+                </div>
+                <div class="modal__body">
+                    <form class="student-form" name="student" method="POST" data-netlify="true">
+                        <div style="display: none;">
+                            <input name="bot-field">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="student-name">Full Name *</label>
+                                <input type="text" id="student-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="student-email">Email Address *</label>
+                                <input type="email" id="student-email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="student-phone">Phone Number</label>
+                                <input type="tel" id="student-phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="student-age">Age *</label>
+                                <input type="number" id="student-age" name="age" min="15" max="30" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="student-education">Education Level *</label>
+                                <select id="student-education" name="education" required>
+                                    <option value="">Select level</option>
+                                    <option value="secondary">Secondary School</option>
+                                    <option value="higher-secondary">Higher Secondary</option>
+                                    <option value="undergraduate">Undergraduate</option>
+                                    <option value="graduate">Graduate</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="student-institution">Institution</label>
+                                <input type="text" id="student-institution" name="institution">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="student-location">Location (District, Division) *</label>
+                            <input type="text" id="student-location" name="location" required placeholder="e.g., Dhaka, Dhaka">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="student-programmes">Interested Programmes *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="programmes[]" value="technology-camps">
+                                    Technology Camps
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="programmes[]" value="digital-education">
+                                    Digital Education
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="programmes[]" value="green-environment">
+                                    Green Environment
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="programmes[]" value="mental-health">
+                                    Mental Health Support
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="programmes[]" value="online-volunteering">
+                                    Online Volunteering
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="student-experience">Technical Experience</label>
+                            <textarea id="student-experience" name="experience" rows="3" placeholder="Any previous experience with technology, programming, or related fields"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="student-goals">Learning Goals *</label>
+                            <textarea id="student-goals" name="goals" rows="3" required placeholder="What do you hope to learn or achieve through ScriptySphere programmes?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--large">Register as Student</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Community Says</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="testimonial-card__content">
+                            <p>"ScriptySphere has transformed my understanding of technology. The mentorship and hands-on learning approach is incredible."</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/img/testimonials/student1.webp" alt="Student testimonial" loading="lazy">
+                            <div>
+                                <h4>রাহুল আহমেদ</h4>
+                                <p>Student, Dhaka College</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-card__content">
+                            <p>"Volunteering with ScriptySphere has been one of the most rewarding experiences. I'm proud to contribute to youth development."</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/img/testimonials/volunteer1.webp" alt="Volunteer testimonial" loading="lazy">
+                            <div>
+                                <h4>সারা খান</h4>
+                                <p>Volunteer, Chittagong</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card__content">
+                            <p>"Our partnership with ScriptySphere has helped us reach more students with quality technology education."</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <img src="/assets/img/testimonials/partner1.webp" alt="Partner testimonial" loading="lazy">
+                            <div>
+                                <h4>ড. আমিনুল ইসলাম</h4>
+                                <p>Principal, Partner School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div data-include="cta"></div>
+    </main>
+    
+    <div data-include="footer"></div>
+    <div data-include="cookie"></div>
+    <div data-include="modal"></div>
+    
+    <script src="/assets/js/partials.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/theme.js" defer></script>
+    <script src="/assets/js/forms.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js" defer></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({ duration: 800, once: true });
+            }
+            
+            // Multi-step form navigation
+            initMultiStepForms();
+            
+            // Modal triggers
+            document.addEventListener('click', (e) => {
+                const modalTrigger = e.target.closest('[data-modal]');
+                if (modalTrigger) {
+                    const modalId = modalTrigger.getAttribute('data-modal');
+                    openModal(modalId);
+                }
+            });
+        });
+        
+        function initMultiStepForms() {
+            const forms = document.querySelectorAll('.volunteer-form');
+            
+            forms.forEach(form => {
+                const steps = form.querySelectorAll('.form-step');
+                const nextBtns = form.querySelectorAll('[data-form-next]');
+                const prevBtns = form.querySelectorAll('[data-form-prev]');
+                const submitBtn = form.querySelector('button[type="submit"]');
+                let currentStep = 1;
+                
+                function updateStep() {
+                    steps.forEach((step, index) => {
+                        step.classList.toggle('form-step--active', index + 1 === currentStep);
+                    });
+                    
+                    // Update navigation buttons
+                    nextBtns.forEach(btn => {
+                        btn.style.display = currentStep === steps.length ? 'none' : 'inline-flex';
+                    });
+                    
+                    prevBtns.forEach(btn => {
+                        btn.style.display = currentStep === 1 ? 'none' : 'inline-flex';
+                    });
+                    
+                    if (submitBtn) {
+                        submitBtn.style.display = currentStep === steps.length ? 'inline-flex' : 'none';
+                    }
+                    
+                    // Update progress indicator
+                    const indicators = form.querySelectorAll('.step-indicator__step');
+                    indicators.forEach((indicator, index) => {
+                        indicator.classList.toggle('step-indicator__step--active', index + 1 === currentStep);
+                        indicator.classList.toggle('step-indicator__step--completed', index + 1 < currentStep);
+                    });
+                }
+                
+                nextBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        if (validateCurrentStep(form, currentStep)) {
+                            currentStep++;
+                            updateStep();
+                        }
+                    });
+                });
+                
+                prevBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        currentStep--;
+                        updateStep();
+                    });
+                });
+                
+                updateStep();
+            });
+        }
+        
+        function validateCurrentStep(form, step) {
+            const currentStepElement = form.querySelector(`[data-step="${step}"]`);
+            const requiredFields = currentStepElement.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('field-error');
+                    isValid = false;
+                } else {
+                    field.classList.remove('field-error');
+                }
+            });
+            
+            // Special validation for checkboxes
+            const checkboxGroups = currentStepElement.querySelectorAll('.checkbox-group');
+            checkboxGroups.forEach(group => {
+                const checkboxes = group.querySelectorAll('input[type="checkbox"]');
+                const hasRequired = group.closest('.form-group').querySelector('label').textContent.includes('*');
+                
+                if (hasRequired) {
+                    const isChecked = Array.from(checkboxes).some(cb => cb.checked);
+                    if (!isChecked) {
+                        group.classList.add('field-error');
+                        isValid = false;
+                    } else {
+                        group.classList.remove('field-error');
+                    }
+                }
+            });
+            
+            if (!isValid) {
+                if (window.app && window.app.showToast) {
+                    window.app.showToast('Please complete all required fields', 'error');
+                }
+            }
+            
+            return isValid;
+        }
+        
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('modal--active');
+                document.body.style.overflow = 'hidden';
+                
+                // Focus first input
+                const firstInput = modal.querySelector('input, textarea, select');
+                if (firstInput) {
+                    setTimeout(() => firstInput.focus(), 100);
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .join-ways {
+            padding: var(--space-16) 0;
+        }
+        
+        .join-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-8);
+        }
+        
+        .join-card {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            text-align: center;
+            transition: all var(--transition-base);
+        }
+        
+        .join-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .join-card__icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-6);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .join-card__icon svg {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .join-card h3 {
+            margin-bottom: var(--space-4);
+            color: var(--color-text);
+        }
+        
+        .join-card > p {
+            margin-bottom: var(--space-6);
+            color: var(--color-text-muted);
+        }
+        
+        .join-card__benefits {
+            list-style: none;
+            padding: 0;
+            margin-bottom: var(--space-6);
+            text-align: left;
+        }
+        
+        .join-card__benefits li {
+            position: relative;
+            padding-left: var(--space-6);
+            margin-bottom: var(--space-2);
+            color: var(--color-text-muted);
+        }
+        
+        .join-card__benefits li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-secondary);
+            font-weight: bold;
+        }
+        
+        .community-stats {
+            background: var(--color-surface);
+            padding: var(--space-16) 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-8);
+        }
+        
+        .stat-card {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            text-align: center;
+            transition: all var(--transition-base);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .stat-card__icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto var(--space-4);
+            background: var(--color-primary);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .stat-card__icon svg {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .stat-card__number {
+            display: block;
+            font-size: var(--font-size-3xl);
+            font-weight: 800;
+            color: var(--color-primary);
+            margin-bottom: var(--space-2);
+        }
+        
+        .stat-card__label {
+            font-weight: 600;
+            color: var(--color-text);
+        }
+        
+        /* Form Styles */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-4);
+        }
+        
+        @media (min-width: 640px) {
+            .form-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .form-group {
+            margin-bottom: var(--space-4);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: var(--space-2);
+            font-weight: 600;
+            color: var(--color-text);
+        }
+        
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-2);
+            margin-top: var(--space-2);
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            cursor: pointer;
+            font-weight: normal;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            margin: 0;
+        }
+        
+        .form-step {
+            display: none;
+        }
+        
+        .form-step--active {
+            display: block;
+        }
+        
+        .form-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--space-8);
+            padding-top: var(--space-6);
+            border-top: 1px solid var(--color-border);
+        }
+        
+        .form-progress {
+            margin-top: var(--space-6);
+        }
+        
+        .step-indicator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+        }
+        
+        .step-indicator__step {
+            width: 32px;
+            height: 32px;
+            border-radius: var(--radius-full);
+            background: var(--color-surface);
+            border: 2px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--color-text-muted);
+            transition: all var(--transition-fast);
+        }
+        
+        .step-indicator__step--active {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: white;
+        }
+        
+        .step-indicator__step--completed {
+            background: var(--color-secondary);
+            border-color: var(--color-secondary);
+            color: white;
+        }
+        
+        .step-indicator__line {
+            width: 40px;
+            height: 2px;
+            background: var(--color-border);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: var(--space-16) 0;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-6);
+        }
+        
+        .testimonial-card {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            transition: all var(--transition-base);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .testimonial-card__content {
+            margin-bottom: var(--space-6);
+        }
+        
+        .testimonial-card__content p {
+            font-style: italic;
+            color: var(--color-text);
+            font-size: var(--font-size-lg);
+            line-height: var(--line-height-relaxed);
+            margin: 0;
+        }
+        
+        .testimonial-card__author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+        }
+        
+        .testimonial-card__author img {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+        }
+        
+        .testimonial-card__author h4 {
+            margin-bottom: var(--space-1);
+            color: var(--color-text);
+            font-size: var(--font-size-base);
+        }
+        
+        .testimonial-card__author p {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            margin: 0;
+        }
+        
+        /* Form validation styles */
+        .field-error {
+            border-color: var(--color-error) !important;
+        }
+        
+        .checkbox-group.field-error {
+            border: 1px solid var(--color-error);
+            border-radius: var(--radius-md);
+            padding: var(--space-2);
+        }
+    </style>
+    
+    <!-- Structured Data for FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How can I volunteer with ScriptySphere?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can apply to volunteer by filling out our volunteer application form. We welcome youth aged 15-30 with passion for technology and community service."
+                }
+            },
+            {
+                "@type": "Question", 
+                "name": "What are the requirements to join programmes?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most programmes are open to youth aged 15-25. Basic computer literacy is helpful but not required. We provide training from beginner to advanced levels."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can organizations partner with ScriptySphere?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Organizations can partner through programme funding, venue sharing, technical expertise, internship opportunities, or joint programme development. Contact us through the partnership form."
+                }
+            }
+        ]
+    }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the ScriptySphere community as a volunteer, partner, or supporter. Be part of building tomorrow's Bangladesh through technology and education.">
+    <meta name="keywords" content="join ScriptySphere, volunteer Bangladesh, technology community, youth organization">
+    <meta name="author" content="ScriptySphere">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scriptysphere.org/community/">
+    <meta property="og:title" content="Community - Join ScriptySphere">
+    <meta property="og:description" content="Be part of building tomorrow's Bangladesh through technology, education, and community action.">
+    <meta property="og:image" content="https://scriptysphere.org/assets/img/og-community.jpg">
+    
+    <link rel="canonical" href="https://scriptysphere.org/community/">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/utilities.css">
+    <link rel="stylesheet" href="/assets/css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css">
+    
+    <title data-i18n="community.title">Community - Join ScriptySphere</title>
+</head>
+<body>
+    <div data-include="header"></div>
+    <div data-include="nav"></div>
+    
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title" data-i18n="community.hero.title">Join Our Community</h1>
+                <p class="page-hero__subtitle" data-i18n="community.hero.subtitle">Be part of building tomorrow's Bangladesh</p>
+            </div>
+        </section>
+        
+        <!-- Ways to Join -->
+        <section class="join-ways">
+            <div class="container">
+                <h2 class="section-title">Ways to Get Involved</h2>
+                <div class="join-grid">
+                    <!-- Volunteer -->
+                    <div class="join-card" data-aos="fade-up">
+                        <div class="join-card__icon">
+                            <svg><use href="/assets/img/icons.svg#users"></use></svg>
+                        </div>
+                        <h3>Become a Volunteer</h3>
+                        <p>Join our team of passionate volunteers and directly impact communities across Bangladesh.</p>
+                        <ul class="join-card__benefits">
+                            <li>Flexible time commitment</li>
+                            <li>Skills development opportunities</li>
+                            <li>Certificate of participation</li>
+                            <li>Network with like-minded youth</li>
+                        </ul>
+                        <button class="btn btn--primary" data-modal="volunteer-modal">Apply as Volunteer</button>
+                    </div>
+                    
+                    <!-- Partner -->
+                    <div class="join-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="join-card__icon">
+                            <svg><use href="/assets/img/icons.svg#briefcase"></use></svg>
+                        </div>
+                        <h3>Partner with Us</h3>
+                        <p>Collaborate with ScriptySphere to amplify impact and reach more communities.</p>
+                        <ul class="join-card__benefits">
+                            <li>Corporate social responsibility</li>
+                            <li>Brand visibility and recognition</li>
+                            <li>Access to youth talent pool</li>
+                            <li>Joint programme development</li>
+                        </ul>
+                        <button class="btn btn--primary" data-modal="partner-modal">Become a Partner</button>
+                    </div>
+                    
+                    <!-- Student -->
+                    <div class="join-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="join-card__icon">
+                            <svg><use href="/assets/img/icons.svg#graduation-cap"></use></svg>
+                        </div>
+                        <h3>Join as Student</h3>
+                        <p>Participate in our programmes and develop skills for the future.</p>
+                        <ul class="join-card__benefits">
+                            <li>Free technology training</li>
+                            <li>Mentorship opportunities</li>
+                            <li>Project-based learning</li>
+                            <li>Career guidance and support</li>
+                        </ul>
+                        <button class="btn btn--primary" data-modal="student-modal">Register as Student</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Community Stats -->
+        <section class="community-stats">
+            <div class="container">
+                <h2 class="section-title">Our Growing Community</h2>
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="zoom-in">
+                        <div class="stat-card__icon">
+                            <svg><use href="/assets/img/icons.svg#users"></use></svg>
+                        </div>
+                        <div class="stat-card__number" data-count="150">0</div>
+                        <div class="stat-card__label">Active Members</div>
+                    </div>
+                    
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-card__icon">
+                            <svg><use href="/assets/img/icons.svg#map"></use></svg>
+                        </div>
+                        <div class="stat-card__number" data-count="8">0</div>
+                        <div class="stat-card__label">Divisions</div>
+                    </div>
+                    
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-card__icon">
+                            <svg><use href="/assets/img/icons.svg#briefcase"></use></svg>
+                        </div>
+                        <div class="stat-card__number" data-count="12">0</div>
+                        <div class="stat-card__label">Partner Organizations</div>
+                    </div>
+                    
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-card__icon">
+                            <svg><use href="/assets/img/icons.svg#award"></use></svg>
+                        </div>
+                        <div class="stat-card__number" data-count="95">0</div>
+                        <div class="stat-card__label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Volunteer Application Modal -->
+        <div class="modal" id="volunteer-modal" role="dialog" aria-labelledby="volunteer-modal-title">
+            <div class="modal__overlay"></div>
+            <div class="modal__container modal__container--large">
+                <div class="modal__header">
+                    <h2 id="volunteer-modal-title">Volunteer Application</h2>
+                    <button class="modal__close" aria-label="Close modal">
+                        <svg><use href="/assets/img/icons.svg#x"></use></svg>
+                    </button>
+                </div>
+                <div class="modal__body">
+                    <form class="volunteer-form" name="volunteer" method="POST" data-netlify="true">
+                        <div style="display: none;">
+                            <input name="bot-field">
+                        </div>
+                        
+                        <div class="form-step form-step--active" data-step="1">
+                            <h3>Personal
