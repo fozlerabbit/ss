@@ -1,0 +1,451 @@
+{
+  "statistics": {
+    "students_reached": 1567,
+    "programmes_conducted": 28,
+    "districts_covered": 12,
+    "active_volunteers": 145,
+    "partner_institutions": 35,
+    "hours_training": 2840,
+    "completion_rate": 89,
+    "satisfaction_score": 4.7
+  },
+  "monthly_growth": [
+    { "month": "Jan 2024", "students": 89, "programmes": 2, "volunteers": 12 },
+    { "month": "Feb 2024", "students": 134, "programmes": 3, "volunteers": 18 },
+    { "month": "Mar 2024", "students": 167, "programmes": 4, "volunteers": 23 },
+    { "month": "Apr 2024", "students": 201, "programmes": 3, "volunteers": 28 },
+    { "month": "May 2024", "students": 189, "programmes": 5, "volunteers": 31 },
+    { "month": "Jun 2024", "students": 223, "programmes": 4, "volunteers": 35 },
+    { "month": "Jul 2024", "students": 198, "programmes": 3, "volunteers": 39 },
+    { "month": "Aug 2024", "students": 245, "programmes": 6, "volunteers": 42 },
+    { "month": "Sep 2024", "students": 178, "programmes": 2, "volunteers": 45 },
+    { "month": "Oct 2024", "students": 267, "programmes": 5, "volunteers": 48 },
+    { "month": "Nov 2024", "students": 289, "programmes": 4, "volunteers": 52 },
+    { "month": "Dec 2024", "students": 312, "programmes": 7, "volunteers": 58 }
+  ],
+  "programme_impact": [
+    {
+      "name": "Technology Camps",
+      "participants": 645,
+      "completion_rate": 92,
+      "satisfaction": 4.8,
+      "key_outcomes": [
+        "78% of participants continued learning programming",
+        "45% started their own tech projects",
+        "23% secured tech internships or jobs"
+      ]
+    },
+    {
+      "name": "Digital Education",
+      "participants": 423,
+      "completion_rate": 87,
+      "satisfaction": 4.6,
+      "key_outcomes": [
+        "85% improved digital literacy scores",
+        "67% started using digital tools regularly",
+        "34% became digital mentors in their communities"
+      ]
+    },
+    {
+      "name": "Green Environment",
+      "participants": 298,
+      "completion_rate": 94,
+      "satisfaction": 4.9,
+      "key_outcomes": [
+        "15,000+ trees planted across 8 districts",
+        "120 environmental monitoring stations established",
+        "56% reduction in local pollution indicators"
+      ]
+    },
+    {
+      "name": "Mental Health Support",
+      "participants": 201,
+      "completion_rate": 91,
+      "satisfaction": 4.7,
+      "key_outcomes": [
+        "89% reported improved mental health awareness",
+        "67% actively use stress management techniques",
+        "45% became peer support volunteers"
+      ]
+    }
+  ],
+  "geographic_distribution": [
+    { "division": "Dhaka", "districts": 4, "participants": 567, "programmes": 12 },
+    { "division": "Chittagong", "districts": 3, "participants": 298, "programmes": 7 },
+    { "division": "Sylhet", "districts": 2, "participants": 189, "programmes": 4 },
+    { "division": "Rajshahi", "districts": 2, "participants": 234, "programmes": 5 },
+    { "division": "Khulna", "districts": 1, "participants": 145, "programmes": 3 },
+    { "division": "Rangpur", "districts": 1, "participants": 89, "programmes": 2 },
+    { "division": "Barisal", "districts": 1, "participants": 67, "programmes": 1 }
+  ],
+  "success_stories": [
+    {
+      "id": "story-001",
+      "title": "From Student to Tech Entrepreneur",
+      "participant": "Rahul Ahmed",
+      "location": "Comilla, Chittagong",
+      "programme": "Technology Camps",
+      "year": 2023,
+      "story": "After attending our programming bootcamp, Rahul developed a mobile app for local farmers that now serves over 500+ users across his district.",
+      "impact": "Started tech startup, created 5 jobs, serving 500+ farmers",
+      "image": "/assets/img/stories/rahul-ahmed.webp",
+      "featured": true
+    },
+    {
+      "id": "story-002", 
+      "title": "Digital Literacy Champion",
+      "participant": "Fatima Khatun",
+      "location": "Mymensingh, Dhaka",
+      "programme": "Digital Education",
+      "year": 2024,
+      "story": "Fatima became a digital literacy trainer in her community, teaching computer skills to 200+ women and elderly residents.",
+      "impact": "Trained 200+ community members, reduced digital divide",
+      "image": "/assets/img/stories/fatima-khatun.webp",
+      "featured": true
+    },
+    {
+      "id": "story-003",
+      "title": "Environmental Action Leader",
+      "participant": "Shakib Hassan",
+      "location": "Sylhet, Sylhet",
+      "programme": "Green Environment",
+      "year": 2024,
+      "story": "Led a team that planted 2,000 trees and established 10 air quality monitoring stations in his division.",
+      "impact": "2,000 trees planted, 10 monitoring stations, cleaner air",
+      "image": "/assets/img/stories/shakib-hassan.webp",
+      "featured": false
+    },
+    {
+      "id": "story-004",
+      "title": "Mental Health Advocate",
+      "participant": "Nusrat Jahan",
+      "location": "Rajshahi, Rajshahi", 
+      "programme": "Mental Health Support",
+      "year": 2024,
+      "story": "Started a peer support network at her university that now helps 150+ students with mental health challenges.",
+      "impact": "Supporting 150+ students, reduced stigma, improved awareness",
+      "image": "/assets/img/stories/nusrat-jahan.webp",
+      "featured": true
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "testimonial-001",
+      "name": "Dr. Rashida Begum",
+      "role": "Principal, Dhaka Residential Model College",
+      "text": "ScriptySphere's programmes have transformed how our students approach technology. The hands-on learning approach is exceptional.",
+      "rating": 5,
+      "programme": "Technology Camps",
+      "image": "/assets/img/testimonials/dr-rashida.webp"
+    },
+    {
+      "id": "testimonial-002",
+      "name": "Mohammad Karim",
+      "role": "Parent of Programme Participant",
+      "text": "My daughter gained confidence and technical skills that will serve her throughout her career. Grateful for ScriptySphere's impact.",
+      "rating": 5,
+      "programme": "Digital Education",
+      "image": "/assets/img/testimonials/mohammad-karim.webp"
+    },
+    {
+      "id": "testimonial-003",
+      "name": "Sadia Rahman",
+      "role": "Programme Graduate, Now Software Developer",
+      "text": "ScriptySphere didn't just teach me coding - it taught me how to think like a problem solver and community builder.",
+      "rating": 5,
+      "programme": "Technology Camps",
+      "image": "/assets/img/testimonials/sadia-rahman.webp"
+    }
+  ],
+  "partnerships": [
+    {
+      "name": "Bangladesh Association of Software and Information Services (BASIS)",
+      "type": "Industry Partner",
+      "collaboration": "Curriculum development and industry mentorship",
+      "since": "2023"
+    },
+    {
+      "name": "Department of Environment, Bangladesh",
+      "type": "Government Partner", 
+      "collaboration": "Environmental monitoring and conservation projects",
+      "since": "2024"
+    },
+    {
+      "name": "BRAC University",
+      "type": "Academic Partner",
+      "collaboration": "Research collaboration and student exchange programmes",
+      "since": "2023"
+    },
+    {
+      "name": "Dhaka Education Board",
+      "type": "Educational Partner",
+      "collaboration": "Integration of technology education in curriculum",
+      "since": "2024"
+    }
+  ],
+  "financial_transparency": {
+    "total_budget_2024": 2500000,
+    "programme_expenses": 1800000,
+    "administrative_costs": 350000,
+    "fundraising_costs": 150000,
+    "reserve_fund": 200000,
+    "funding_sources": [
+      { "source": "Individual Donations", "percentage": 45, "amount": 1125000 },
+      { "source": "Corporate Sponsorship", "percentage": 30, "amount": 750000 },
+      { "source": "Grants", "percentage": 20, "amount": 500000 },
+      { "source": "Programme Fees", "percentage": 5, "amount": 125000 }
+    ]
+  },
+  "programme_locations": [
+    {
+      "name": "Dhaka Technology Hub",
+      "division": "Dhaka",
+      "district": "Dhaka",
+      "coordinates": [23.8103, 90.4125],
+      "programmes": ["Technology Camps", "Digital Education"],
+      "capacity": 150,
+      "established": "2023-01"
+    },
+    {
+      "name": "Chittagong Innovation Center",
+      "division": "Chittagong", 
+      "district": "Chittagong",
+      "coordinates": [22.3569, 91.7832],
+      "programmes": ["Technology Camps", "Green Environment"],
+      "capacity": 100,
+      "established": "2023-06"
+    },
+    {
+      "name": "Sylhet Learning Center",
+      "division": "Sylhet",
+      "district": "Sylhet", 
+      "coordinates": [24.8949, 91.8687],
+      "programmes": ["Digital Education", "Mental Health Support"],
+      "capacity": 75,
+      "established": "2024-02"
+    },
+    {
+      "name": "Rajshahi Skills Development Center",
+      "division": "Rajshahi",
+      "district": "Rajshahi",
+      "coordinates": [24.3745, 88.6042],
+      "programmes": ["Technology Camps", "Green Environment"],
+      "capacity": 80,
+      "established": "2024-03"
+    }
+  ],
+  "milestones": [
+    {
+      "date": "2023-01-15",
+      "title": "ScriptySphere Founded",
+      "description": "Official launch with first technology camp in Dhaka",
+      "type": "founding"
+    },
+    {
+      "date": "2023-03-20",
+      "title": "100 Students Milestone",
+      "description": "Reached our first 100 programme participants",
+      "type": "milestone"
+    },
+    {
+      "date": "2023-06-10",
+      "title": "Chittagong Expansion",
+      "description": "Opened second programme location in Chittagong",
+      "type": "expansion"
+    },
+    {
+      "date": "2023-09-05",
+      "title": "Environmental Initiative Launch",
+      "description": "Started Green Environment programme with tree plantation drive",
+      "type": "programme"
+    },
+    {
+      "date": "2023-12-01",
+      "title": "500 Students Milestone",
+      "description": "Crossed 500 programme participants across all initiatives",
+      "type": "milestone"
+    },
+    {
+      "date": "2024-02-14",
+      "title": "Mental Health Programme",
+      "description": "Launched mental health support initiative for students",
+      "type": "programme"
+    },
+    {
+      "date": "2024-05-20",
+      "title": "1000 Students Milestone",
+      "description": "Reached 1000+ students across all programmes",
+      "type": "milestone"
+    },
+    {
+      "date": "2024-08-15",
+      "title": "Digital Platform Launch",
+      "description": "Launched online learning platform for remote students",
+      "type": "technology"
+    },
+    {
+      "date": "2024-11-30",
+      "title": "Annual Impact Assessment",
+      "description": "Published comprehensive impact report showing 92% programme effectiveness",
+      "type": "milestone"
+    }
+  ],
+  "awards_recognition": [
+    {
+      "title": "Best Youth Initiative 2024",
+      "organization": "Bangladesh Youth Development Foundation",
+      "date": "2024-10-15",
+      "description": "Recognized for outstanding contribution to youth development in Bangladesh"
+    },
+    {
+      "title": "Innovation in Education Award",
+      "organization": "Ministry of Education, Bangladesh",
+      "date": "2024-08-20", 
+      "description": "Honored for innovative approach to technology education in rural areas"
+    },
+    {
+      "title": "Environmental Excellence Certificate",
+      "organization": "Department of Environment",
+      "date": "2024-06-05",
+      "description": "Acknowledged for significant environmental conservation efforts"
+    }
+  ],
+  "media_coverage": [
+    {
+      "outlet": "The Daily Star",
+      "title": "Young Innovators Bridging Digital Divide in Bangladesh",
+      "date": "2024-11-15",
+      "url": "https://example.com/daily-star-article",
+      "type": "newspaper"
+    },
+    {
+      "outlet": "Bangladesh Television",
+      "title": "ScriptySphere: Empowering Youth Through Technology",
+      "date": "2024-10-22",
+      "url": "https://example.com/btv-feature",
+      "type": "television"
+    },
+    {
+      "outlet": "Prothom Alo",
+      "title": "তরুণদের প্রযুক্তি শিক্ষায় স্ক্রিপ্টিস্ফিয়ারের অবদান",
+      "date": "2024-09-30",
+      "url": "https://example.com/prothom-alo-article", 
+      "type": "newspaper"
+    }
+  ],
+  "programme_feedback": {
+    "technology_camps": {
+      "overall_rating": 4.8,
+      "categories": {
+        "content_quality": 4.9,
+        "instructor_effectiveness": 4.7,
+        "practical_application": 4.8,
+        "support_provided": 4.6,
+        "career_relevance": 4.9
+      },
+      "top_feedback": [
+        "Excellent hands-on learning experience",
+        "Instructors were knowledgeable and supportive", 
+        "Projects were relevant to real-world applications",
+        "Great networking opportunities with peers"
+      ]
+    },
+    "digital_education": {
+      "overall_rating": 4.6,
+      "categories": {
+        "accessibility": 4.8,
+        "content_relevance": 4.5,
+        "platform_usability": 4.4,
+        "support_provided": 4.7,
+        "skill_development": 4.6
+      },
+      "top_feedback": [
+        "Made technology accessible to everyone",
+        "Flexible learning schedule was perfect",
+        "Great support for beginners",
+        "Practical skills for daily life"
+      ]
+    },
+    "green_environment": {
+      "overall_rating": 4.9,
+      "categories": {
+        "environmental_impact": 4.9,
+        "community_engagement": 4.8,
+        "education_value": 4.7,
+        "project_organization": 4.9,
+        "long_term_sustainability": 4.8
+      },
+      "top_feedback": [
+        "Made real difference in our community",
+        "Learned practical environmental solutions",
+        "Great team collaboration experience",
+        "Visible positive impact on local environment"
+      ]
+    },
+    "mental_health": {
+      "overall_rating": 4.7,
+      "categories": {
+        "stigma_reduction": 4.8,
+        "practical_tools": 4.6,
+        "peer_support": 4.9,
+        "professional_guidance": 4.5,
+        "ongoing_support": 4.7
+      },
+      "top_feedback": [
+        "Broke down mental health stigma",
+        "Provided practical coping strategies",
+        "Created supportive peer network",
+        "Professional guidance was invaluable"
+      ]
+    }
+  },
+  "volunteer_impact": {
+    "total_hours_contributed": 12580,
+    "skill_areas": [
+      { "skill": "Teaching & Training", "volunteers": 45, "hours": 3200 },
+      { "skill": "Content Creation", "volunteers": 23, "hours": 1850 },
+      { "skill": "Event Organization", "volunteers": 38, "hours": 2940 },
+      { "skill": "Technical Support", "volunteers": 19, "hours": 1560 },
+      { "skill": "Community Outreach", "volunteers": 32, "hours": 2430 },
+      { "skill": "Administrative Support", "volunteers": 15, "hours": 600 }
+    ],
+    "volunteer_retention": 87,
+    "average_commitment": "8.5 hours/month"
+  },
+  "future_projections": {
+    "2025_targets": {
+      "students_to_reach": 3000,
+      "new_programmes": 8,
+      "new_districts": 5,
+      "volunteer_growth": 50
+    },
+    "5_year_vision": {
+      "students_impacted": 15000,
+      "nationwide_coverage": true,
+      "programme_sustainability": "95%",
+      "alumni_network": 5000
+    }
+  },
+  "sdg_alignment": [
+    {
+      "goal": "SDG 4: Quality Education",
+      "contribution": "Providing accessible technology education and digital literacy programmes",
+      "indicators": ["4.4: Technical and vocational skills", "4.7: Education for sustainable development"]
+    },
+    {
+      "goal": "SDG 8: Decent Work and Economic Growth", 
+      "contribution": "Building job-relevant skills and supporting youth entrepreneurship",
+      "indicators": ["8.6: Youth employment", "8.B: Youth employment strategy"]
+    },
+    {
+      "goal": "SDG 13: Climate Action",
+      "contribution": "Environmental monitoring and conservation through technology solutions",
+      "indicators": ["13.3: Climate change education", "13.B: Capacity building"]
+    },
+    {
+      "goal": "SDG 17: Partnerships for the Goals",
+      "contribution": "Building partnerships across sectors for sustainable development",
+      "indicators": ["17.17: Multi-stakeholder partnerships", "17.6: Technology cooperation"]
+    }
+  ]
+}
