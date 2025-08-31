@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the passionate members of ScriptySphere community driving technological and social change across Bangladesh.">
+    <meta name="keywords" content="ScriptySphere members, Bangladesh youth, technology community, volunteers">
+    <meta name="author" content="ScriptySphere">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scriptysphere.org/members/">
+    <meta property="og:title" content="Members Directory - ScriptySphere Community">
+    <meta property="og:description" content="Meet the passionate members of ScriptySphere community driving change across Bangladesh.">
+    <meta property="og:image" content="https://scriptysphere.org/assets/img/og-members.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Members Directory - ScriptySphere Community">
+    <meta property="twitter:description" content="Meet the passionate members of ScriptySphere community.">
+    <meta property="twitter:image" content="https://scriptysphere.org/assets/img/og-members.jpg">
+    
+    <link rel="canonical" href="https://scriptysphere.org/members/">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/utilities.css">
+    <link rel="stylesheet" href="/assets/css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css">
+    
+    <title data-i18n="members.title">Members Directory - ScriptySphere Community</title>
+</head>
+<body>
+    <!-- Header -->
+    <div data-include="header"></div>
+    
+    <!-- Navigation -->
+    <div data-include="nav"></div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero" aria-labelledby="members-hero-title">
+            <div class="container">
+                <div class="page-hero__content">
+                    <h1 id="members-hero-title" class="page-hero__title" data-i18n="members.hero.title">Our Members</h1>
+                    <p class="page-hero__subtitle" data-i18n="members.hero.subtitle">Meet the passionate youth driving change across Bangladesh</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Members Directory -->
+        <section class="members-directory" aria-labelledby="members-title">
+            <div class="container">
+                <!-- Filters and Search -->
+                <div class="members-filters" role="search" aria-label="Member filters">
+                    <div class="members-filters__search">
+                        <input type="search" id="member-search" class="search-input" 
+                               placeholder="Search members by name..." 
+                               data-i18n-placeholder="members.filters.search_placeholder"
+                               aria-label="Search members">
+                        <svg class="search-input__icon">
+                            <use href="/assets/img/icons.svg#search"></use>
+                        </svg>
+                    </div>
+                    
+                    <div class="members-filters__controls">
+                        <!-- Division Filter -->
+                        <select id="division-filter" class="filter-select" aria-label="Filter by division">
+                            <option value="" data-i18n="members.filters.division">Division</option>
+                        </select>
+                        
+                        <!-- District Filter -->
+                        <select id="district-filter" class="filter-select" aria-label="Filter by district" disabled>
+                            <option value="" data-i18n="members.filters.district">District</option>
+                        </select>
+                        
+                        <!-- Upazila Filter -->
+                        <select id="upazila-filter" class="filter-select" aria-label="Filter by sub-district" disabled>
+                            <option value="" data-i18n="members.filters.upazila">Sub-district</option>
+                        </select>
+                        
+                        <!-- Role Filter -->
+                        <select id="role-filter" class="filter-select" aria-label="Filter by role">
+                            <option value="" data-i18n="members.filters.role">Role</option>
+                        </select>
+                        
+                        <!-- Sort -->
+                        <select id="sort-filter" class="filter-select" aria-label="Sort members">
+                            <option value="name" data-i18n="members.sort.name">Name (A-Z)</option>
+                            <option value="recent" data-i18n="members.sort.recent">Recently Joined</option>
+                            <option value="role" data-i18n="members.sort.role">Role</option>
+                        </select>
+                        
+                        <!-- Clear Filters -->
+                        <button id="clear-filters" class="btn btn--outline btn--small" data-i18n="members.filters.clear">
+                            Clear Filters
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Results Summary -->
+                <div class="members-summary">
+                    <p class="members-count" id="members-count" data-i18n="members.member_count">0 members found</p>
+                </div>
+                
+                <!-- Loading State -->
+                <div id="members-loading" class="members-loading">
+                    <div class="loading-spinner"></div>
+                    <p data-i18n="members.loading">Loading members...</p>
+                </div>
+                
+                <!-- Members Grid -->
+                <div id="members-grid" class="members-grid" role="grid" aria-label="Members directory">
+                    <!-- Members will be populated here via JavaScript -->
+                </div>
+                
+                <!-- No Results State -->
+                <div id="no-results" class="no-results" style="display: none;">
+                    <div class="no-results__icon">
+                        <svg><use href="/assets/img/icons.svg#users"></use></svg>
+                    </div>
+                    <h3 class="no-results__title" data-i18n="members.no_results">It looks like there's no member yet. Be the first one.</h3>
+                    <a href="/community/" class="btn btn--primary" data-i18n="cta.join_us">Join Us Today</a>
+                </div>
+                
+                <!-- Pagination -->
+                <div id="pagination" class="pagination" role="navigation" aria-label="Members pagination">
+                    <!-- Pagination will be populated here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <div data-include="footer"></div>
+    
+    <!-- Cookie Banner -->
+    <div data-include="cookie"></div>
+    
+    <!-- Modal -->
+    <div data-include="modal"></div>
+    
+    <!-- Scripts -->
+    <script src="/assets/js/partials.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/theme.js" defer></script>
+    <script src="/assets/js/members.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 600,
+                    once: true
+                });
+            }
+        });
+    </script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "ScriptySphere Members",
+        "description": "Directory of ScriptySphere community members across Bangladesh",
+        "url": "https://scriptysphere.org/members/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "ScriptySphere Members",
+            "description": "Active members of ScriptySphere organization"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://scriptysphere.org/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Members",
+                    "item": "https://scriptysphere.org/members/"
+                }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>
