@@ -25,7 +25,7 @@ class PartialsLoader {
             
             if (!this.cache.has(partialName)) {
                 try {
-                    const response = await fetch(`/partials/${partialName}.html`);
+                    const response = await fetch(`./partials/${partialName}.html`);
                     if (!response.ok) {
                         throw new Error(`Failed to load ${partialName}: ${response.status}`);
                     }
@@ -229,4 +229,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Export for potential use in other scripts
+
 window.PartialsLoader = PartialsLoader;
