@@ -1,4 +1,157 @@
-<div class="form-step form-step--active" data-step="1">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the ScriptySphere community as a volunteer, partner, or supporter. Be part of building tomorrow's Bangladesh through technology and education.">
+    <meta name="keywords" content="join ScriptySphere, volunteer Bangladesh, technology community, youth organization">
+    <meta name="author" content="ScriptySphere">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scriptysphere.org/community/">
+    <meta property="og:title" content="Community - Join ScriptySphere">
+    <meta property="og:description" content="Be part of building tomorrow's Bangladesh through technology, education, and community action.">
+    <meta property="og:image" content="https://scriptysphere.org/assets/img/og-community.jpg">
+    
+    <link rel="canonical" href="https://scriptysphere.org/community/">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/utilities.css">
+    <link rel="stylesheet" href="/assets/css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css">
+    
+    <title data-i18n="community.title">Community - Join ScriptySphere</title>
+</head>
+<body>
+    <div data-include="header"></div>
+    <div data-include="nav"></div>
+    
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title" data-i18n="community.hero.title">Join Our Community</h1>
+                <p class="page-hero__subtitle" data-i18n="community.hero.subtitle">Be part of building tomorrow's Bangladesh</p>
+            </div>
+        </section>
+        
+        <!-- Ways to Join -->
+        <section class="join-ways">
+            <div class="container">
+                <h2 class="section-title">Ways to Get Involved</h2>
+                <div class="join-grid">
+                    <!-- Volunteer -->
+                    <div class="join-card" data-aos="fade-up">
+                        <div class="join-card__icon">
+                            <svg><use href="/assets/img/icons.svg#users"></use></svg>
+                        </div>
+                        <h3>Become a Volunteer</h3>
+                        <p>Join our team of passionate volunteers and directly impact communities across Bangladesh.</p>
+                        <ul class="join-card__benefits">
+                            <li>Flexible time commitment</li>
+                            <li>Skills development opportunities</li>
+                            <li>Certificate of participation</li>
+                            <li>Network with like-minded youth</li>
+                        </ul>
+                        <button class="btn btn--primary" data-modal="volunteer-modal">Apply as Volunteer</button>
+                    </div>
+                    
+                    <!-- Partner -->
+                    <div class="join-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="join-card__icon">
+                            <svg><use href="/assets/img/icons.svg#briefcase"></use></svg>
+                        </div>
+                        <h3>Partner with Us</h3>
+                        <p>Collaborate with ScriptySphere to amplify impact and reach more communities.</p>
+                        <ul class="join-card__benefits">
+                            <li>Corporate social responsibility</li>
+                            <li>Brand visibility and recognition</li>
+                            <li>Access to youth talent pool</li>
+                            <li>Joint programme development</li>
+                        </ul>
+                        <button class="btn btn--primary" data-modal="partner-modal">Become a Partner</button>
+                    </div>
+                    
+                    <!-- Student -->
+                    <div class="join-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="join-card__icon">
+                            <svg><use href="/assets/img/icons.svg#graduation-cap"></use></svg>
+                        </div>
+                        <h3>Join as Student</h3>
+                        <p>Participate in our programmes and develop skills for the future.</p>
+                        <ul class="join-card__benefits">
+                            <li>Free technology training</li>
+                            <li>Mentorship opportunities</li>
+                            <li>Project-based learning</li>
+                            <li>Career guidance and support</li>
+                        </ul>
+                        <button class="btn btn--primary" data-modal="student-modal">Register as Student</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Community Stats -->
+        <section class="community-stats">
+            <div class="container">
+                <h2 class="section-title">Our Growing Community</h2>
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="zoom-in">
+                        <div class="stat-card__icon">
+                            <svg><use href="/assets/img/icons.svg#users"></use></svg>
+                        </div>
+                        <div class="stat-card__number" data-count="150">0</div>
+                        <div class="stat-card__label">Active Members</div>
+                    </div>
+                    
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-card__icon">
+                            <svg><use href="/assets/img/icons.svg#map"></use></svg>
+                        </div>
+                        <div class="stat-card__number" data-count="8">0</div>
+                        <div class="stat-card__label">Divisions</div>
+                    </div>
+                    
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-card__icon">
+                            <svg><use href="/assets/img/icons.svg#briefcase"></use></svg>
+                        </div>
+                        <div class="stat-card__number" data-count="12">0</div>
+                        <div class="stat-card__label">Partner Organizations</div>
+                    </div>
+                    
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-card__icon">
+                            <svg><use href="/assets/img/icons.svg#award"></use></svg>
+                        </div>
+                        <div class="stat-card__number" data-count="95">0</div>
+                        <div class="stat-card__label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Volunteer Application Modal -->
+        <div class="modal" id="volunteer-modal" role="dialog" aria-labelledby="volunteer-modal-title">
+            <div class="modal__overlay"></div>
+            <div class="modal__container modal__container--large">
+                <div class="modal__header">
+                    <h2 id="volunteer-modal-title">Volunteer Application</h2>
+                    <button class="modal__close" aria-label="Close modal">
+                        <svg><use href="/assets/img/icons.svg#x"></use></svg>
+                    </button>
+                </div>
+                <div class="modal__body">
+                    <form class="volunteer-form" name="volunteer" method="POST" data-netlify="true">
+                        <div style="display: none;">
+                            <input name="bot-field">
+                        </div>
+                        
+                        <div class="form-step form-step--active" data-step="1">
+
+                          
                             <h3>Personal Information</h3>
                             <div class="form-row">
                                 <div class="form-group">
@@ -1003,3 +1156,4 @@
                         
                         <div class="form-step form-step--active" data-step="1">
                             <h3>Personal
+
