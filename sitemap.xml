@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://scriptysphere.org/</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/about/</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/about/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/about/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/programmes/</loc>
+    <lastmod>2024-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/programmes/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/programmes/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/impact/</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/impact/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/impact/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/members/</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/members/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/members/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/blog/</loc>
+    <lastmod>2024-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/blog/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/blog/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/resources/</loc>
+    <lastmod>2024-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/resources/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/resources/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/community/</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/community/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/community/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/contact/</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scriptysphere.org/contact/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://scriptysphere.org/contact/?lang=bn" />
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/privacy.html</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://scriptysphere.org/terms.html</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>
