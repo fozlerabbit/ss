@@ -1,0 +1,272 @@
+[
+  {
+    "title": "ScriptySphere - Building Tomorrow's Bangladesh",
+    "url": "/",
+    "type": "Page",
+    "excerpt": "Youth-driven organization advancing technology, education, and social development in Bangladesh.",
+    "content": "ScriptySphere technology education youth leadership environmental awareness mental health Bangladesh",
+    "tags": ["home", "technology", "education", "youth", "bangladesh"],
+    "language": "en"
+  },
+  {
+    "title": "স্ক্রিপ্টিস্ফিয়ার - আগামীর বাংলাদেশ গড়া",
+    "url": "/",
+    "type": "পাতা",
+    "excerpt": "প্রযুক্তি, শিক্ষা এবং সামাজিক উন্নয়নে অগ্রগামী যুব-চালিত সংস্থা।",
+    "content": "স্ক্রিপ্টিস্ফিয়ার প্রযুক্তি শিক্ষা যুব নেতৃত্ব পরিবেশ সচেতনতা মানসিক স্বাস্থ্য বাংলাদেশ",
+    "tags": ["হোম", "প্রযুক্তি", "শিক্ষা", "যুব", "বাংলাদেশ"],
+    "language": "bn"
+  },
+  {
+    "title": "About ScriptySphere",
+    "url": "/about/",
+    "type": "Page",
+    "excerpt": "Learn about our vision, mission, and values in building tomorrow's Bangladesh through technology.",
+    "content": "vision mission values youth empowerment technology education social development bangladesh history timeline",
+    "tags": ["about", "vision", "mission", "values", "history"],
+    "language": "en"
+  },
+  {
+    "title": "স্ক্রিপ্টিস্ফিয়ার সম্পর্কে",
+    "url": "/about/",
+    "type": "পাতা",
+    "excerpt": "প্রযুক্তির মাধ্যমে আগামীর বাংলাদেশ গড়ায় আমাদের দৃষ্টিভঙ্গি, লক্ষ্য এবং মূল্যবোধ জানুন।",
+    "content": "দৃষ্টিভঙ্গি লক্ষ্য মূল্যবোধ যুব ক্ষমতায়ন প্রযুক্তি শিক্ষা সামাজিক উন্নয়ন বাংলাদেশ ইতিহাস সময়রেখা",
+    "tags": ["সম্পর্কে", "দৃষ্টিভঙ্গি", "লক্ষ্য", "মূল্যবোধ", "ইতিহাস"],
+    "language": "bn"
+  },
+  {
+    "title": "Technology Camps",
+    "url": "/programmes/#tech-camps",
+    "type": "Programme",
+    "excerpt": "Hands-on technology workshops for students across Bangladesh with focus on practical skills.",
+    "content": "technology camps workshops programming web development mobile apps coding bootcamp skills training",
+    "tags": ["technology", "camps", "programming", "workshops", "training"],
+    "language": "en"
+  },
+  {
+    "title": "প্রযুক্তি ক্যাম্প",
+    "url": "/programmes/#tech-camps",
+    "type": "কার্যক্রম",
+    "excerpt": "বাংলাদেশের বিভিন্ন স্থানে শিক্ষার্থীদের জন্য হাতে-কলমে প্রযুক্তি কর্মশালা।",
+    "content": "প্রযুক্তি ক্যাম্প কর্মশালা প্রোগ্রামিং ওয়েব ডেভেলপমেন্ট মোবাইল অ্যাপ কোডিং বুটক্যাম্প দক্ষতা প্রশিক্ষণ",
+    "tags": ["প্রযুক্তি", "ক্যাম্প", "প্রোগ্রামিং", "কর্মশালা", "প্রশিক্ষণ"],
+    "language": "bn"
+  },
+  {
+    "title": "Digital Education",
+    "url": "/programmes/#digital-education",
+    "type": "Programme",
+    "excerpt": "Online learning platforms and digital literacy programmes for underserved communities.",
+    "content": "digital education online learning platform literacy computer skills internet safety digital divide",
+    "tags": ["digital", "education", "online", "literacy", "learning"],
+    "language": "en"
+  },
+  {
+    "title": "ডিজিটাল শিক্ষা",
+    "url": "/programmes/#digital-education",
+    "type": "কার্যক্রম",
+    "excerpt": "অনলাইন শিক্ষা প্ল্যাটফর্ম এবং ডিজিটাল সাক্ষরতা কর্মসূচি।",
+    "content": "ডিজিটাল শিক্ষা অনলাইন শিক্ষা প্ল্যাটফর্ম সাক্ষরতা কম্পিউটার দক্ষতা ইন্টারনেট নিরাপত্তা",
+    "tags": ["ডিজিটাল", "শিক্ষা", "অনলাইন", "সাক্ষরতা", "শিক্ষা"],
+    "language": "bn"
+  },
+  {
+    "title": "Green Environment",
+    "url": "/programmes/#green-environment",
+    "type": "Programme",
+    "excerpt": "Environmental monitoring and conservation initiatives using technology and community action.",
+    "content": "environment green conservation monitoring sensors climate change sustainability tree plantation",
+    "tags": ["environment", "green", "conservation", "sustainability", "climate"],
+    "language": "en"
+  },
+  {
+    "title": "সবুজ পরিবেশ",
+    "url": "/programmes/#green-environment",
+    "type": "কার্যক্রম",
+    "excerpt": "প্রযুক্তি ও সম্প্রদায়িক কর্মের মাধ্যমে পরিবেশ পর্যবেক্ষণ ও সংরক্ষণ উদ্যোগ।",
+    "content": "পরিবেশ সবুজ সংরক্ষণ পর্যবেক্ষণ সেন্সর জলবায়ু পরিবর্তন টেকসই উন্নয়ন বৃক্ষরোপণ",
+    "tags": ["পরিবেশ", "সবুজ", "সংরক্ষণ", "টেকসই", "জলবায়ু"],
+    "language": "bn"
+  },
+  {
+    "title": "Mental Health Support",
+    "url": "/programmes/#mental-health",
+    "type": "Programme",
+    "excerpt": "Mental health awareness campaigns and counseling support for students and youth.",
+    "content": "mental health awareness counseling support students youth stress depression anxiety wellbeing",
+    "tags": ["mental", "health", "counseling", "support", "wellbeing"],
+    "language": "en"
+  },
+  {
+    "title": "মানসিক স্বাস্থ্য সহায়তা",
+    "url": "/programmes/#mental-health",
+    "type": "কার্যক্রম",
+    "excerpt": "শিক্ষার্থী ও যুবদের জন্য মানসিক স্বাস্থ্য সচেতনতা প্রচারণা ও কাউন্সেলিং সহায়তা।",
+    "content": "মানসিক স্বাস্থ্য সচেতনতা কাউন্সেলিং সহায়তা শিক্ষার্থী যুব চাপ বিষাদ উদ্বেগ সুস্বাস্থ্য",
+    "tags": ["মানসিক", "স্বাস্থ্য", "কাউন্সেলিং", "সহায়তা", "সুস্বাস্থ্য"],
+    "language": "bn"
+  },
+  {
+    "title": "Volunteer Opportunities",
+    "url": "/programmes/#volunteering",
+    "type": "Programme",
+    "excerpt": "Join our volunteer network and contribute to community development across Bangladesh.",
+    "content": "volunteer opportunities community service social work youth engagement civic participation",
+    "tags": ["volunteer", "community", "service", "opportunities", "engagement"],
+    "language": "en"
+  },
+  {
+    "title": "স্বেচ্ছাসেবক সুযোগ",
+    "url": "/programmes/#volunteering",
+    "type": "কার্যক্রম",
+    "excerpt": "আমাদের স্বেচ্ছাসেবক নেটওয়ার্কে যোগ দিন এবং বাংলাদেশ জুড়ে সম্প্রদায়িক উন্নয়নে অবদান রাখুন।",
+    "content": "স্বেচ্ছাসেবক সুযোগ সম্প্রদায়িক সেবা সামাজিক কাজ যুব সম্পৃক্ততা নাগরিক অংশগ্রহণ",
+    "tags": ["স্বেচ্ছাসেবক", "সম্প্রদায়", "সেবা", "সুযোগ", "সম্পৃক্ততা"],
+    "language": "bn"
+  },
+  {
+    "title": "Our Impact",
+    "url": "/impact/",
+    "type": "Page",
+    "excerpt": "See the positive changes we're making across Bangladesh through our programmes and initiatives.",
+    "content": "impact results statistics success stories case studies metrics evaluation community change",
+    "tags": ["impact", "results", "statistics", "success", "metrics"],
+    "language": "en"
+  },
+  {
+    "title": "আমাদের প্রভাব",
+    "url": "/impact/",
+    "type": "পাতা",
+    "excerpt": "আমাদের কর্মসূচি ও উদ্যোগের মাধ্যমে বাংলাদেশ জুড়ে যে ইতিবাচক পরিবর্তন আনছি তা দেখুন।",
+    "content": "প্রভাব ফলাফল পরিসংখ্যান সাফল্যের গল্প কেস স্টাডি মেট্রিক্স মূল্যায়ন সম্প্রদায়িক পরিবর্তন",
+    "tags": ["প্রভাব", "ফলাফল", "পরিসংখ্যান", "সাফল্য", "মেট্রিক্স"],
+    "language": "bn"
+  },
+  {
+    "title": "Members Directory",
+    "url": "/members/",
+    "type": "Page",
+    "excerpt": "Meet our passionate community members driving change across Bangladesh.",
+    "content": "members directory community volunteers team leaders ambassadors profiles network",
+    "tags": ["members", "directory", "community", "team", "network"],
+    "language": "en"
+  },
+  {
+    "title": "সদস্য ডিরেক্টরি",
+    "url": "/members/",
+    "type": "পাতা",
+    "excerpt": "বাংলাদেশ জুড়ে পরিবর্তন আনয়নে উৎসাহী আমাদের কমিউনিটির সদস্যদের সাথে পরিচিত হন।",
+    "content": "সদস্য ডিরেক্টরি কমিউনিটি স্বেচ্ছাসেবক দল নেতা অ্যাম্বাসেডর প্রোফাইল নেটওয়ার্ক",
+    "tags": ["সদস্য", "ডিরেক্টরি", "কমিউনিটি", "দল", "নেটওয়ার্ক"],
+    "language": "bn"
+  },
+  {
+    "title": "Resources and Downloads",
+    "url": "/resources/",
+    "type": "Page",
+    "excerpt": "Download brochures, media kits, brand assets, and educational materials.",
+    "content": "resources downloads brochures media kit brand assets educational materials pdf documents",
+    "tags": ["resources", "downloads", "brochures", "media", "materials"],
+    "language": "en"
+  },
+  {
+    "title": "রিসোর্স এবং ডাউনলোড",
+    "url": "/resources/",
+    "type": "পাতা",
+    "excerpt": "ব্রোশিউর, মিডিয়া কিট, ব্র্যান্ড সম্পদ এবং শিক্ষামূলক উপাদান ডাউনলোড করুন।",
+    "content": "রিসোর্স ডাউনলোড ব্রোশিউর মিডিয়া কিট ব্র্যান্ড সম্পদ শিক্ষামূলক উপাদান পিডিএফ নথি",
+    "tags": ["রিসোর্স", "ডাউনলোড", "ব্রোশিউর", "মিডিয়া", "উপাদান"],
+    "language": "bn"
+  },
+  {
+    "title": "Join Our Community",
+    "url": "/community/",
+    "type": "Page",
+    "excerpt": "Get involved with ScriptySphere as a volunteer, partner, or supporter.",
+    "content": "join community volunteer partner supporter get involved membership registration application",
+    "tags": ["join", "community", "volunteer", "partner", "membership"],
+    "language": "en"
+  },
+  {
+    "title": "আমাদের কমিউনিটিতে যোগ দিন",
+    "url": "/community/",
+    "type": "পাতা",
+    "excerpt": "স্বেচ্ছাসেবক, অংশীদার বা সমর্থক হিসেবে স্ক্রিপ্টিস্ফিয়ারে যুক্ত হন।",
+    "content": "যোগ দিন কমিউনিটি স্বেচ্ছাসেবক অংশীদার সমর্থক যুক্ত হওয়া সদস্যপদ নিবন্ধন আবেদন",
+    "tags": ["যোগ", "কমিউনিটি", "স্বেচ্ছাসেবক", "অংশীদার", "সদস্যপদ"],
+    "language": "bn"
+  },
+  {
+    "title": "Contact Us",
+    "url": "/contact/",
+    "type": "Page",
+    "excerpt": "Get in touch with ScriptySphere team for partnerships, questions, or collaboration opportunities.",
+    "content": "contact us get in touch partnerships questions collaboration email phone address location",
+    "tags": ["contact", "partnerships", "collaboration", "support", "help"],
+    "language": "en"
+  },
+  {
+    "title": "যোগাযোগ করুন",
+    "url": "/contact/",
+    "type": "পাতা",
+    "excerpt": "অংশীদারিত্ব, প্রশ্ন বা সহযোগিতার সুযোগের জন্য স্ক্রিপ্টিস্ফিয়ার দলের সাথে যোগাযোগ করুন।",
+    "content": "যোগাযোগ করুন যোগাযোগ অংশীদারিত্ব প্রশ্ন সহযোগিতা ইমেইল ফোন ঠিকানা অবস্থান",
+    "tags": ["যোগাযোগ", "অংশীদারিত্ব", "সহযোগিতা", "সহায়তা", "সাহায্য"],
+    "language": "bn"
+  },
+  {
+    "title": "Blog and Updates",
+    "url": "/blog/",
+    "type": "Page",
+    "excerpt": "Latest news, stories, and insights from the ScriptySphere community.",
+    "content": "blog news updates stories insights articles community posts events announcements",
+    "tags": ["blog", "news", "updates", "stories", "articles"],
+    "language": "en"
+  },
+  {
+    "title": "ব্লগ এবং আপডেট",
+    "url": "/blog/",
+    "type": "পাতা",
+    "excerpt": "স্ক্রিপ্টিস্ফিয়ার কমিউনিটির সর্বশেষ সংবাদ, গল্প এবং অন্তর্দৃষ্টি।",
+    "content": "ব্লগ সংবাদ আপডেট গল্প অন্তর্দৃষ্টি প্রবন্ধ কমিউনিটি পোস্ট ইভেন্ট ঘোষণা",
+    "tags": ["ব্লগ", "সংবাদ", "আপডেট", "গল্প", "প্রবন্ধ"],
+    "language": "bn"
+  },
+  {
+    "title": "Privacy Policy",
+    "url": "/privacy.html",
+    "type": "Legal",
+    "excerpt": "How we collect, use, and protect your personal information and data privacy.",
+    "content": "privacy policy data protection personal information cookies gdpr compliance legal",
+    "tags": ["privacy", "policy", "data", "legal", "protection"],
+    "language": "en"
+  },
+  {
+    "title": "গোপনীয়তা নীতি",
+    "url": "/privacy.html",
+    "type": "আইনি",
+    "excerpt": "আমরা কীভাবে আপনার ব্যক্তিগত তথ্য সংগ্রহ, ব্যবহার এবং সুরক্ষা করি।",
+    "content": "গোপনীয়তা নীতি ডেটা সুরক্ষা ব্যক্তিগত তথ্য কুকি জিডিপিআর সম্মতি আইনি",
+    "tags": ["গোপনীয়তা", "নীতি", "ডেটা", "আইনি", "সুরক্ষা"],
+    "language": "bn"
+  },
+  {
+    "title": "Terms of Service",
+    "url": "/terms.html",
+    "type": "Legal",
+    "excerpt": "Terms and conditions for using ScriptySphere website and services.",
+    "content": "terms service conditions legal agreement website usage rights responsibilities",
+    "tags": ["terms", "service", "legal", "agreement", "conditions"],
+    "language": "en"
+  },
+  {
+    "title": "সেবার শর্তাবলী",
+    "url": "/terms.html",
+    "type": "আইনি",
+    "excerpt": "স্ক্রিপ্টিস্ফিয়ার ওয়েবসাইট ও সেবা ব্যবহারের নিয়ম ও শর্তাবলী।",
+    "content": "শর্তাবলী সেবা নিয়ম আইনি চুক্তি ওয়েবসাইট ব্যবহার অধিকার দায়িত্ব",
+    "tags": ["শর্তাবলী", "সেবা", "আইনি", "চুক্তি", "নিয়ম"],
+    "language": "bn"
+  }
+]
