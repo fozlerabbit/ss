@@ -1,0 +1,262 @@
+[
+  {
+    "id": "SS202401",
+    "name": "আহমেদ রহমান",
+    "role": "Tech Lead",
+    "division": "Dhaka",
+    "district": "Dhaka",
+    "upazila": "Dhanmondi",
+    "email": "ahmed.rahman@example.com",
+    "avatar": "/assets/img/members/ahmed-rahman.webp",
+    "bio": "Passionate about technology education and youth empowerment. Leading multiple tech camps across Dhaka division.",
+    "skills": ["JavaScript", "Python", "Web Development", "Teaching", "Leadership"],
+    "joinedDate": "2024-01-15",
+    "featured": true,
+    "social": {
+      "github": "https://github.com/ahmedrahman",
+      "linkedin": "https://linkedin.com/in/ahmedrahman"
+    }
+  },
+  {
+    "id": "SS202402",
+    "name": "ফাতিমা খাতুন",
+    "role": "Programme Coordinator",
+    "division": "Chittagong",
+    "district": "Chittagong",
+    "upazila": "Kotwali",
+    "email": "fatima.khatun@example.com",
+    "avatar": "/assets/img/members/fatima-khatun.webp",
+    "bio": "Coordinating digital education programmes and environmental awareness campaigns.",
+    "skills": ["Project Management", "Digital Literacy", "Environmental Science", "Community Outreach"],
+    "joinedDate": "2024-01-22",
+    "featured": false,
+    "social": {
+      "facebook": "https://facebook.com/fatimakhatun",
+      "linkedin": "https://linkedin.com/in/fatimakhatun"
+    }
+  },
+  {
+    "id": "SS202403",
+    "name": "মো. করিম উদ্দিন",
+    "role": "Volunteer",
+    "division": "Sylhet",
+    "district": "Sylhet",
+    "upazila": "Sylhet Sadar",
+    "email": "karim.uddin@example.com",
+    "bio": "Active volunteer in mental health awareness programmes and tech workshops.",
+    "skills": ["Mental Health Advocacy", "Workshop Facilitation", "Community Support"],
+    "joinedDate": "2024-02-05",
+    "featured": false,
+    "social": {
+      "facebook": "https://facebook.com/karimuddin"
+    }
+  },
+  {
+    "id": "SS202404",
+    "name": "রায়হানা আক্তার",
+    "role": "Content Creator",
+    "division": "Rajshahi",
+    "district": "Rajshahi",
+    "upazila": "Rajpara",
+    "email": "rayhana.akter@example.com",
+    "avatar": "/assets/img/members/rayhana-akter.webp",
+    "bio": "Creating educational content and managing social media outreach for various programmes.",
+    "skills": ["Content Writing", "Social Media", "Graphic Design", "Video Editing"],
+    "joinedDate": "2024-02-12",
+    "featured": true,
+    "social": {
+      "instagram": "https://instagram.com/rayhanaakter",
+      "behance": "https://behance.net/rayhanaakter"
+    }
+  },
+  {
+    "id": "SS202405",
+    "name": "তানভীর হোসেন",
+    "role": "Web Developer",
+    "division": "Khulna",
+    "district": "Khulna",
+    "upazila": "Khulna Sadar",
+    "email": "tanvir.hosen@example.com",
+    "avatar": "/assets/img/members/tanvir-hosen.webp",
+    "bio": "Full-stack developer contributing to ScriptySphere's digital infrastructure and online learning platforms.",
+    "skills": ["React", "Node.js", "MongoDB", "UI/UX Design", "DevOps"],
+    "joinedDate": "2024-02-20",
+    "featured": false,
+    "social": {
+      "github": "https://github.com/tanvirhosen",
+      "portfolio": "https://tanvirhosen.dev"
+    }
+  },
+  {
+    "id": "SS202406",
+    "name": "সাবিনা ইয়াসমিন",
+    "role": "Research Assistant",
+    "division": "Barisal",
+    "district": "Barisal",
+    "upazila": "Barisal Sadar",
+    "email": "sabina.yasmin@example.com",
+    "bio": "Conducting research on digital education impact and community development strategies.",
+    "skills": ["Research", "Data Analysis", "Survey Design", "Report Writing"],
+    "joinedDate": "2024-03-01",
+    "featured": false,
+    "social": {
+      "linkedin": "https://linkedin.com/in/sabinayasmin",
+      "researchgate": "https://researchgate.net/profile/sabina-yasmin"
+    }
+  },
+  {
+    "id": "SS202407",
+    "name": "আরিফ হাসান",
+    "role": "Student Ambassador",
+    "division": "Rangpur",
+    "district": "Rangpur",
+    "upazila": "Rangpur Sadar",
+    "email": "arif.hasan@example.com",
+    "avatar": "/assets/img/members/arif-hasan.webp",
+    "bio": "Representing ScriptySphere in educational institutions and organizing peer-to-peer learning sessions.",
+    "skills": ["Public Speaking", "Peer Education", "Event Management", "Social Networking"],
+    "joinedDate": "2024-03-10",
+    "featured": false,
+    "social": {
+      "facebook": "https://facebook.com/arifhasan",
+      "twitter": "https://twitter.com/arifhasan"
+    }
+  },
+  {
+    "id": "SS202408",
+    "name": "নুসরাত জাহান",
+    "role": "UI/UX Designer",
+    "division": "Dhaka",
+    "district": "Gazipur",
+    "upazila": "Gazipur Sadar",
+    "email": "nusrat.jahan@example.com",
+    "avatar": "/assets/img/members/nusrat-jahan.webp",
+    "bio": "Designing user-friendly interfaces for ScriptySphere's digital platforms and educational apps.",
+    "skills": ["UI Design", "UX Research", "Figma", "Adobe Creative Suite", "User Testing"],
+    "joinedDate": "2024-03-18",
+    "featured": true,
+    "social": {
+      "dribbble": "https://dribbble.com/nusratjahan",
+      "behance": "https://behance.net/nusratjahan"
+    }
+  },
+  {
+    "id": "SS202409",
+    "name": "মাহবুব আলম",
+    "role": "Data Analyst",
+    "division": "Mymensingh",
+    "district": "Mymensingh",
+    "upazila": "Mymensingh Sadar",
+    "email": "mahbub.alam@example.com",
+    "bio": "Analyzing programme impact data and creating insights for organizational growth and improvement.",
+    "skills": ["Python", "R", "Data Visualization", "Statistical Analysis", "Machine Learning"],
+    "joinedDate": "2024-03-25",
+    "featured": false,
+    "social": {
+      "github": "https://github.com/mahbubalam",
+      "kaggle": "https://kaggle.com/mahbubalam"
+    }
+  },
+  {
+    "id": "SS202410",
+    "name": "রোকসানা বেগম",
+    "role": "Community Manager",
+    "division": "Chittagong",
+    "district": "Cox's Bazar",
+    "upazila": "Cox's Bazar Sadar",
+    "email": "roksana.begum@example.com",
+    "avatar": "/assets/img/members/roksana-begum.webp",
+    "bio": "Building and nurturing the ScriptySphere community, organizing events and managing partnerships.",
+    "skills": ["Community Building", "Event Planning", "Partnership Development", "Communication"],
+    "joinedDate": "2024-04-02",
+    "featured": false,
+    "social": {
+      "linkedin": "https://linkedin.com/in/roksanabegum",
+      "facebook": "https://facebook.com/roksanabegum"
+    }
+  },
+  {
+    "id": "SS202411",
+    "name": "শাহরিয়ার কবির",
+    "role": "Mobile App Developer",
+    "division": "Sylhet",
+    "district": "Moulvibazar",
+    "upazila": "Moulvibazar Sadar",
+    "email": "shahriar.kabir@example.com",
+    "bio": "Developing mobile applications for educational purposes and community engagement.",
+    "skills": ["Flutter", "React Native", "Firebase", "API Development", "Mobile UI/UX"],
+    "joinedDate": "2024-04-15",
+    "featured": false,
+    "social": {
+      "github": "https://github.com/shahriarkabir",
+      "playstore": "https://play.google.com/store/apps/developer?id=Shahriar+Kabir"
+    }
+  },
+  {
+    "id": "SS202412",
+    "name": "তাসনিম আরা",
+    "role": "Mental Health Advocate",
+    "division": "Khulna",
+    "district": "Jessore",
+    "upazila": "Jessore Sadar",
+    "email": "tasnim.ara@example.com",
+    "avatar": "/assets/img/members/tasnim-ara.webp",
+    "bio": "Leading mental health awareness campaigns and providing counseling support to students.",
+    "skills": ["Psychology", "Counseling", "Workshop Facilitation", "Crisis Support"],
+    "joinedDate": "2024-04-22",
+    "featured": true,
+    "social": {
+      "linkedin": "https://linkedin.com/in/tasnimara"
+    }
+  },
+  {
+    "id": "SS202413",
+    "name": "রাফি আহমেদ",
+    "role": "Environmental Scientist",
+    "division": "Barisal",
+    "district": "Patuakhali",
+    "upazila": "Patuakhali Sadar",
+    "email": "rafi.ahmed@example.com",
+    "bio": "Working on environmental monitoring projects and climate change awareness initiatives.",
+    "skills": ["Environmental Science", "GIS", "Climate Research", "Data Collection"],
+    "joinedDate": "2024-05-01",
+    "featured": false,
+    "social": {
+      "researchgate": "https://researchgate.net/profile/rafi-ahmed"
+    }
+  },
+  {
+    "id": "SS202414",
+    "name": "সামিয়া রহমান",
+    "role": "Training Specialist",
+    "division": "Rangpur",
+    "district": "Kurigram",
+    "upazila": "Kurigram Sadar",
+    "email": "samia.rahman@example.com",
+    "avatar": "/assets/img/members/samia-rahman.webp",
+    "bio": "Designing and delivering training modules for technology education and skill development.",
+    "skills": ["Training Design", "Curriculum Development", "Adult Learning", "Assessment"],
+    "joinedDate": "2024-05-08",
+    "featured": false,
+    "social": {
+      "linkedin": "https://linkedin.com/in/samiarahman"
+    }
+  },
+  {
+    "id": "SS202415",
+    "name": "নাহিদ হাসান",
+    "role": "DevOps Engineer",
+    "division": "Dhaka",
+    "district": "Narayanganj",
+    "upazila": "Narayanganj Sadar",
+    "email": "nahid.hasan@example.com",
+    "bio": "Managing infrastructure and deployment pipelines for ScriptySphere's digital platforms.",
+    "skills": ["Docker", "Kubernetes", "AWS", "CI/CD", "Monitoring"],
+    "joinedDate": "2024-05-15",
+    "featured": false,
+    "social": {
+      "github": "https://github.com/nahidhasan",
+      "linkedin": "https://linkedin.com/in/nahidhasan"
+    }
+  }
+]
