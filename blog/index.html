@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the latest stories, updates, and insights from the ScriptySphere community. Stay updated with our technology education initiatives across Bangladesh.">
+    <meta name="keywords" content="ScriptySphere blog, Bangladesh technology education news, youth development stories">
+    <meta name="author" content="ScriptySphere">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scriptysphere.org/blog/">
+    <meta property="og:title" content="Blog - ScriptySphere Insights">
+    <meta property="og:description" content="Stories, updates, and insights from our community working to build tomorrow's Bangladesh.">
+    <meta property="og:image" content="https://scriptysphere.org/assets/img/og-blog.jpg">
+    
+    <link rel="canonical" href="https://scriptysphere.org/blog/">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/utilities.css">
+    <link rel="stylesheet" href="/assets/css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css">
+    
+    <title data-i18n="blog.title">Blog - ScriptySphere Insights</title>
+</head>
+<body>
+    <div data-include="header"></div>
+    <div data-include="nav"></div>
+    
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title" data-i18n="blog.hero.title">Blog & Insights</h1>
+                <p class="page-hero__subtitle" data-i18n="blog.hero.subtitle">Stories, updates, and insights from our community</p>
+            </div>
+        </section>
+        
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="container">
+                <article class="featured-article" data-aos="fade-up">
+                    <div class="featured-article__image">
+                        <img src="/assets/img/blog/featured-post.webp" alt="Featured article" loading="lazy">
+                        <div class="featured-article__badge">Featured</div>
+                    </div>
+                    <div class="featured-article__content">
+                        <div class="article-meta">
+                            <span class="article-category">Technology</span>
+                            <time datetime="2024-11-15">November 15, 2024</time>
+                            <span class="article-read-time">5 min read</span>
+                        </div>
+                        <h2>
+                            <a href="/blog/posts/2024-11-building-digital-bangladesh/">
+                                Building a Digitally Literate Bangladesh: Our Journey So Far
+                            </a>
+                        </h2>
+                        <p>Reflecting on our first year of impact, the challenges we've overcome, and the exciting future ahead as we work towards making Bangladesh a digitally empowered nation.</p>
+                        <a href="/blog/posts/2024-11-building-digital-bangladesh/" class="btn btn--primary">Read Full Article</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts">
+            <div class="container">
+                <div class="blog-header">
+                    <h2>Latest Posts</h2>
+                    <div class="blog-filters">
+                        <select class="filter-select" id="category-filter">
+                            <option value="">All Categories</option>
+                            <option value="technology">Technology</option>
+                            <option value="education">Education</option>
+                            <option value="environment">Environment</option>
+                            <option value="mental-health">Mental Health</option>
+                            <option value="community">Community</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="posts-grid" id="posts-grid">
+                    <!-- Posts will be loaded here -->
+                </div>
+                
+                <div class="blog-pagination" id="blog-pagination">
+                    <!-- Pagination will be added here -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Signup -->
+        <section class="blog-newsletter">
+            <div class="container">
+                <div class="newsletter-card" data-aos="fade-up">
+                    <div class="newsletter-content">
+                        <h2>Stay Updated</h2>
+                        <p>Get the latest stories and updates from ScriptySphere delivered to your inbox.</p>
+                    </div>
+                    <form class="newsletter-signup" name="blog-newsletter" method="POST" data-netlify="true">
+                        <div style="display: none;">
+                            <input name="bot-field">
+                        </div>
+                        <div class="newsletter-input-group">
+                            <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+                            <button type="submit" aria-label="Subscribe">
+                                <svg><use href="/assets/img/icons.svg#arrow-right"></use></svg>
+                            </button>
+                        </div>
+                        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div data-include="footer"></div>
+    <div data-include="cookie"></div>
+    <div data-include="modal"></div>
+    
+    <script src="/assets/js/partials.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/theme.js" defer></script>
+    <script src="/assets/js/blog.js" defer></script>
+    <script src="/assets/js/forms.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js" defer></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({ duration: 800, once: true });
+            }
+        });
+    </script>
+    
+    <style>
+        .featured-post {
+            padding: var(--space-12) 0;
+        }
+        
+        .featured-article {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+        
+        @media (min-width: 1024px) {
+            .featured-article {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .featured-article:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .featured-article__image {
+            position: relative;
+            aspect-ratio: 16/10;
+            overflow: hidden;
+        }
+        
+        .featured-article__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .featured-article__badge {
+            position: absolute;
+            top: var(--space-4);
+            left: var(--space-4);
+            background: var(--color-accent);
+            color: white;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+        }
+        
+        .featured-article__content {
+            padding: var(--space-8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            margin-bottom: var(--space-4);
+            font-size: var(--font-size-sm);
+        }
+        
+        .article-category {
+            background: var(--color-primary);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+        }
+        
+        .article-read-time {
+            color: var(--color-text-muted);
+        }
+        
+        .featured-article h2 {
+            margin-bottom: var(--space-4);
+        }
+        
+        .featured-article h2 a {
+            color: var(--color-text);
+            text-decoration: none;
+        }
+        
+        .featured-article h2 a:hover {
+            color: var(--color-primary);
+        }
+        
+        .featured-article p {
+            margin-bottom: var(--space-6);
+            color: var(--color-text-muted);
+        }
+        
+        .blog-posts {
+            padding: var(--space-16) 0;
+            background: var(--color-surface);
+        }
+        
+        .blog-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-12);
+        }
+        
+        @media (max-width: 640px) {
+            .blog-header {
+                flex-direction: column;
+                gap: var(--space-4);
+                align-items: flex-start;
+            }
+        }
+        
+        .blog-filters {
+            display: flex;
+            gap: var(--space-4);
+        }
+        
+        .filter-select {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            padding: var(--space-2) var(--space-4);
+        }
+        
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-8);
+            margin-bottom: var(--space-12);
+        }
+        
+        .blog-newsletter {
+            padding: var(--space-16) 0;
+        }
+        
+        .newsletter-card {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-12);
+            text-align: center;
+        }
+        
+        .newsletter-content h2 {
+            color: white;
+            margin-bottom: var(--space-4);
+        }
+        
+        .newsletter-content p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-8);
+            font-size: var(--font-size-lg);
+        }
+        
+        .newsletter-input-group {
+            display: flex;
+            max-width: 400px;
+            margin: 0 auto var(--space-4);
+            gap: var(--space-2);
+        }
+        
+        .newsletter-input-group input {
+            flex: 1;
+            padding: var(--space-3) var(--space-4);
+            border: none;
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+        }
+        
+        .newsletter-input-group button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--radius-lg);
+            color: white;
+            padding: var(--space-3);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .newsletter-input-group button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .newsletter-input-group button svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .newsletter-privacy {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: var(--font-size-sm);
+            margin: 0;
+        }
+        
+        @media (max-width: 640px) {
+            .newsletter-input-group {
+                flex-direction: column;
+            }
+            
+            .newsletter-input-group button {
+                align-self: center;
+                padding: var(--space-3) var(--space-6);
+            }
+        }
+    </style>
+</body>
+</html>
