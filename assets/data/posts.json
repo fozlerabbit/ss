@@ -1,0 +1,191 @@
+[
+  {
+    "id": "building-digital-bangladesh-2024",
+    "title": "Building a Digitally Literate Bangladesh: Our Journey So Far",
+    "slug": "building-digital-bangladesh-2024",
+    "url": "/blog/posts/2024-11-building-digital-bangladesh/",
+    "excerpt": "Reflecting on our first year of impact, the challenges we've overcome, and the exciting future ahead as we work towards making Bangladesh a digitally empowered nation.",
+    "content": "Full article content would go here...",
+    "date": "2024-11-15",
+    "category": "Technology",
+    "tags": ["digital literacy", "bangladesh", "education", "technology", "impact"],
+    "image": "/assets/img/blog/digital-bangladesh.webp",
+    "featured": true,
+    "author": {
+      "name": "Ahmed Rahman",
+      "avatar": "/assets/img/authors/ahmed-rahman.webp",
+      "bio": "Founder & CEO of ScriptySphere"
+    },
+    "readTime": 5,
+    "views": 1250,
+    "language": "en"
+  },
+  {
+    "id": "mental-health-awareness-youth",
+    "title": "Breaking the Silence: Mental Health Awareness Among Youth",
+    "slug": "mental-health-awareness-youth",
+    "url": "/blog/posts/2024-11-mental-health-awareness/",
+    "excerpt": "Exploring the importance of mental health support for young people and how technology can help create safe spaces for conversation and healing.",
+    "content": "Full article content...",
+    "date": "2024-11-10",
+    "category": "Mental Health",
+    "tags": ["mental health", "youth", "awareness", "support", "wellbeing"],
+    "image": "/assets/img/blog/mental-health-youth.webp",
+    "featured": false,
+    "author": {
+      "name": "Dr. Tasnim Ara",
+      "avatar": "/assets/img/authors/tasnim-ara.webp",
+      "bio": "Mental Health Advocate & Counselor"
+    },
+    "readTime": 7,
+    "views": 890,
+    "language": "en"
+  },
+  {
+    "id": "green-tech-solutions-bangladesh",
+    "title": "Green Tech Solutions for a Sustainable Bangladesh",
+    "slug": "green-tech-solutions-bangladesh", 
+    "url": "/blog/posts/2024-11-green-tech-solutions/",
+    "excerpt": "How young innovators are using technology to address environmental challenges and create sustainable solutions for Bangladesh's climate future.",
+    "content": "Full article content...",
+    "date": "2024-11-05",
+    "category": "Environment",
+    "tags": ["environment", "technology", "sustainability", "climate", "innovation"],
+    "image": "/assets/img/blog/green-tech.webp",
+    "featured": false,
+    "author": {
+      "name": "Rafi Ahmed",
+      "avatar": "/assets/img/authors/rafi-ahmed.webp",
+      "bio": "Environmental Scientist & Tech Enthusiast"
+    },
+    "readTime": 6,
+    "views": 650,
+    "language": "en"
+  },
+  {
+    "id": "women-in-tech-bangladesh",
+    "title": "Empowering Women in Tech: Success Stories from Bangladesh",
+    "slug": "women-in-tech-bangladesh",
+    "url": "/blog/posts/2024-10-women-in-tech/",
+    "excerpt": "Celebrating the achievements of women in technology across Bangladesh and highlighting initiatives to increase female participation in STEM fields.",
+    "content": "Full article content...",
+    "date": "2024-10-28",
+    "category": "Technology",
+    "tags": ["women in tech", "gender equality", "stem", "empowerment", "success stories"],
+    "image": "/assets/img/blog/women-tech.webp",
+    "featured": false,
+    "author": {
+      "name": "Nusrat Jahan",
+      "avatar": "/assets/img/authors/nusrat-jahan.webp",
+      "bio": "UI/UX Designer & Women in Tech Advocate"
+    },
+    "readTime": 8,
+    "views": 1150,
+    "language": "en"
+  },
+  {
+    "id": "community-impact-rural-areas",
+    "title": "Bringing Technology Education to Rural Bangladesh",
+    "slug": "community-impact-rural-areas",
+    "url": "/blog/posts/2024-10-rural-technology-education/",
+    "excerpt": "Our efforts to bridge the digital divide by bringing quality technology education to rural communities across Bangladesh.",
+    "content": "Full article content...",
+    "date": "2024-10-20",
+    "category": "Education",
+    "tags": ["rural education", "digital divide", "community outreach", "technology access"],
+    "image": "/assets/img/blog/rural-education.webp",
+    "featured": false,
+    "author": {
+      "name": "Fatima Khatun",
+      "avatar": "/assets/img/authors/fatima-khatun.webp",
+      "bio": "Programme Coordinator"
+    },
+    "readTime": 6,
+    "views": 780,
+    "language": "en"
+  },
+  {
+    "id": "volunteer-spotlight-october",
+    "title": "Volunteer Spotlight: Making a Difference One Student at a Time",
+    "slug": "volunteer-spotlight-october",
+    "url": "/blog/posts/2024-10-volunteer-spotlight/",
+    "excerpt": "Meet our amazing volunteers who are dedicating their time and skills to empower the next generation of tech leaders in Bangladesh.",
+    "content": "Full article content...",
+    "date": "2024-10-15",
+    "category": "Community",
+    "tags": ["volunteers", "community", "spotlight", "recognition", "impact"],
+    "image": "/assets/img/blog/volunteer-spotlight.webp",
+    "featured": false,
+    "author": {
+      "name": "Roksana Begum",
+      "avatar": "/assets/img/authors/roksana-begum.webp",
+      "bio": "Community Manager"
+    },
+    "readTime": 4,
+    "views": 520,
+    "language": "en"
+  },
+  {
+    "id": "digital-skills-future-jobs",
+    "title": "Digital Skills for Future Jobs: Preparing Bangladesh's Youth",
+    "slug": "digital-skills-future-jobs",
+    "url": "/blog/posts/2024-10-digital-skills-jobs/",
+    "excerpt": "Analyzing the digital skills gap in Bangladesh and how our programmes are preparing young people for the jobs of tomorrow.",
+    "content": "Full article content...",
+    "date": "2024-10-08",
+    "category": "Education",
+    "tags": ["digital skills", "future jobs", "career preparation", "youth development"],
+    "image": "/assets/img/blog/digital-skills.webp",
+    "featured": false,
+    "author": {
+      "name": "Mahbub Alam",
+      "avatar": "/assets/img/authors/mahbub-alam.webp",
+      "bio": "Data Analyst & Education Researcher"
+    },
+    "readTime": 9,
+    "views": 950,
+    "language": "en"
+  },
+  {
+    "id": "partnership-success-stories",
+    "title": "Partnership Success: Collaborating for Greater Impact",
+    "slug": "partnership-success-stories",
+    "url": "/blog/posts/2024-09-partnership-success/",
+    "excerpt": "How strategic partnerships with educational institutions and corporations are amplifying our reach and creating sustainable change.",
+    "content": "Full article content...",
+    "date": "2024-09-25",
+    "category": "Community",
+    "tags": ["partnerships", "collaboration", "impact", "sustainability", "growth"],
+    "image": "/assets/img/blog/partnerships.webp",
+    "featured": false,
+    "author": {
+      "name": "Shahriar Kabir",
+      "avatar": "/assets/img/authors/shahriar-kabir.webp",
+      "bio": "Partnership Development Lead"
+    },
+    "readTime": 5,
+    "views": 670,
+    "language": "en"
+  },
+  {
+    "id": "mobile-app-development-workshop",
+    "title": "From Idea to App Store: Our Mobile Development Workshop Success",
+    "slug": "mobile-app-development-workshop",
+    "url": "/blog/posts/2024-09-mobile-app-workshop/",
+    "excerpt": "How 30 students learned mobile app development and published their first apps to Google Play Store in just 8 weeks.",
+    "content": "Full article content...",
+    "date": "2024-09-18",
+    "category": "Technology",
+    "tags": ["mobile development", "app store", "workshop", "student success", "android"],
+    "image": "/assets/img/blog/mobile-workshop.webp",
+    "featured": false,
+    "author": {
+      "name": "Tanvir Hosen",
+      "avatar": "/assets/img/authors/tanvir-hosen.webp",
+      "bio": "Mobile App Developer & Trainer"
+    },
+    "readTime": 6,
+    "views": 1320,
+    "language": "en"
+  }
+]
