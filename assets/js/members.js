@@ -493,4 +493,148 @@ class MembersDirectory {
         this.clearUpazilas();
         const districtSelect = document.getElementById('district-filter');
         if (districtSelect) {
-            districtSelect.innerHTML = '<option value="" data-i18n="members.
+            districtSelect.innerHTML = '<option value="" data-i18n="members.filters.district">District</option>';
+            districtSelect.disabled = true;
+        }
+        
+        // Apply filters
+        this.applyFilters();
+    }
+
+    populateRoles() {
+        const select = document.getElementById('role-filter');
+        if (!select) return;
+
+        const roles = [...new Set(this.members.map(m => m.role).filter(Boolean))];
+        
+        roles.sort().forEach(role => {
+            const option = document.createElement('option');
+            option.value = role;
+            option.textContent = role;
+            select.appendChild(option);
+        });
+    }
+
+    // Export functionality
+    exportToCSV() {
+        const csvContent = this.generateCSV();
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement('a');
+        
+        if (link.download !== undefined) {
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'scriptysphere-members.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    }
+
+    generateCSV() {
+        const headers = ['Name', 'Role', 'Division', 'District', 'Upazila', 'ID', 'Email', 'Joined Date'];
+        const rows = this.filteredMembers.map(member => [
+            member.name,
+            member.role,
+            member.division,
+            member.district,
+            member.upazila,
+            member.id,
+            member.email || '',
+            member.joinedDate || ''
+        ]);
+        
+        return [headers, ...rows]
+            .map(row => row.map(field => `"${(field || '').toString().replace(/"/g, '""')}"`).join(','))
+            .join('\n');
+    }
+
+    // Bookmark functionality (using localStorage)
+    toggleBookmark(memberId) {
+        try {
+            const bookmarks = JSON.parse(localStorage.getItem('member-bookmarks') || '[]');
+            const index = bookmarks.indexOf(memberId);
+            
+            if (index > -1) {
+                bookmarks.splice(index, 1);
+            } else {
+                bookmarks.push(memberId);
+            }
+            
+            localStorage.setItem('member-bookmarks', JSON.stringify(bookmarks));
+            this.updateBookmarkUI(memberId, index === -1);
+            
+            return index === -1; // Return true if bookmarked, false if unbookmarked
+        } catch (error) {
+            console.warn('Could not toggle bookmark:', error);
+            return false;
+        }
+    }
+
+    updateBookmarkUI(memberId, isBookmarked) {
+        const memberCard = document.querySelector(`[data-member-id="${memberId}"]`);
+        if (memberCard) {
+            memberCard.classList.toggle('member-card--bookmarked', isBookmarked);
+        }
+    }
+
+    getBookmarkedMembers() {
+        try {
+            const bookmarks = JSON.parse(localStorage.getItem('member-bookmarks') || '[]');
+            return this.members.filter(member => bookmarks.includes(member.id));
+        } catch (error) {
+            return [];
+        }
+    }
+
+    // Stats functionality
+    getStats() {
+        const stats = {
+            total: this.members.length,
+            byDivision: {},
+            byRole: {},
+            byDistrict: {}
+        };
+
+        this.members.forEach(member => {
+            // By division
+            stats.byDivision[member.division] = (stats.byDivision[member.division] || 0) + 1;
+            
+            // By role
+            stats.byRole[member.role] = (stats.byRole[member.role] || 0) + 1;
+            
+            // By district
+            const districtKey = `${member.district}, ${member.division}`;
+            stats.byDistrict[districtKey] = (stats.byDistrict[districtKey] || 0) + 1;
+        });
+
+        return stats;
+    }
+
+    // Search highlighting
+    highlightSearchTerm(text, searchTerm) {
+        if (!searchTerm || !text) return text;
+        
+        const regex = new RegExp(`(${searchTerm})`, 'gi');
+        return text.replace(regex, '<mark>$1</mark>');
+    }
+}
+
+// Initialize when DOM is ready
+let membersDirectory;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    // Only initialize on members page
+    if (window.location.pathname.includes('/members/')) {
+        membersDirectory = new MembersDirectory();
+        
+        // Make available globally
+        window.membersDirectory = membersDirectory;
+    }
+});
+
+// Export for potential module use
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = MembersDirectory;
+}
