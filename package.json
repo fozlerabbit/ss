@@ -1,0 +1,56 @@
+{
+  "name": "scriptysphere-website",
+  "version": "1.0.0",
+  "description": "Static website for ScriptySphere - Building tomorrow's Bangladesh through technology",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/css/styles.min.css assets/css/base.css assets/css/components.css assets/css/utilities.css assets/css/themes.css",
+    "minify-js": "terser assets/js/*.js --compress --mangle -o dist/js/scripts.min.js",
+    "optimize-images": "imagemin assets/img/**/*.{jpg,png} --out-dir=dist/img --plugin=imagemin-mozjpeg --plugin=imagemin-pngquant",
+    "validate-html": "html-validate *.html **/*.html",
+    "test-accessibility": "axe-cli http://localhost:8000",
+    "test-lighthouse": "lhci autorun",
+    "serve": "npx serve .",
+    "deploy:netlify": "netlify deploy --prod --dir=.",
+    "deploy:vercel": "vercel --prod"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.4",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "html-validate": "^8.7.3",
+    "@axe-core/cli": "^4.8.2",
+    "@lhci/cli": "^0.12.0",
+    "serve": "^14.2.1"
+  },
+  "keywords": [
+    "scriptysphere",
+    "bangladesh",
+    "technology",
+    "education",
+    "youth",
+    "development",
+    "static-site",
+    "pwa"
+  ],
+  "author": "ScriptySphere Team",
+  "license": "MIT",
+  "homepage": "https://scriptysphere.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scriptysphere/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scriptysphere/website/issues"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
