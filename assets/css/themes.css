@@ -1,0 +1,334 @@
+/* Theme Variables */
+
+/* Dark Theme */
+[data-theme="dark"] {
+    /* Neutrals */
+    --color-white: #ffffff;
+    --color-gray-50: #1f2937;
+    --color-gray-100: #374151;
+    --color-gray-200: #4b5563;
+    --color-gray-300: #6b7280;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #d1d5db;
+    --color-gray-600: #e5e7eb;
+    --color-gray-700: #f3f4f6;
+    --color-gray-800: #f9fafb;
+    --color-gray-900: #ffffff;
+    
+    /* Semantic Colors */
+    --color-background: #111827;
+    --color-surface: #1f2937;
+    --color-text: #f9fafb;
+    --color-text-muted: #d1d5db;
+    --color-border: #374151;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    
+    /* Primary colors remain the same for brand consistency */
+    --color-primary: #3b82f6;
+    --color-primary-light: #60a5fa;
+    --color-primary-dark: #2563eb;
+}
+
+/* Bengali font support */
+.lang-bengali {
+    font-family: var(--font-family-bengali);
+}
+
+.lang-bengali h1,
+.lang-bengali h2,
+.lang-bengali h3,
+.lang-bengali h4,
+.lang-bengali h5,
+.lang-bengali h6 {
+    font-family: var(--font-family-bengali);
+    line-height: var(--line-height-relaxed);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --color-shadow: rgba(0, 0, 0, 0.5);
+        --color-border: #000000;
+    }
+    
+    [data-theme="dark"] {
+        --color-shadow: rgba(255, 255, 255, 0.3);
+        --color-border: #ffffff;
+    }
+    
+    .btn {
+        border-width: 2px;
+    }
+    
+    .btn--outline {
+        border-width: 2px;
+        font-weight: 700;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .cta__circle {
+        animation: none;
+    }
+    
+    .hero__background::before {
+        opacity: 0.1;
+    }
+}
+
+/* Print styles for dark theme */
+@media print {
+    [data-theme="dark"] {
+        --color-background: #ffffff !important;
+        --color-surface: #ffffff !important;
+        --color-text: #000000 !important;
+        --color-text-muted: #666666 !important;
+        --color-border: #cccccc !important;
+    }
+}
+
+/* Focus indicators for dark theme */
+[data-theme="dark"] :focus-visible {
+    outline-color: var(--color-primary-light);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Selection colors */
+::selection {
+    background: rgba(37, 99, 235, 0.2);
+    color: var(--color-text);
+}
+
+[data-theme="dark"] ::selection {
+    background: rgba(59, 130, 246, 0.3);
+    color: var(--color-white);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-gray-400);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gray-500);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: var(--color-gray-800);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--color-gray-600);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gray-500);
+}
+
+/* Theme-specific component adjustments */
+[data-theme="dark"] .header {
+    background: rgba(17, 24, 39, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .nav {
+    background: var(--color-background);
+}
+
+[data-theme="dark"] .hero__background {
+    opacity: 0.95;
+}
+
+[data-theme="dark"] .mission__card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .programme-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .modal__container {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .search-form__input {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+[data-theme="dark"] .search-form__input::placeholder {
+    color: var(--color-text-muted);
+}
+
+[data-theme="dark"] .cookie-banner {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+}
+
+/* Theme transition animation */
+* {
+    transition: 
+        background-color var(--transition-base),
+        border-color var(--transition-base),
+        color var(--transition-base),
+        fill var(--transition-base);
+}
+
+/* Disable transitions during theme change for better performance */
+.theme-transitioning * {
+    transition: none !important;
+}
+
+/* Custom theme toggle animation */
+.theme-toggle__icon {
+    transition: 
+        opacity var(--transition-base),
+        transform var(--transition-base);
+}
+
+/* Hover states for dark theme */
+[data-theme="dark"] .nav__link:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+[data-theme="dark"] .btn--outline:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+[data-theme="dark"] .footer__social-link:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Loading skeleton for dark theme */
+[data-theme="dark"] .loading::after {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+}
+
+/* Form elements in dark theme */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+    color: var(--color-text-muted);
+}
+
+/* Image adjustments for dark theme */
+[data-theme="dark"] img {
+    opacity: 0.9;
+}
+
+[data-theme="dark"] .footer__logo {
+    filter: brightness(0) invert(1);
+}
+
+/* Code blocks in dark theme */
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-color: var(--color-border);
+}
+
+/* Table styles for dark theme */
+[data-theme="dark"] table {
+    background: var(--color-surface);
+}
+
+[data-theme="dark"] th {
+    background: var(--color-gray-800);
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+
+[data-theme="dark"] td {
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+/* Toast/notification styles */
+[data-theme="dark"] .toast {
+    background: var(--color-surface);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .toast--success {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+[data-theme="dark"] .toast--error {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+[data-theme="dark"] .toast--warning {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--color-warning);
+    border-color: var(--color-warning);
+}
+
+/* Custom scrollbar for modal in dark theme */
+[data-theme="dark"] .modal__body::-webkit-scrollbar-track {
+    background: var(--color-gray-800);
+}
+
+/* Accessibility: High contrast adjustments */
+@media (prefers-contrast: high) {
+    [data-theme="dark"] {
+        --color-background: #000000;
+        --color-surface: #1a1a1a;
+        --color-text: #ffffff;
+        --color-border: #666666;
+        --color-primary: #4f9eff;
+    }
+}
+
+/* System theme change detection styles */
+.theme-system-change {
+    transition: all 0.3s ease !important;
+}
