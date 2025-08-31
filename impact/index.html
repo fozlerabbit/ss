@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See the positive impact ScriptySphere is making across Bangladesh through technology education, youth empowerment, and community development programmes.">
+    <meta name="keywords" content="ScriptySphere impact, Bangladesh technology education results, youth development statistics">
+    <meta name="author" content="ScriptySphere">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scriptysphere.org/impact/">
+    <meta property="og:title" content="Impact - ScriptySphere Results">
+    <meta property="og:description" content="Measuring the positive change we're creating across Bangladesh through technology and education.">
+    <meta property="og:image" content="https://scriptysphere.org/assets/img/og-impact.jpg">
+    
+    <link rel="canonical" href="https://scriptysphere.org/impact/">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/utilities.css">
+    <link rel="stylesheet" href="/assets/css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.css">
+    
+    <title data-i18n="impact.title">Impact - ScriptySphere Results</title>
+</head>
+<body>
+    <div data-include="header"></div>
+    <div data-include="nav"></div>
+    
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title" data-i18n="impact.hero.title">Our Impact</h1>
+                <p class="page-hero__subtitle" data-i18n="impact.hero.subtitle">Measuring the positive change we're creating across Bangladesh</p>
+            </div>
+        </section>
+        
+        <!-- Key Metrics -->
+        <section class="key-metrics">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="metric-card" data-aos="zoom-in">
+                        <div class="metric-card__icon">
+                            <svg><use href="/assets/img/icons.svg#users"></use></svg>
+                        </div>
+                        <div class="metric-card__number" data-count="1500">0</div>
+                        <div class="metric-card__label">Students Reached</div>
+                        <div class="metric-card__growth">+45% this year</div>
+                    </div>
+                    
+                    <div class="metric-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="metric-card__icon">
+                            <svg><use href="/assets/img/icons.svg#calendar"></use></svg>
+                        </div>
+                        <div class="metric-card__number" data-count="25">0</div>
+                        <div class="metric-card__label">Programmes Conducted</div>
+                        <div class="metric-card__growth">+67% this year</div>
+                    </div>
+                    
+                    <div class="metric-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="metric-card__icon">
+                            <svg><use href="/assets/img/icons.svg#map"></use></svg>
+                        </div>
+                        <div class="metric-card__number" data-count="8">0</div>
+                        <div class="metric-card__label">Divisions Covered</div>
+                        <div class="metric-card__growth">100% coverage</div>
+                    </div>
+                    
+                    <div class="metric-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="metric-card__icon">
+                            <svg><use href="/assets/img/icons.svg#graduation-cap"></use></svg>
+                        </div>
+                        <div class="metric-card__number" data-count="85">0</div>
+                        <div class="metric-card__label">Completion Rate (%)</div>
+                        <div class="metric-card__growth">Above industry average</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <div class="container">
+                <h2 class="section-title">Progress Over Time</h2>
+                <div class="charts-grid">
+                    <div class="chart-container" data-aos="fade-up">
+                        <h3>Students Reached by Month</h3>
+                        <canvas id="studentsChart" width="400" height="200"></canvas>
+                    </div>
+                    
+                    <div class="chart-container" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Programme Distribution</h3>
+                        <canvas id="programmesChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+                
+                <div class="charts-grid">
+                    <div class="chart-container" data-aos="fade-up">
+                        <h3>Geographic Reach</h3>
+                        <canvas id="geographicChart" width="400" height="200"></canvas>
+                    </div>
+                    
+                    <div class="chart-container" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Age Group Participation</h3>
+                        <canvas id="ageGroupChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Stories -->
+        <section class="success-stories">
+            <div class="container">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="stories-grid">
+                    <article class="story-card" data-aos="fade-up">
+                        <div class="story-card__image">
+                            <img src="/assets/img/stories/story1.webp" alt="Success story" loading="lazy">
+                        </div>
+                        <div class="story-card__content">
+                            <h3>From Zero to Full Stack Developer</h3>
+                            <p>Rashid started with no programming knowledge and now works as a full-stack developer after completing our 6-month intensive programme.</p>
+                            <div class="story-card__meta">
+                                <span class="story-tag">Technology</span>
+                                <span class="story-date">March 2024</span>
+                            </div>
+                            <button class="btn btn--outline btn--small" data-modal="story1-modal">Read Full Story</button>
+                        </div>
+                    </article>
+                    
+                    <article class="story-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="story-card__image">
+                            <img src="/assets/img/stories/story2.webp" alt="Success story" loading="lazy">
+                        </div>
+                        <div class="story-card__content">
+                            <h3>Mental Health Champion</h3>
+                            <p>Fatima became a mental health advocate in her community, helping establish support groups in 3 schools across Chittagong.</p>
+                            <div class="story-card__meta">
+                                <span class="story-tag">Mental Health</span>
+                                <span class="story-date">April 2024</span>
+                            </div>
+                            <button class="btn btn--outline btn--small" data-modal="story2-modal">Read Full Story</button>
+                        </div>
+                    </article>
+                    
+                    <article class="story-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="story-card__image">
+                            <img src="/assets/img/stories/story3.webp" alt="Success story" loading="lazy">
+                        </div>
+                        <div class="story-card__content">
+                            <h3>Environmental Tech Innovator</h3>
+                            <p>Karim developed an IoT-based water quality monitoring system that's now used in 5 rural communities.</p>
+                            <div class="story-card__meta">
+                                <span class="story-tag">Environment</span>
+                                <span class="story-date">May 2024</span>
+                            </div>
+                            <button class="btn btn--outline btn--small" data-modal="story3-modal">Read Full Story</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Geographic Impact -->
+        <section class="geographic-impact">
+            <div class="container">
+                <h2 class="section-title">Where We Work</h2>
+                <div class="impact-map-container">
+                    <div id="impact-map" style="height: 400px; border-radius: var(--radius-xl); overflow: hidden;"></div>
+                </div>
+                
+                <div class="division-stats">
+                    <div class="division-grid">
+                        <div class="division-stat" data-aos="fade-up">
+                            <h4>Dhaka</h4>
+                            <div class="division-numbers">
+                                <span class="division-students">450 students</span>
+                                <span class="division-programmes">8 programmes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="division-stat" data-aos="fade-up" data-aos-delay="50">
+                            <h4>Chittagong</h4>
+                            <div class="division-numbers">
+                                <span class="division-students">320 students</span>
+                                <span class="division-programmes">6 programmes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="division-stat" data-aos="fade-up" data-aos-delay="100">
+                            <h4>Sylhet</h4>
+                            <div class="division-numbers">
+                                <span class="division-students">180 students</span>
+                                <span class="division-programmes">3 programmes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="division-stat" data-aos="fade-up" data-aos-delay="150">
+                            <h4>Khulna</h4>
+                            <div class="division-numbers">
+                                <span class="division-students">220 students</span>
+                                <span class="division-programmes">4 programmes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div data-include="cta"></div>
+    </main>
+    
+    <div data-include="footer"></div>
+    <div data-include="cookie"></div>
+    <div data-include="modal"></div>
+    
+    <script src="/assets/js/partials.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/theme.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({ duration: 800, once: true });
+            }
+            
+            // Initialize charts when Chart.js is loaded
+            if (typeof Chart !== 'undefined') {
+                initCharts();
+            } else {
+                // Wait for Chart.js to load
+                const checkChart = setInterval(() => {
+                    if (typeof Chart !== 'undefined') {
+                        clearInterval(checkChart);
+                        initCharts();
+                    }
+                }, 100);
+            }
+            
+            // Initialize map when Leaflet is loaded
+            if (typeof L !== 'undefined') {
+                initMap();
+            } else {
+                const checkLeaflet = setInterval(() => {
+                    if (typeof L !== 'undefined') {
+                        clearInterval(checkLeaflet);
+                        initMap();
+                    }
+                }, 100);
+            }
+        });
+        
+        function initCharts() {
+            // Students reached chart
+            const studentsCtx = document.getElementById('studentsChart');
+            if (studentsCtx) {
+                new Chart(studentsCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+                        datasets: [{
+                            label: 'Students Reached',
+                            data: [50, 80, 120, 200, 180, 250, 300, 280, 350, 420],
+                            borderColor: 'rgb(37, 99, 235)',
+                            backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Programme distribution chart
+            const programmesCtx = document.getElementById('programmesChart');
+            if (programmesCtx) {
+                new Chart(programmesCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Technology Camps', 'Digital Education', 'Green Environment', 'Mental Health', 'Volunteering'],
+                        datasets: [{
+                            data: [35, 25, 15, 15, 10],
+                            backgroundColor: [
+                                'rgb(37, 99, 235)',
+                                'rgb(16, 185, 129)', 
+                                'rgb(34, 197, 94)',
+                                'rgb(245, 158, 11)',
+                                'rgb(139, 92, 246)'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Geographic reach chart
+            const geographicCtx = document.getElementById('geographicChart');
+            if (geographicCtx) {
+                new Chart(geographicCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Dhaka', 'Chittagong', 'Khulna', 'Sylhet', 'Rajshahi', 'Barisal', 'Rangpur', 'Mymensingh'],
+                        datasets: [{
+                            label: 'Students',
+                            data: [450, 320, 220, 180, 150, 120, 80, 75],
+                            backgroundColor: 'rgba(37, 99, 235, 0.8)',
+                            borderColor: 'rgb(37, 99, 235)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Age group chart
+            const ageGroupCtx = document.getElementById('ageGroupChart');
+            if (ageGroupCtx) {
+                new Chart(ageGroupCtx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['15-18 years', '19-22 years', '23-25 years', '26+ years'],
+                        datasets: [{
+                            data: [40, 35, 20, 5],
+                            backgroundColor: [
+                                'rgb(59, 130, 246)',
+                                'rgb(16, 185, 129)',
+                                'rgb(245, 158, 11)',
+                                'rgb(239, 68, 68)'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            }
+        }
+        
+        function initMap() {
+            const mapElement = document.getElementById('impact-map');
+            if (!mapElement) return;
+            
+            // Initialize map centered on Bangladesh
+            const map = L.map('impact-map').setView([23.8103, 90.4125], 7);
+            
+            // Add tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            
+            // Programme locations
+            const locations = [
+                { lat: 23.8103, lng: 90.4125, name: 'Dhaka', programmes: 8, students: 450 },
+                { lat: 22.3569, lng: 91.7832, name: 'Chittagong', programmes: 6, students: 320 },
+                { lat: 22.8456, lng: 89.5403, name: 'Khulna', programmes: 4, students: 220 },
+                { lat: 24.8949, lng: 91.8687, name: 'Sylhet', programmes: 3, students: 180 },
+                { lat: 24.3636, lng: 88.6241, name: 'Rajshahi', programmes: 3, students: 150 },
+                { lat: 22.7010, lng: 90.3535, name: 'Barisal', programmes: 2, students: 120 },
+                { lat: 25.7439, lng: 89.2752, name: 'Rangpur', programmes: 2, students: 80 },
+                { lat: 24.7471, lng: 90.4203, name: 'Mymensingh', programmes: 2, students: 75 }
+            ];
+            
+            locations.forEach(location => {
+                const marker = L.marker([location.lat, location.lng]).addTo(map);
+                marker.bindPopup(`
+                    <div class="map-popup">
+                        <h4>${location.name}</h4>
+                        <p><strong>${location.students}</strong> students reached</p>
+                        <p><strong>${location.programmes}</strong> programmes conducted</p>
+                    </div>
+                `);
+            });
+        }
+    </script>
+    
+    <style>
+        .key-metrics {
+            padding: var(--space-16) 0;
+            background: var(--color-surface);
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+        }
+        
+        .metric-card {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            text-align: center;
+            transition: all var(--transition-base);
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .metric-card__icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto var(--space-4);
+            background: var(--color-primary);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .metric-card__icon svg {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .metric-card__number {
+            display: block;
+            font-size: var(--font-size-4xl);
+            font-weight: 800;
+            color: var(--color-primary);
+            margin-bottom: var(--space-2);
+        }
+        
+        .metric-card__label {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: var(--space-2);
+        }
+        
+        .metric-card__growth {
+            font-size: var(--font-size-sm);
+            color: var(--color-secondary);
+            font-weight: 500;
+        }
+        
+        .charts-section {
+            padding: var(--space-16) 0;
+        }
+        
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--space-8);
+            margin-bottom: var(--space-8);
+        }
+        
+        @media (max-width: 640px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .chart-container {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            height: 300px;
+        }
+        
+        .chart-container h3 {
+            margin-bottom: var(--space-4);
+            color: var(--color-text);
+            font-size: var(--font-size-lg);
+        }
+        
+        .chart-container canvas {
+            max-height: 240px;
+        }
+        
+        .success-stories {
+            background: var(--color-surface);
+            padding: var(--space-16) 0;
+        }
+        
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-8);
+        }
+        
+        .story-card {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+        
+        .story-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .story-card__image {
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+        
+        .story-card__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+        
+        .story-card:hover .story-card__image img {
+            transform: scale(1.05);
+        }
+        
+        .story-card__content {
+            padding: var(--space-6);
+        }
+        
+        .story-card h3 {
+            margin-bottom: var(--space-3);
+            color: var(--color-text);
+        }
+        
+        .story-card p {
+            margin-bottom: var(--space-4);
+            color: var(--color-text-muted);
+        }
+        
+        .story-card__meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-4);
+        }
+        
+        .story-tag {
+            background: var(--color-surface);
+            color: var(--color-primary);
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+        }
+        
+        .story-date {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+        }
+        
+        .geographic-impact {
+            padding: var(--space-16) 0;
+        }
+        
+        .impact-map-container {
+            margin-bottom: var(--space-12);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+        }
+        
+        .division-stats {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+        }
+        
+        .division-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-6);
+        }
+        
+        .division-stat {
+            text-align: center;
+            padding: var(--space-4);
+            border-radius: var(--radius-lg);
+            background: var(--color-surface);
+        }
+        
+        .division-stat h4 {
+            margin-bottom: var(--space-3);
+            color: var(--color-text);
+        }
+        
+        .division-numbers {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-1);
+        }
+        
+        .division-students {
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        
+        .division-programmes {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+        }
+        
+        /* Map popup styles */
+        .map-popup h4 {
+            margin-bottom: var(--space-2);
+            color: var(--color-text);
+        }
+        
+        .map-popup p {
+            margin-bottom: var(--space-1);
+            font-size: var(--font-size-sm);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chart-container {
+                height: 250px;
+                padding: var(--space-4);
+            }
+            
+            .metric-card {
+                padding: var(--space-6);
+            }
+            
+            .metric-card__number {
+                font-size: var(--font-size-3xl);
+            }
+        }
+    </script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "ScriptySphere Impact",
+        "description": "Measuring the positive change ScriptySphere is creating across Bangladesh through technology education and youth empowerment",
+        "url": "https://scriptysphere.org/impact/",
+        "mainEntity": {
+            "@type": "Organization",
+            "@id": "https://scriptysphere.org/#organization"
+        },
+        "about": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "ScriptySphere",
+                "hasCredential": [
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Technology Education",
+                        "educationalLevel": "Secondary and Higher Education",
+                        "competencyRequired": "Digital Literacy, Programming, Environmental Awareness"
+                    }
+                ]
+            }
+        ],
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://scriptysphere.org/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Impact",
+                    "item": "https://scriptysphere.org/impact/"
+                }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>
