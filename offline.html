@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You are currently offline. ScriptySphere content will be available when you reconnect.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>Offline - ScriptySphere</title>
+    
+    <!-- Inline critical CSS for offline page -->
+    <style>
+        :root {
+            --color-primary: #2563eb;
+            --color-secondary: #10b981;
+            --color-background: #ffffff;
+            --color-text: #111827;
+            --color-text-muted: #6b7280;
+            --color-surface: #f9fafb;
+            --space-4: 1rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-16: 4rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-background: #111827;
+                --color-text: #f9fafb;
+                --color-text-muted: #d1d5db;
+                --color-surface: #1f2937;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .offline-container {
+            text-align: center;
+            max-width: 500px;
+            padding: var(--space-8);
+            background: var(--color-surface);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .offline-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-6);
+            background: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .offline-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+            color: var(--color-text);
+        }
+
+        .offline-description {
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-8);
+            line-height: 1.6;
+        }
+
+        .offline-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-4) var(--space-6);
+            border: none;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn--primary {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .btn--primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .btn--secondary {
+            background: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+
+        .btn--secondary:hover {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .connection-status {
+            margin-top: var(--space-6);
+            padding: var(--space-4);
+            border-radius: var(--radius-lg);
+            font-size: 0.9rem;
+        }
+
+        .connection-status--offline {
+            background: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #fecaca;
+        }
+
+        .connection-status--online {
+            background: #f0fdf4;
+            color: #16a34a;
+            border: 1px solid #bbf7d0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .connection-status--offline {
+                background: #450a0a;
+                color: #fca5a5;
+                border-color: #7f1d1d;
+            }
+
+            .connection-status--online {
+                background: #052e16;
+                color: #86efac;
+                border-color: #166534;
+            }
+        }
+
+        /* Pulse animation for offline indicator */
+        .pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Responsive design */
+        @media (max-width: 640px) {
+            .offline-container {
+                padding: var(--space-6);
+                margin: var(--space-4);
+            }
+
+            .offline-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon pulse">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/>
+                <path d="m15 5 4 4"/>
+            </svg>
+        </div>
+        
+        <h1 class="offline-title">You're Offline</h1>
+        <p class="offline-description">
+            It looks like you've lost your internet connection. Don't worry - you can still browse 
+            some of our cached content, and we'll reconnect you as soon as your connection is restored.
+        </p>
+        
+        <div class="offline-actions">
+            <button onclick="window.location.reload()" class="btn btn--primary">
+                Try Again
+            </button>
+            <a href="/" class="btn btn--secondary">
+                Go to Homepage
+            </a>
+        </div>
+        
+        <div id="connection-status" class="connection-status connection-status--offline">
+            <span id="status-text">You are currently offline</span>
+        </div>
+    </div>
+
+    <script>
+        // Connection status monitoring
+        function updateConnectionStatus() {
+            const statusDiv = document.getElementById('connection-status');
+            const statusText = document.getElementById('status-text');
+            const offlineIcon = document.querySelector('.offline-icon');
+            
+            if (navigator.onLine) {
+                statusDiv.className = 'connection-status connection-status--online';
+                statusText.textContent = 'Connection restored! You can reload the page.';
+                offlineIcon.classList.remove('pulse');
+                
+                // Auto-reload after 2 seconds if online
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+            } else {
+                statusDiv.className = 'connection-status connection-status--offline';
+                statusText.textContent = 'You are currently offline';
+                offlineIcon.classList.add('pulse');
+            }
+        }
+
+        // Listen for connection changes
+        window.addEventListener('online', updateConnectionStatus);
+        window.addEventListener('offline', updateConnectionStatus);
+
+        // Check connection status periodically
+        setInterval(() => {
+            // Attempt to fetch a small resource to verify connection
+            fetch('/manifest.json', { 
+                method: 'HEAD',
+                cache: 'no-cache'
+            }).then(() => {
+                if (!navigator.onLine) {
+                    // Connection is actually working, update status
+                    window.dispatchEvent(new Event('online'));
+                }
+            }).catch(() => {
+                // Connection is still down
+                if (navigator.onLine) {
+                    window.dispatchEvent(new Event('offline'));
+                }
+            });
+        }, 5000);
+
+        // Initialize status
+        updateConnectionStatus();
+
+        // Service Worker communication
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.addEventListener('message', (event) => {
+                if (event.data && event.data.type === 'CACHE_UPDATED') {
+                    // Show notification that new content is available
+                    const notification = document.createElement('div');
+                    notification.innerHTML = `
+                        <div style="position: fixed; top: 20px; right: 20px; background: var(--color-secondary); color: white; padding: 1rem; border-radius: 0.5rem; z-index: 1000;">
+                            New content available! <button onclick="window.location.reload()" style="background: none; border: 1px solid white; color: white; padding: 0.25rem 0.5rem; margin-left: 0.5rem; border-radius: 0.25rem; cursor: pointer;">Reload</button>
+                        </div>
+                    `;
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 10000);
+                }
+            });
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'r' && (e.ctrlKey || e.metaKey)) {
+                // Prevent default browser reload and use our custom reload
+                e.preventDefault();
+                window.location.reload();
+            } else if (e.key === 'h' && !e.ctrlKey && !e.metaKey) {
+                // Go to homepage
+                window.location.href = '/';
+            }
+        });
+
+        // Add some offline-specific functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if there's cached content available
+            if ('caches' in window) {
+                caches.open('scriptysphere-static-v1').then(cache => {
+                    cache.keys().then(keys => {
+                        if (keys.length > 0) {
+                            const cachedNote = document.createElement('p');
+                            cachedNote.style.cssText = `
+                                margin-top: var(--space-4);
+                                font-size: 0.9rem;
+                                color: var(--color-text-muted);
+                                font-style: italic;
+                            `;
+                            cachedNote.textContent = 'Some content may be available from cache.';
+                            document.querySelector('.offline-description').appendChild(cachedNote);
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
