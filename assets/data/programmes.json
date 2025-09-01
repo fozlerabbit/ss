@@ -1,0 +1,549 @@
+{
+  "programmes": [
+    {
+      "id": "tech-camps",
+      "title": "Technology Camps",
+      "title_bn": "প্রযুক্তি ক্যাম্প",
+      "category": "technology",
+      "description": "Hands-on technology workshops and coding bootcamps for students across Bangladesh.",
+      "description_bn": "বাংলাদেশের ছাত্রছাত্রীদের জন্য হ্যান্ড-অন প্রযুক্তি কর্মশালা এবং কোডিং বুটক্যাম্প।",
+      "image": "/assets/img/programmes/tech-camps.webp",
+      "icon": "code",
+      "color": "#2563eb",
+      "status": "active",
+      "duration": "3-5 days",
+      "participants": 645,
+      "locations": ["Dhaka", "Chittagong", "Sylhet", "Rajshahi"],
+      "age_group": "13-25 years",
+      "cost": "Free",
+      "features": [
+        {
+          "title": "Programming Fundamentals",
+          "title_bn": "প্রোগ্রামিং মৌলিক বিষয়",
+          "description": "Learn Python, JavaScript, and web development basics through project-based learning.",
+          "description_bn": "প্রজেক্ট-ভিত্তিক শেখার মাধ্যমে Python, JavaScript এবং ওয়েব ডেভেলপমেন্টের মূল বিষয়গুলি শিখুন।"
+        },
+        {
+          "title": "Mobile App Development",
+          "title_bn": "মোবাইল অ্যাপ ডেভেলপমেন্ট",
+          "description": "Build Android apps using modern frameworks and publish to Google Play Store.",
+          "description_bn": "আধুনিক ফ্রেমওয়ার্ক ব্যবহার করে Android অ্যাপ তৈরি করুন এবং Google Play Store-এ প্রকাশ করুন।"
+        },
+        {
+          "title": "AI & Machine Learning",
+          "title_bn": "AI এবং মেশিন লার্নিং",
+          "description": "Introduction to artificial intelligence and machine learning concepts with practical applications.",
+          "description_bn": "ব্যবহারিক প্রয়োগসহ কৃত্রিম বুদ্ধিমত্তা এবং মেশিন লার্নিং ধারণার পরিচয়।"
+        },
+        {
+          "title": "Robotics Workshops",
+          "title_bn": "রোবোটিক্স কর্মশালা",
+          "description": "Hands-on experience with Arduino, Raspberry Pi, and IoT device programming.",
+          "description_bn": "Arduino, Raspberry Pi এবং IoT ডিভাইস প্রোগ্রামিং এর হ্যান্ড-অন অভিজ্ঞতা।"
+        }
+      ],
+      "outcomes": [
+        "78% of participants continued learning programming",
+        "45% started their own tech projects",
+        "23% secured tech internships or jobs"
+      ],
+      "requirements": [
+        "Basic computer literacy",
+        "Willingness to learn",
+        "Laptop (can be provided if needed)"
+      ],
+      "schedule": [
+        {
+          "day": "Day 1",
+          "topic": "Programming Basics & Setup",
+          "activities": ["Environment setup", "Syntax introduction", "First program"]
+        },
+        {
+          "day": "Day 2",
+          "topic": "Web Development Fundamentals",
+          "activities": ["HTML/CSS basics", "JavaScript introduction", "Interactive webpage"]
+        },
+        {
+          "day": "Day 3",
+          "topic": "Mobile App Development",
+          "activities": ["App frameworks", "UI design", "Basic app creation"]
+        },
+        {
+          "day": "Day 4",
+          "topic": "Advanced Topics",
+          "activities": ["AI/ML introduction", "Robotics basics", "IoT concepts"]
+        },
+        {
+          "day": "Day 5",
+          "topic": "Project Showcase",
+          "activities": ["Project presentation", "Peer review", "Certificate ceremony"]
+        }
+      ],
+      "instructors": [
+        {
+          "name": "Kamal Hassan",
+          "role": "Technology Lead",
+          "expertise": ["JavaScript", "Python", "Mobile Development"]
+        },
+        {
+          "name": "Sadia Rahman",
+          "role": "Content Creator & Trainer",
+          "expertise": ["Python", "Web Development", "Teaching"]
+        }
+      ],
+      "next_events": [
+        {
+          "date": "2024-12-15",
+          "location": "Dhaka",
+          "venue": "Dhaka University",
+          "registration_link": "/programmes/register/tech-camp-dhaka-dec-2024"
+        },
+        {
+          "date": "2024-12-22",
+          "location": "Chittagong",
+          "venue": "Chittagong University",
+          "registration_link": "/programmes/register/tech-camp-ctg-dec-2024"
+        }
+      ],
+      "success_stories": [
+        {
+          "name": "Rahul Ahmed",
+          "story": "After attending our programming bootcamp, Rahul developed a mobile app for local farmers that now serves over 500+ users across his district.",
+          "outcome": "Started tech startup, created 5 jobs"
+        }
+      ]
+    },
+    {
+      "id": "digital-education",
+      "title": "Digital Education",
+      "title_bn": "ডিজিটাল শিক্ষা",
+      "category": "education",
+      "description": "Online learning platforms and digital literacy programmes for underserved communities.",
+      "description_bn": "সুবিধাবঞ্চিত সম্প্রদায়ের জন্য অনলাইন শেখার প্ল্যাটফর্ম এবং ডিজিটাল সাক্ষরতা কর্মসূচি।",
+      "image": "/assets/img/programmes/digital-education.webp",
+      "icon": "monitor",
+      "color": "#10b981",
+      "status": "active",
+      "duration": "Ongoing",
+      "participants": 423,
+      "locations": ["Online", "Remote Areas"],
+      "age_group": "All ages",
+      "cost": "Free",
+      "features": [
+        {
+          "title": "Digital Literacy",
+          "title_bn": "ডিজিটাল সাক্ষরতা",
+          "description": "Basic computer skills, internet safety, and digital citizenship training.",
+          "description_bn": "মৌলিক কম্পিউটার দক্ষতা, ইন্টারনেট নিরাপত্তা এবং ডিজিটাল নাগরিকত্ব প্রশিক্ষণ।"
+        },
+        {
+          "title": "Online Learning Platform",
+          "title_bn": "অনলাইন শিক্ষা প্ল্যাটফর্ম",
+          "description": "Self-paced courses in technology, entrepreneurship, and life skills.",
+          "description_bn": "প্রযুক্তি, উদ্যোক্তা এবং জীবন দক্ষতায় স্ব-গতির কোর্স।"
+        },
+        {
+          "title": "Teacher Training",
+          "title_bn": "শিক্ষক প্রশিক্ষণ",
+          "description": "Equipping educators with digital tools and modern teaching methodologies.",
+          "description_bn": "শিক্ষকদের ডিজিটাল টুলস এবং আধুনিক শিক্ষাদান পদ্ধতিতে সজ্জিত করা।"
+        },
+        {
+          "title": "Content Creation",
+          "title_bn": "কন্টেন্ট তৈরি",
+          "description": "Video editing, graphic design, and social media content creation workshops.",
+          "description_bn": "ভিডিও এডিটিং, গ্রাফিক ডিজাইন এবং সোশ্যাল মিডিয়া কন্টেন্ট তৈরির কর্মশালা।"
+        }
+      ],
+      "outcomes": [
+        "85% improved digital literacy scores",
+        "67% started using digital tools regularly",
+        "34% became digital mentors in their communities"
+      ],
+      "requirements": [
+        "Internet connection",
+        "Basic device (smartphone/computer)",
+        "Willingness to learn"
+      ],
+      "courses": [
+        {
+          "title": "Digital Basics",
+          "duration": "2 weeks",
+          "modules": 8,
+          "level": "Beginner"
+        },
+        {
+          "title": "Internet Safety",
+          "duration": "1 week",
+          "modules": 5,
+          "level": "Beginner"
+        },
+        {
+          "title": "Online Business",
+          "duration": "4 weeks",
+          "modules": 12,
+          "level": "Intermediate"
+        }
+      ],
+      "success_stories": [
+        {
+          "name": "Fatima Khatun",
+          "story": "Fatima became a digital literacy trainer in her community, teaching computer skills to 200+ women and elderly residents.",
+          "outcome": "Trained 200+ community members, reduced digital divide"
+        }
+      ]
+    },
+    {
+      "id": "green-environment",
+      "title": "Green Environment",
+      "title_bn": "সবুজ পরিবেশ",
+      "category": "environment",
+      "description": "Environmental monitoring and conservation initiatives using technology and community action.",
+      "description_bn": "প্রযুক্তি এবং সামুদায়িক কর্মের মাধ্যমে পরিবেশগত মনিটরিং এবং সংরক্ষণ উদ্যোগ।",
+      "image": "/assets/img/programmes/green-environment.webp",
+      "icon": "leaf",
+      "color": "#059669",
+      "status": "active",
+      "duration": "Long-term",
+      "participants": 298,
+      "locations": ["Dhaka", "Rajshahi", "Sylhet"],
+      "age_group": "15+ years",
+      "cost": "Free",
+      "features": [
+        {
+          "title": "Smart Monitoring",
+          "title_bn": "স্মার্ট মনিটরিং",
+          "description": "IoT sensors for air quality, water pollution, and environmental data collection.",
+          "description_bn": "বায়ুর মান, পানি দূষণ এবং পরিবেশগত তথ্য সংগ্রহের জন্য IoT সেন্সর।"
+        },
+        {
+          "title": "Tree Plantation Drives",
+          "title_bn": "বৃক্ষরোপণ অভিযান",
+          "description": "Community-organized tree planting campaigns with GPS tracking and monitoring.",
+          "description_bn": "GPS ট্র্যাকিং এবং মনিটরিং সহ সম্প্রদায়-সংগঠিত বৃক্ষরোপণ অভিযান।"
+        },
+        {
+          "title": "Waste Management",
+          "title_bn": "বর্জ্য ব্যবস্থাপনা",
+          "description": "Digital solutions for waste tracking, recycling programs, and community cleanup.",
+          "description_bn": "বর্জ্য ট্র্যাকিং, পুনর্ব্যবহার কর্মসূচি এবং সম্প্রদায়িক পরিষ্কারের জন্য ডিজিটাল সমাধান।"
+        },
+        {
+          "title": "Climate Education",
+          "title_bn": "জলবায়ু শিক্ষা",
+          "description": "Workshops on climate change, sustainability, and environmental conservation.",
+          "description_bn": "জলবায়ু পরিবর্তন, টেকসইতা এবং পরিবেশ সংরক্ষণের উপর কর্মশালা।"
+        }
+      ],
+      "outcomes": [
+        "15,000+ trees planted across 8 districts",
+        "120 environmental monitoring stations established",
+        "56% reduction in local pollution indicators"
+      ],
+      "requirements": [
+        "Environmental awareness",
+        "Community engagement",
+        "Physical participation"
+      ],
+      "projects": [
+        {
+          "name": "Clean Air Initiative",
+          "location": "Dhaka",
+          "sensors": 25,
+          "data_points": "Daily"
+        },
+        {
+          "name": "River Restoration",
+          "location": "Sylhet",
+          "area": "15 km stretch",
+          "communities": 8
+        },
+        {
+          "name": "Urban Forestry",
+          "location": "Rajshahi",
+          "trees_planted": 5000,
+          "survival_rate": "89%"
+        }
+      ],
+      "success_stories": [
+        {
+          "name": "Shakib Hassan",
+          "story": "Led a team that planted 2,000 trees and established 10 air quality monitoring stations in his division.",
+          "outcome": "2,000 trees planted, 10 monitoring stations, cleaner air"
+        }
+      ]
+    },
+    {
+      "id": "mental-health",
+      "title": "Mental Health Support",
+      "title_bn": "মানসিক স্বাস্থ্য সহায়তা",
+      "category": "health",
+      "description": "Mental health awareness campaigns and counseling support for students and youth.",
+      "description_bn": "ছাত্রছাত্রী এবং যুবকদের জন্য মানসিক স্বাস্থ্য সচেতনতা প্রচারণা এবং কাউন্সেলিং সহায়তা।",
+      "image": "/assets/img/programmes/mental-health.webp",
+      "icon": "heart",
+      "color": "#dc2626",
+      "status": "active",
+      "duration": "Ongoing",
+      "participants": 201,
+      "locations": ["Khulna", "Dhaka", "Chittagong"],
+      "age_group": "13-30 years",
+      "cost": "Free",
+      "features": [
+        {
+          "title": "Awareness Campaigns",
+          "title_bn": "সচেতনতা প্রচারণা",
+          "description": "Reducing stigma through education and open conversations about mental health.",
+          "description_bn": "শিক্ষা এবং মানসিক স্বাস্থ্য নিয়ে খোলামেলা কথোপকথনের মাধ্যমে কলঙ্ক কমানো।"
+        },
+        {
+          "title": "Peer Support Groups",
+          "title_bn": "সমবয়সী সহায়তা দল",
+          "description": "Safe spaces for students to share experiences and support each other.",
+          "description_bn": "ছাত্রছাত্রীদের অভিজ্ঞতা ভাগ করে নিতে এবং একে অপরকে সহায়তা করার জন্য নিরাপদ স্থান।"
+        },
+        {
+          "title": "Counseling Services",
+          "title_bn": "কাউন্সেলিং সেবা",
+          "description": "Professional counseling support and crisis intervention resources.",
+          "description_bn": "পেশাদার কাউন্সেলিং সহায়তা এবং সংকট হস্তক্ষেপ সম্পদ।"
+        },
+        {
+          "title": "Wellness Workshops",
+          "title_bn": "সুস্থতা কর্মশালা",
+          "description": "Stress management, mindfulness, and emotional intelligence training.",
+          "description_bn": "চাপ ব্যবস্থাপনা, মানসিকতা এবং আবেগপ্রবণ বুদ্ধিমত্তার প্রশিক্ষণ।"
+        }
+      ],
+      "outcomes": [
+        "89% reported improved mental health awareness",
+        "67% actively use stress management techniques",
+        "45% became peer support volunteers"
+      ],
+      "requirements": [
+        "Open mindset",
+        "Confidentiality agreement",
+        "Regular attendance"
+      ],
+      "services": [
+        {
+          "type": "Individual Counseling",
+          "availability": "Weekly",
+          "sessions": "1 hour",
+          "format": "Online/In-person"
+        },
+        {
+          "type": "Group Therapy",
+          "availability": "Bi-weekly",
+          "sessions": "2 hours",
+          "format": "In-person"
+        },
+        {
+          "type": "Crisis Hotline",
+          "availability": "24/7",
+          "response": "Immediate",
+          "format": "Phone/WhatsApp"
+        }
+      ],
+      "success_stories": [
+        {
+          "name": "Nusrat Jahan",
+          "story": "Started a peer support network at her university that now helps 150+ students with mental health challenges.",
+          "outcome": "Supporting 150+ students, reduced stigma, improved awareness"
+        }
+      ]
+    },
+    {
+      "id": "online-volunteering",
+      "title": "Online Volunteering",
+      "title_bn": "অনলাইন স্বেচ্ছাসেবা",
+      "category": "community",
+      "description": "Join our volunteer network and contribute to community development across Bangladesh.",
+      "description_bn": "আমাদের স্বেচ্ছাসেবক নেটওয়ার্কে যোগ দিন এবং বাংলাদেশ জুড়ে সামুদায়িক উন্নয়নে অবদান রাখুন।",
+      "image": "/assets/img/programmes/volunteering.webp",
+      "icon": "users",
+      "color": "#7c3aed",
+      "status": "active",
+      "duration": "Flexible",
+      "participants": 145,
+      "locations": ["Online", "Nationwide"],
+      "age_group": "16+ years",
+      "cost": "Free",
+      "features": [
+        {
+          "title": "Event Organization",
+          "title_bn": "অনুষ্ঠান আয়োজন",
+          "description": "Help organize and coordinate technology camps and community events.",
+          "description_bn": "প্রযুক্তি ক্যাম্প এবং সামুদায়িক অনুষ্ঠান আয়োজন ও সমন্বয়ে সহায়তা করুন।"
+        },
+        {
+          "title": "Content Creation",
+          "title_bn": "কন্টেন্ট তৈরি",
+          "description": "Develop educational materials, blog posts, and social media content.",
+          "description_bn": "শিক্ষামূলক উপকরণ, ব্লগ পোস্ট এবং সোশ্যাল মিডিয়া কন্টেন্ট তৈরি করুন।"
+        },
+        {
+          "title": "Mentoring",
+          "title_bn": "পরামর্শদান",
+          "description": "Guide and mentor students in their technology learning journey.",
+          "description_bn": "ছাত্রছাত্রীদের তাদের প্রযুক্তি শেখার যাত্রায় গাইড এবং পরামর্শ দিন।"
+        },
+        {
+          "title": "Community Outreach",
+          "title_bn": "সামুদায়িক প্রসার",
+          "description": "Connect with local communities and schools to expand our reach.",
+          "description_bn": "আমাদের পৌঁছানোর ক্ষেত্র বিস্তৃত করতে স্থানীয় সম্প্রদায় এবং স্কুলগুলির সাথে সংযোগ করুন।"
+        }
+      ],
+      "outcomes": [
+        "100+ active volunteers recruited",
+        "50+ successful events organized",
+        "500+ students mentored"
+      ],
+      "requirements": [
+        "Reliable internet connection",
+        "Commitment of 5+ hours/week",
+        "Relevant skills or passion to learn"
+      ],
+      "volunteer_roles": [
+        {
+          "title": "Event Coordinator",
+          "skills": ["Organization", "Communication", "Time Management"],
+          "commitment": "10 hours/week",
+          "type": "Remote"
+        },
+        {
+          "title": "Content Writer",
+          "skills": ["Writing", "Research", "SEO"],
+          "commitment": "8 hours/week",
+          "type": "Remote"
+        },
+        {
+          "title": "Technical Mentor",
+          "skills": ["Programming", "Teaching", "Patience"],
+          "commitment": "6 hours/week",
+          "type": "Remote/Hybrid"
+        },
+        {
+          "title": "Social Media Manager",
+          "skills": ["Social Media", "Design", "Marketing"],
+          "commitment": "12 hours/week",
+          "type": "Remote"
+        }
+      ],
+      "benefits": [
+        "Skill development opportunities",
+        "Certificate of appreciation",
+        "Networking with professionals",
+        "Letter of recommendation",
+        "Priority access to events"
+      ],
+      "success_stories": [
+        {
+          "name": "Tanvir Hossain",
+          "story": "Started as a volunteer and recruited 100+ active volunteers, organizing 20+ community events.",
+          "outcome": "Recruited 100+ volunteers, organized 20+ events"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "technology",
+      "name": "Technology",
+      "name_bn": "প্রযুক্তি",
+      "color": "#2563eb",
+      "icon": "code"
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "name_bn": "শিক্ষা", 
+      "color": "#10b981",
+      "icon": "book"
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "name_bn": "পরিবেশ",
+      "color": "#059669",
+      "icon": "leaf"
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "name_bn": "স্বাস্থ্য",
+      "color": "#dc2626",
+      "icon": "heart"
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "name_bn": "সম্প্রদায়",
+      "color": "#7c3aed",
+      "icon": "users"
+    }
+  ],
+  "statistics": {
+    "total_programmes": 5,
+    "active_programmes": 5,
+    "total_participants": 1712,
+    "locations_covered": 8,
+    "completion_rate": 91.2,
+    "satisfaction_score": 4.7,
+    "volunteer_hours": 12580
+  },
+  "upcoming_events": [
+    {
+      "programme_id": "tech-camps",
+      "title": "Technology Camp - Dhaka Winter 2024",
+      "date": "2024-12-15",
+      "end_date": "2024-12-19",
+      "location": "Dhaka University",
+      "capacity": 100,
+      "registered": 67,
+      "registration_deadline": "2024-12-10",
+      "status": "open"
+    },
+    {
+      "programme_id": "green-environment",
+      "title": "Tree Plantation Drive - Chittagong",
+      "date": "2024-12-20",
+      "location": "Chittagong Hill Tracts",
+      "capacity": 50,
+      "registered": 34,
+      "registration_deadline": "2024-12-18",
+      "status": "open"
+    },
+    {
+      "programme_id": "digital-education",
+      "title": "Digital Literacy Workshop - Rural Areas",
+      "date": "2025-01-05",
+      "location": "Online",
+      "capacity": 200,
+      "registered": 156,
+      "registration_deadline": "2025-01-03",
+      "status": "open"
+    }
+  ],
+  "partnerships": [
+    {
+      "organization": "Bangladesh Association of Software and Information Services (BASIS)",
+      "type": "Industry Partner",
+      "programmes": ["tech-camps", "digital-education"],
+      "since": "2023"
+    },
+    {
+      "organization": "Department of Environment, Bangladesh",
+      "type": "Government Partner",
+      "programmes": ["green-environment"],
+      "since": "2024"
+    },
+    {
+      "organization": "Ministry of Health",
+      "type": "Government Partner", 
+      "programmes": ["mental-health"],
+      "since": "2024"
+    }
+  ]
+}
