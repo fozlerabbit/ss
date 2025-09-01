@@ -1,677 +1,262 @@
-{
-  "members": [
-    {
-      "id": "SS202301",
-      "name": "Fozle Rabbi",
-      "name_bn": "ফজলে রাব্বি",
-      "role": "Founder & Executive Director",
-      "role_bn": "প্রতিষ্ঠাতা ও নির্বাহী পরিচালক",
-      "division": "Dhaka",
-      "division_bn": "ঢাকা",
-      "district": "Dhaka",
-      "district_bn": "ঢাকা",
-      "upazila": "Dhanmondi",
-      "upazila_bn": "ধানমন্ডি",
-      "email": "fozle@scriptysphere.org",
-      "phone": "+8801600374396",
-      "avatar": "/assets/img/members/fozle-rabbi.webp",
-      "bio": "Passionate about empowering youth through technology education. Leading ScriptySphere's mission to bridge the digital divide in Bangladesh.",
-      "bio_bn": "প্রযুক্তি শিক্ষার মাধ্যমে যুবসমাজকে ক্ষমতায়নে আগ্রহী। বাংলাদেশে ডিজিটাল বিভাজন দূর করতে স্ক্রিপ্টিস্ফিয়ারের মিশনের নেতৃত্ব দিচ্ছেন।",
-      "skills": ["Leadership", "Technology Education", "Community Building", "Public Speaking"],
-      "joinedDate": "2023-01-15",
-      "featured": true,
-      "committee": true,
-      "position": "Executive Director",
-      "social": {
-        "linkedin": "https://linkedin.com/in/fozlerabbi",
-        "twitter": "https://twitter.com/fozlerabbi",
-        "github": "https://github.com/fozlerabbit",
-        "facebook": "https://facebook.com/fozlerabbi.dev"
-      },
-      "achievements": [
-        "Founded ScriptySphere in 2023",
-        "Reached 1500+ students across Bangladesh",
-        "Featured in national media for youth development"
-      ]
-    },
-    {
-      "id": "SS202302",
-      "name": "Rashida Sultana",
-      "name_bn": "রশিদা সুলতানা",
-      "role": "Programme Coordinator",
-      "role_bn": "কর্মসূচি সমন্বয়কারী",
-      "division": "Dhaka",
-      "division_bn": "ঢাকা",
-      "district": "Gazipur",
-      "district_bn": "গাজীপুর",
-      "upazila": "Savar",
-      "upazila_bn": "সাভার",
-      "email": "rashida@scriptysphere.org",
-      "avatar": "/assets/img/members/rashida-sultana.webp",
-      "bio": "Coordinating educational programmes and ensuring quality delivery across all ScriptySphere initiatives.",
-      "bio_bn": "শিক্ষামূলক কর্মসূচি সমন্বয় করা এবং স্ক্রিপ্টিস্ফিয়ারের সকল উদ্যোগে গুণগত বিতরণ নিশ্চিত করা।",
-      "skills": ["Project Management", "Education", "Team Leadership", "Communication"],
-      "joinedDate": "2023-02-20",
-      "featured": true,
-      "committee": true,
-      "position": "Programme Coordinator",
-      "social": {
-        "linkedin": "https://linkedin.com/in/rashida-sultana",
-        "facebook": "https://facebook.com/rashida.sultana"
-      },
-      "achievements": [
-        "Managed 25+ successful programmes",
-        "Trained 500+ students in digital literacy",
-        "Developed curriculum for rural education"
-      ]
-    },
-    {
-      "id": "SS202303",
-      "name": "Kamal Hassan",
-      "name_bn": "কামাল হাসান",
-      "role": "Technology Lead",
-      "role_bn": "প্রযুক্তি প্রধান",
-      "division": "Chittagong",
-      "division_bn": "চট্টগ্রাম",
-      "district": "Chittagong",
-      "district_bn": "চট্টগ্রাম",
-      "upazila": "Kotwali",
-      "upazila_bn": "কোতোয়ালী",
-      "email": "kamal@scriptysphere.org",
-      "avatar": "/assets/img/members/kamal-hassan.webp",
-      "bio": "Full-stack developer with expertise in web technologies and mobile app development. Leading technical training initiatives.",
-      "bio_bn": "ওয়েব প্রযুক্তি এবং মোবাইল অ্যাপ ডেভেলপমেন্টে দক্ষতাসম্পন্ন ফুল-স্ট্যাক ডেভেলপার। প্রযুক্তিগত প্রশিক্ষণ উদ্যোগের নেতৃত্ব দিচ্ছেন।",
-      "skills": ["JavaScript", "Python", "React", "Node.js", "Mobile Development"],
-      "joinedDate": "2023-03-10",
-      "featured": false,
-      "committee": true,
-      "position": "Technology Lead",
-      "social": {
-        "linkedin": "https://linkedin.com/in/kamal-hassan",
-        "github": "https://github.com/kamalhassan",
-        "twitter": "https://twitter.com/kamal_dev"
-      },
-      "achievements": [
-        "Developed ScriptySphere learning platform",
-        "Mentored 200+ students in programming",
-        "Open source contributor"
-      ]
-    },
-    {
-      "id": "SS202304",
-      "name": "Fatima Ahmed",
-      "name_bn": "ফাতিমা আহমেদ",
-      "role": "Community Outreach Manager",
-      "role_bn": "কমিউনিটি আউটরিচ ম্যানেজার",
-      "division": "Sylhet",
-      "division_bn": "সিলেট",
-      "district": "Sylhet",
-      "district_bn": "সিলেট",
-      "upazila": "Sylhet Sadar",
-      "upazila_bn": "সিলেট সদর",
-      "email": "fatima@scriptysphere.org",
-      "avatar": "/assets/img/members/fatima-ahmed.webp",
-      "bio": "Building bridges between ScriptySphere and local communities. Passionate about inclusive education and women's empowerment in tech.",
-      "bio_bn": "স্ক্রিপ্টিস্ফিয়ার এবং স্থানীয় সম্প্রদায়ের মধ্যে সেতুবন্ধন তৈরি করছেন। অন্তর্ভুক্তিমূলক শিক্ষা এবং প্রযুক্তিতে নারীর ক্ষমতায়নে আগ্রহী।",
-      "skills": ["Community Engagement", "Social Media", "Event Planning", "Public Relations"],
-      "joinedDate": "2023-04-05",
-      "featured": true,
-      "committee": true,
-      "position": "Community Manager",
-      "social": {
-        "linkedin": "https://linkedin.com/in/fatima-ahmed",
-        "facebook": "https://facebook.com/fatima.ahmed",
-        "instagram": "https://instagram.com/fatima_community"
-      },
-      "achievements": [
-        "Established partnerships with 15+ schools",
-        "Organized 50+ community events",
-        "Led women in tech initiatives"
-      ]
-    },
-    {
-      "id": "SS202305",
-      "name": "Md. Shahrul Islam",
-      "name_bn": "মো. শাহরুল ইসলাম",
-      "role": "Environmental Program Lead",
-      "role_bn": "পরিবেশ কর্মসূচি প্রধান",
-      "division": "Rajshahi",
-      "division_bn": "রাজশাহী",
-      "district": "Rajshahi",
-      "district_bn": "রাজশাহী",
-      "upazila": "Rajshahi Sadar",
-      "upazila_bn": "রাজশাহী সদর",
-      "email": "shahrul@scriptysphere.org",
-      "avatar": "/assets/img/members/shahrul-islam.webp",
-      "bio": "Environmental scientist leading green technology initiatives. Expert in IoT-based environmental monitoring systems.",
-      "bio_bn": "পরিবেশ বিজ্ঞানী যিনি সবুজ প্রযুক্তি উদ্যোগের নেতৃত্ব দিচ্ছেন। IoT-ভিত্তিক পরিবেশ মনিটরিং সিস্টেমে বিশেষজ্ঞ।",
-      "skills": ["Environmental Science", "IoT", "Data Analysis", "Project Management"],
-      "joinedDate": "2023-05-12",
-      "featured": false,
-      "committee": true,
-      "position": "Environmental Lead",
-      "social": {
-        "linkedin": "https://linkedin.com/in/shahrul-islam",
-        "twitter": "https://twitter.com/shahrul_env"
-      },
-      "achievements": [
-        "Deployed 50+ environmental sensors",
-        "Led tree plantation of 5000+ trees",
-        "Published research on air quality monitoring"
-      ]
-    },
-    {
-      "id": "SS202306",
-      "name": "Nusrat Jahan",
-      "name_bn": "নুসরাত জাহান",
-      "role": "Mental Health Coordinator",
-      "role_bn": "মানসিক স্বাস্থ্য সমন্বয়কারী",
-      "division": "Khulna",
-      "division_bn": "খুলনা",
-      "district": "Khulna",
-      "district_bn": "খুলনা",
-      "upazila": "Khulna Sadar",
-      "upazila_bn": "খুলনা সদর",
-      "email": "nusrat@scriptysphere.org",
-      "avatar": "/assets/img/members/nusrat-jahan.webp",
-      "bio": "Psychology graduate dedicated to mental health awareness and support for youth. Leading peer counseling initiatives.",
-      "bio_bn": "মনোবিজ্ঞান স্নাতক যিনি যুবকদের মানসিক স্বাস্থ্য সচেতনতা এবং সহায়তায় নিবেদিত। সহকারী কাউন্সেলিং উদ্যোগের নেতৃত্ব দিচ্ছেন।",
-      "skills": ["Psychology", "Counseling", "Workshop Facilitation", "Peer Support"],
-      "joinedDate": "2023-06-18",
-      "featured": true,
-      "committee": false,
-      "position": "Mental Health Coordinator",
-      "social": {
-        "linkedin": "https://linkedin.com/in/nusrat-jahan",
-        "facebook": "https://facebook.com/nusrat.jahan.mh"
-      },
-      "achievements": [
-        "Supported 300+ students with mental health",
-        "Trained 50+ peer counselors",
-        "Reduced mental health stigma in 10+ schools"
-      ]
-    },
-    {
-      "id": "SS202307",
-      "name": "Rahul Ahmed",
-      "name_bn": "রাহুল আহমেদ",
-      "role": "Student Volunteer",
-      "role_bn": "ছাত্র স্বেচ্ছাসেবক",
-      "division": "Chittagong",
-      "division_bn": "চট্টগ্রাম",
-      "district": "Comilla",
-      "district_bn": "কুমিল্লা",
-      "upazila": "Comilla Sadar",
-      "upazila_bn": "কুমিল্লা সদর",
-      "email": "rahul@example.com",
-      "avatar": "/assets/img/members/rahul-ahmed.webp",
-      "bio": "Computer Science student and app developer. Created AgriConnect app serving 500+ farmers in his district.",
-      "bio_bn": "কম্পিউটার সায়েন্স ছাত্র এবং অ্যাপ ডেভেলপার। তার জেলায় ৫০০+ কৃষকের সেবা করে এমন এগ্রিকানেক্ট অ্যাপ তৈরি করেছেন।",
-      "skills": ["Mobile Development", "Flutter", "Firebase", "UI/UX Design"],
-      "joinedDate": "2023-07-22",
-      "featured": true,
-      "committee": false,
-      "position": "Student Volunteer",
-      "social": {
-        "linkedin": "https://linkedin.com/in/rahul-ahmed",
-        "github": "https://github.com/rahulahmed",
-        "facebook": "https://facebook.com/rahul.ahmed.dev"
-      },
-      "achievements": [
-        "Developed AgriConnect mobile app",
-        "Mentored 50+ junior students",
-        "Won Best Innovation Award 2024"
-      ]
-    },
-    {
-      "id": "SS202308",
-      "name": "Sadia Rahman",
-      "name_bn": "সাদিয়া রহমান",
-      "role": "Content Creator & Trainer",
-      "role_bn": "কন্টেন্ট ক্রিয়েটর ও প্রশিক্ষক",
-      "division": "Rangpur",
-      "division_bn": "রংপুর",
-      "district": "Rangpur",
-      "district_bn": "রংপুর",
-      "upazila": "Rangpur Sadar",
-      "upazila_bn": "রংপুর সদর",
-      "email": "sadia@scriptysphere.org",
-      "avatar": "/assets/img/members/sadia-rahman.webp",
-      "bio": "Digital content creator and coding instructor. Specializes in making complex programming concepts accessible to beginners.",
-      "bio_bn": "ডিজিটাল কন্টেন্ট ক্রিয়েটর এবং কোডিং প্রশিক্ষক। জটিল প্রোগ্রামিং ধারণাগুলো নতুনদের কাছে সহজভাবে উপস্থাপনায় বিশেষজ্ঞ।",
-      "skills": ["Content Creation", "Python", "Web Development", "Video Editing"],
-      "joinedDate": "2023-08-15",
-      "featured": false,
-      "committee": false,
-      "position": "Trainer",
-      "social": {
-        "linkedin": "https://linkedin.com/in/sadia-rahman",
-        "youtube": "https://youtube.com/@sadiacodestutorials",
-        "instagram": "https://instagram.com/sadia_codes"
-      },
-      "achievements": [
-        "Created 100+ educational videos",
-        "Trained 300+ students in programming",
-        "Popular tech YouTuber with 10K+ subscribers"
-      ]
-    },
-    {
-      "id": "SS202309",
-      "name": "Tanvir Hossain",
-      "name_bn": "তানভীর হোসেন",
-      "role": "Volunteer Coordinator",
-      "role_bn": "স্বেচ্ছাসেবক সমন্বয়কারী",
-      "division": "Barisal",
-      "division_bn": "বরিশাল",
-      "district": "Barisal",
-      "district_bn": "বরিশাল",
-      "upazila": "Barisal Sadar",
-      "upazila_bn": "বরিশাল সদর",
-      "email": "tanvir@scriptysphere.org",
-      "avatar": "/assets/img/members/tanvir-hossain.webp",
-      "bio": "Managing volunteer network and coordinating community outreach programs across southern Bangladesh.",
-      "bio_bn": "স্বেচ্ছাসেবক নেটওয়ার্ক পরিচালনা এবং দক্ষিণ বাংলাদেশ জুড়ে কমিউনিটি আউটরিচ প্রোগ্রাম সমন্বয় করছেন।",
-      "skills": ["Volunteer Management", "Community Building", "Event Organization", "Public Speaking"],
-      "joinedDate": "2023-09-03",
-      "featured": false,
-      "committee": false,
-      "position": "Volunteer Coordinator",
-      "social": {
-        "linkedin": "https://linkedin.com/in/tanvir-hossain",
-        "facebook": "https://facebook.com/tanvir.volunteer"
-      },
-      "achievements": [
-        "Recruited 100+ active volunteers",
-        "Organized 20+ community events",
-        "Expanded ScriptySphere presence in Barisal"
-      ]
-    },
-    {
-      "id": "SS202310",
-      "name": "Mariam Begum",
-      "name_bn": "মরিয়ম বেগম",
-      "role": "Digital Literacy Trainer",
-      "role_bn": "ডিজিটাল সাক্ষরতা প্রশিক্ষক",
-      "division": "Mymensingh",
-      "division_bn": "ময়মনসিংহ",
-      "district": "Mymensingh",
-      "district_bn": "ময়মনসিংহ",
-      "upazila": "Mymensingh Sadar",
-      "upazila_bn": "ময়মনসিংহ সদর",
-      "email": "mariam@example.com",
-      "avatar": "/assets/img/members/mariam-begum.webp",
-      "bio": "Educator with 10+ years experience. Focusing on digital literacy for women and elderly community members.",
-      "bio_bn": "১০+ বছরের অভিজ্ঞতাসম্পন্ন শিক্ষক। নারী এবং বয়স্ক সম্প্রদায়ের সদস্যদের ডিজিটাল সাক্ষরতায় মনোনিবেশ করছেন।",
-      "skills": ["Teaching", "Digital Literacy", "Adult Education", "Women Empowerment"],
-      "joinedDate": "2023-10-14",
-      "featured": false,
-      "committee": false,
-      "position": "Trainer",
-      "social": {
-        "facebook": "https://facebook.com/mariam.begum.teacher"
-      },
-      "achievements": [
-        "Trained 200+ women in digital skills",
-        "Reduced gender digital divide in rural areas",
-        "Community digital literacy champion"
-      ]
-    },
-    {
-      "id": "SS202401",
-      "name": "Shakib Hassan",
-      "name_bn": "শাকিব হাসান",
-      "role": "Environmental Activist",
-      "role_bn": "পরিবেশ কর্মী",
-      "division": "Sylhet",
-      "division_bn": "সিলেট",
-      "district": "Habiganj",
-      "district_bn": "হবিগঞ্জ",
-      "upazila": "Habiganj Sadar",
-      "upazila_bn": "হবিগঞ্জ সদর",
-      "email": "shakib@example.com",
-      "avatar": "/assets/img/members/shakib-hassan.webp",
-      "bio": "Environmental engineering student leading green technology initiatives. Champion of sustainable development.",
-      "bio_bn": "পরিবেশ প্রকৌশল ছাত্র যিনি সবুজ প্রযুক্তি উদ্যোগের নেতৃত্ব দিচ্ছেন। টেকসই উন্নয়নের চ্যাম্পিয়ন।",
-      "skills": ["Environmental Engineering", "Sustainability", "Data Analysis", "Project Planning"],
-      "joinedDate": "2024-01-20",
-      "featured": true,
-      "committee": false,
-      "position": "Environmental Activist",
-      "social": {
-        "linkedin": "https://linkedin.com/in/shakib-hassan",
-        "twitter": "https://twitter.com/shakib_green"
-      },
-      "achievements": [
-        "Planted 2000+ trees across Sylhet",
-        "Established 10 air quality monitoring stations",
-        "Environmental awareness champion"
-      ]
-    },
-    {
-      "id": "SS202402",
-      "name": "Aisha Khatun",
-      "name_bn": "আয়েশা খাতুন",
-      "role": "Student Member",
-      "role_bn": "ছাত্র সদস্য",
-      "division": "Dhaka",
-      "division_bn": "ঢাকা",
-      "district": "Manikganj",
-      "district_bn": "মানিকগঞ্জ",
-      "upazila": "Manikganj Sadar",
-      "upazila_bn": "মানিকগঞ্জ সদর",
-      "email": "aisha@example.com",
-      "avatar": "/assets/img/members/aisha-khatun.webp",
-      "bio": "High school student passionate about robotics and AI. Active participant in technology camps and competitions.",
-      "bio_bn": "রোবোটিক্স এবং AI নিয়ে আগ্রহী উচ্চ বিদ্যালয়ের ছাত্রী। প্রযুক্তি ক্যাম্প এবং প্রতিযোগিতায় সক্রিয় অংশগ্রহণকারী।",
-      "skills": ["Robotics", "Arduino", "Python", "Problem Solving"],
-      "joinedDate": "2024-02-28",
-      "featured": false,
-      "committee": false,
-      "position": "Student",
-      "social": {
-        "facebook": "https://facebook.com/aisha.robotics",
-        "instagram": "https://instagram.com/aisha_codes"
-      },
-      "achievements": [
-        "Won regional robotics competition",
-        "Built smart home automation system",
-        "Mentoring junior students"
-      ]
-    },
-    {
-      "id": "SS202403",
-      "name": "Ibrahim Khan",
-      "name_bn": "ইব্রাহিম খান",
-      "role": "Web Developer",
-      "role_bn": "ওয়েব ডেভেলপার",
-      "division": "Chittagong",
-      "division_bn": "চট্টগ্রাম",
-      "district": "Cox's Bazar",
-      "district_bn": "কক্সবাজার",
-      "upazila": "Cox's Bazar Sadar",
-      "upazila_bn": "কক্সবাজার সদর",
-      "email": "ibrahim@example.com",
-      "avatar": "/assets/img/members/ibrahim-khan.webp",
-      "bio": "Freelance web developer contributing to ScriptySphere's digital platforms. Expert in modern web technologies.",
-      "bio_bn": "ফ্রিল্যান্স ওয়েব ডেভেলপার যিনি স্ক্রিপ্টিস্ফিয়ারের ডিজিটাল প্ল্যাটফর্মে অবদান রাখছেন। আধুনিক ওয়েব প্রযুক্তিতে বিশেষজ্ঞ।",
-      "skills": ["React", "Next.js", "TypeScript", "UI/UX Design"],
-      "joinedDate": "2024-03-15",
-      "featured": false,
-      "committee": false,
-      "position": "Developer",
-      "social": {
-        "linkedin": "https://linkedin.com/in/ibrahim-khan",
-        "github": "https://github.com/ibrahimkhan",
-        "portfolio": "https://ibrahimkhan.dev"
-      },
-      "achievements": [
-        "Built ScriptySphere member portal",
-        "Contributed to 10+ open source projects",
-        "Freelance success with international clients"
-      ]
-    },
-    {
-      "id": "SS202404",
-      "name": "Ruma Akter",
-      "name_bn": "রুমা আক্তার",
-      "role": "Graphic Designer",
-      "role_bn": "গ্রাফিক ডিজাইনার",
-      "division": "Rajshahi",
-      "division_bn": "রাজশাহী",
-      "district": "Bogura",
-      "district_bn": "বগুড়া",
-      "upazila": "Bogura Sadar",
-      "upazila_bn": "বগুড়া সদর",
-      "email": "ruma@example.com",
-      "avatar": "/assets/img/members/ruma-akter.webp",
-      "bio": "Creative designer responsible for ScriptySphere's visual identity and marketing materials. Passionate about visual storytelling.",
-      "bio_bn": "স্ক্রিপ্টিস্ফিয়ারের ভিজ্যুয়াল পরিচয় এবং মার্কেটিং ম্যাটেরিয়ালের জন্য দায়ী সৃজনশীল ডিজাইনার। ভিজ্যুয়াল গল্প বলায় আগ্রহী।",
-      "skills": ["Graphic Design", "Adobe Creative Suite", "Branding", "Illustration"],
-      "joinedDate": "2024-04-10",
-      "featured": false,
-      "committee": false,
-      "position": "Designer",
-      "social": {
-        "linkedin": "https://linkedin.com/in/ruma-akter",
-        "behance": "https://behance.net/rumaakter",
-        "instagram": "https://instagram.com/ruma_designs"
-      },
-      "achievements": [
-        "Designed ScriptySphere brand identity",
-        "Created 200+ educational graphics",
-        "Award-winning poster designer"
-      ]
+[
+  {
+    "id": "SS202401",
+    "name": "আহমেদ রহমান",
+    "role": "Tech Lead",
+    "division": "Dhaka",
+    "district": "Dhaka",
+    "upazila": "Dhanmondi",
+    "email": "ahmed.rahman@example.com",
+    "avatar": "/assets/img/members/ahmed-rahman.webp",
+    "bio": "Passionate about technology education and youth empowerment. Leading multiple tech camps across Dhaka division.",
+    "skills": ["JavaScript", "Python", "Web Development", "Teaching", "Leadership"],
+    "joinedDate": "2024-01-15",
+    "featured": true,
+    "social": {
+      "github": "https://github.com/ahmedrahman",
+      "linkedin": "https://linkedin.com/in/ahmedrahman"
     }
-  ],
-   "divisions": [
-    {
-      "name": "Dhaka",
-      "name_bn": "ঢাকা",
-      "districts": [
-        {
-          "name": "Dhaka",
-          "name_bn": "ঢাকা",
-          "upazilas": [
-            "Dhanmondi",
-            "Gulshan",
-            "Uttara",
-            "Old Dhaka",
-            "Wari"
-          ]
-        },
-        {
-          "name": "Gazipur",
-          "name_bn": "গাজীপুর",
-          "upazilas": [
-            "Gazipur Sadar",
-            "Savar",
-            "Kaliakair",
-            "Kapasia"
-          ]
-        },
-        {
-          "name": "Manikganj",
-          "name_bn": "মানিকগঞ্জ",
-          "upazilas": [
-            "Manikganj Sadar",
-            "Singair",
-            "Shibalaya",
-            "Harirampur"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Chittagong",
-      "name_bn": "চট্টগ্রাম",
-      "districts": [
-        {
-          "name": "Chittagong",
-          "name_bn": "চট্টগ্রাম",
-          "upazilas": [
-            "Kotwali",
-            "Pahartali",
-            "Chandgaon",
-            "Bayazid"
-          ]
-        },
-        {
-          "name": "Cox's Bazar",
-          "name_bn": "কক্সবাজার",
-          "upazilas": [
-            "Cox's Bazar Sadar",
-            "Chakaria",
-            "Teknaf",
-            "Ramu"
-          ]
-        },
-        {
-          "name": "Comilla",
-          "name_bn": "কুমিল্লা",
-          "upazilas": [
-            "Comilla Sadar",
-            "Brahmanpara",
-            "Burichang",
-            "Chandina"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Sylhet",
-      "name_bn": "সিলেট",
-      "districts": [
-        {
-          "name": "Sylhet",
-          "name_bn": "সিলেট",
-          "upazilas": [
-            "Sylhet Sadar",
-            "Osmani Nagar",
-            "Dakshin Surma",
-            "Companiganj"
-          ]
-        },
-        {
-          "name": "Habiganj",
-          "name_bn": "হবিগঞ্জ",
-          "upazilas": [
-            "Habiganj Sadar",
-            "Chunarughat",
-            "Lakhai",
-            "Nabiganj"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Rajshahi",
-      "name_bn": "রাজশাহী",
-      "districts": [
-        {
-          "name": "Rajshahi",
-          "name_bn": "রাজশাহী",
-          "upazilas": [
-            "Rajshahi Sadar",
-            "Poba",
-            "Durgapur",
-            "Mohanpur"
-          ]
-        },
-        {
-          "name": "Bogura",
-          "name_bn": "বগুড়া",
-          "upazilas": [
-            "Bogura Sadar",
-            "Sherpur",
-            "Dhunat",
-            "Shibganj"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Khulna",
-      "name_bn": "খুলনা",
-      "districts": [
-        {
-          "name": "Khulna",
-          "name_bn": "খুলনা",
-          "upazilas": [
-            "Khulna Sadar",
-            "Dumuria",
-            "Batiaghata",
-            "Dakop"
-          ]
-        },
-        {
-          "name": "Jessore",
-          "name_bn": "যশোর",
-          "upazilas": [
-            "Jessore Sadar",
-            "Manirampur",
-            "Chaugachha",
-            "Jhikargacha"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Rangpur",
-      "name_bn": "রংপুর",
-      "districts": [
-        {
-          "name": "Rangpur",
-          "name_bn": "রংপুর",
-          "upazilas": [
-            "Rangpur Sadar",
-            "Gangachara",
-            "Mithapukur",
-            "Pirganj"
-          ]
-        },
-        {
-          "name": "Dinajpur",
-          "name_bn": "দিনাজপুর",
-          "upazilas": [
-            "Dinajpur Sadar",
-            "Birganj",
-            "Bochaganj",
-            "Chirirbandar"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Barisal",
-      "name_bn": "বরিশাল",
-      "districts": [
-        {
-          "name": "Barisal",
-          "name_bn": "বরিশাল",
-          "upazilas": [
-            "Barisal Sadar",
-            "Bakerganj",
-            "Babuganj",
-            "Wazirpur"
-          ]
-        },
-        {
-          "name": "Patuakhali",
-          "name_bn": "পটুয়াখালী",
-          "upazilas": [
-            "Patuakhali Sadar",
-            "Bauphal",
-            "Dashmina",
-            "Galachipa"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Mymensingh",
-      "name_bn": "ময়মনসিংহ",
-      "districts": [
-        {
-          "name": "Mymensingh",
-          "name_bn": "ময়মনসিংহ",
-          "upazilas": [
-            "Mymensingh Sadar",
-            "Muktagacha",
-            "Bhaluka",
-            "Trishal"
-          ]
-        },
-        {
-          "name": "Jamalpur",
-          "name_bn": "জামালপুর",
-          "upazilas": [
-            "Jamalpur Sadar",
-            "Dewanganj",
-            "Islampur",
-            "Melandaha"
-          ]
-        }
-      ]
+  },
+  {
+    "id": "SS202402",
+    "name": "ফাতিমা খাতুন",
+    "role": "Programme Coordinator",
+    "division": "Chittagong",
+    "district": "Chittagong",
+    "upazila": "Kotwali",
+    "email": "fatima.khatun@example.com",
+    "avatar": "/assets/img/members/fatima-khatun.webp",
+    "bio": "Coordinating digital education programmes and environmental awareness campaigns.",
+    "skills": ["Project Management", "Digital Literacy", "Environmental Science", "Community Outreach"],
+    "joinedDate": "2024-01-22",
+    "featured": false,
+    "social": {
+      "facebook": "https://facebook.com/fatimakhatun",
+      "linkedin": "https://linkedin.com/in/fatimakhatun"
     }
-  ]
-}
+  },
+  {
+    "id": "SS202403",
+    "name": "মো. করিম উদ্দিন",
+    "role": "Volunteer",
+    "division": "Sylhet",
+    "district": "Sylhet",
+    "upazila": "Sylhet Sadar",
+    "email": "karim.uddin@example.com",
+    "bio": "Active volunteer in mental health awareness programmes and tech workshops.",
+    "skills": ["Mental Health Advocacy", "Workshop Facilitation", "Community Support"],
+    "joinedDate": "2024-02-05",
+    "featured": false,
+    "social": {
+      "facebook": "https://facebook.com/karimuddin"
+    }
+  },
+  {
+    "id": "SS202404",
+    "name": "রায়হানা আক্তার",
+    "role": "Content Creator",
+    "division": "Rajshahi",
+    "district": "Rajshahi",
+    "upazila": "Rajpara",
+    "email": "rayhana.akter@example.com",
+    "avatar": "/assets/img/members/rayhana-akter.webp",
+    "bio": "Creating educational content and managing social media outreach for various programmes.",
+    "skills": ["Content Writing", "Social Media", "Graphic Design", "Video Editing"],
+    "joinedDate": "2024-02-12",
+    "featured": true,
+    "social": {
+      "instagram": "https://instagram.com/rayhanaakter",
+      "behance": "https://behance.net/rayhanaakter"
+    }
+  },
+  {
+    "id": "SS202405",
+    "name": "তানভীর হোসেন",
+    "role": "Web Developer",
+    "division": "Khulna",
+    "district": "Khulna",
+    "upazila": "Khulna Sadar",
+    "email": "tanvir.hosen@example.com",
+    "avatar": "/assets/img/members/tanvir-hosen.webp",
+    "bio": "Full-stack developer contributing to ScriptySphere's digital infrastructure and online learning platforms.",
+    "skills": ["React", "Node.js", "MongoDB", "UI/UX Design", "DevOps"],
+    "joinedDate": "2024-02-20",
+    "featured": false,
+    "social": {
+      "github": "https://github.com/tanvirhosen",
+      "portfolio": "https://tanvirhosen.dev"
+    }
+  },
+  {
+    "id": "SS202406",
+    "name": "সাবিনা ইয়াসমিন",
+    "role": "Research Assistant",
+    "division": "Barisal",
+    "district": "Barisal",
+    "upazila": "Barisal Sadar",
+    "email": "sabina.yasmin@example.com",
+    "bio": "Conducting research on digital education impact and community development strategies.",
+    "skills": ["Research", "Data Analysis", "Survey Design", "Report Writing"],
+    "joinedDate": "2024-03-01",
+    "featured": false,
+    "social": {
+      "linkedin": "https://linkedin.com/in/sabinayasmin",
+      "researchgate": "https://researchgate.net/profile/sabina-yasmin"
+    }
+  },
+  {
+    "id": "SS202407",
+    "name": "আরিফ হাসান",
+    "role": "Student Ambassador",
+    "division": "Rangpur",
+    "district": "Rangpur",
+    "upazila": "Rangpur Sadar",
+    "email": "arif.hasan@example.com",
+    "avatar": "/assets/img/members/arif-hasan.webp",
+    "bio": "Representing ScriptySphere in educational institutions and organizing peer-to-peer learning sessions.",
+    "skills": ["Public Speaking", "Peer Education", "Event Management", "Social Networking"],
+    "joinedDate": "2024-03-10",
+    "featured": false,
+    "social": {
+      "facebook": "https://facebook.com/arifhasan",
+      "twitter": "https://twitter.com/arifhasan"
+    }
+  },
+  {
+    "id": "SS202408",
+    "name": "নুসরাত জাহান",
+    "role": "UI/UX Designer",
+    "division": "Dhaka",
+    "district": "Gazipur",
+    "upazila": "Gazipur Sadar",
+    "email": "nusrat.jahan@example.com",
+    "avatar": "/assets/img/members/nusrat-jahan.webp",
+    "bio": "Designing user-friendly interfaces for ScriptySphere's digital platforms and educational apps.",
+    "skills": ["UI Design", "UX Research", "Figma", "Adobe Creative Suite", "User Testing"],
+    "joinedDate": "2024-03-18",
+    "featured": true,
+    "social": {
+      "dribbble": "https://dribbble.com/nusratjahan",
+      "behance": "https://behance.net/nusratjahan"
+    }
+  },
+  {
+    "id": "SS202409",
+    "name": "মাহবুব আলম",
+    "role": "Data Analyst",
+    "division": "Mymensingh",
+    "district": "Mymensingh",
+    "upazila": "Mymensingh Sadar",
+    "email": "mahbub.alam@example.com",
+    "bio": "Analyzing programme impact data and creating insights for organizational growth and improvement.",
+    "skills": ["Python", "R", "Data Visualization", "Statistical Analysis", "Machine Learning"],
+    "joinedDate": "2024-03-25",
+    "featured": false,
+    "social": {
+      "github": "https://github.com/mahbubalam",
+      "kaggle": "https://kaggle.com/mahbubalam"
+    }
+  },
+  {
+    "id": "SS202410",
+    "name": "রোকসানা বেগম",
+    "role": "Community Manager",
+    "division": "Chittagong",
+    "district": "Cox's Bazar",
+    "upazila": "Cox's Bazar Sadar",
+    "email": "roksana.begum@example.com",
+    "avatar": "/assets/img/members/roksana-begum.webp",
+    "bio": "Building and nurturing the ScriptySphere community, organizing events and managing partnerships.",
+    "skills": ["Community Building", "Event Planning", "Partnership Development", "Communication"],
+    "joinedDate": "2024-04-02",
+    "featured": false,
+    "social": {
+      "linkedin": "https://linkedin.com/in/roksanabegum",
+      "facebook": "https://facebook.com/roksanabegum"
+    }
+  },
+  {
+    "id": "SS202411",
+    "name": "শাহরিয়ার কবির",
+    "role": "Mobile App Developer",
+    "division": "Sylhet",
+    "district": "Moulvibazar",
+    "upazila": "Moulvibazar Sadar",
+    "email": "shahriar.kabir@example.com",
+    "bio": "Developing mobile applications for educational purposes and community engagement.",
+    "skills": ["Flutter", "React Native", "Firebase", "API Development", "Mobile UI/UX"],
+    "joinedDate": "2024-04-15",
+    "featured": false,
+    "social": {
+      "github": "https://github.com/shahriarkabir",
+      "playstore": "https://play.google.com/store/apps/developer?id=Shahriar+Kabir"
+    }
+  },
+  {
+    "id": "SS202412",
+    "name": "তাসনিম আরা",
+    "role": "Mental Health Advocate",
+    "division": "Khulna",
+    "district": "Jessore",
+    "upazila": "Jessore Sadar",
+    "email": "tasnim.ara@example.com",
+    "avatar": "/assets/img/members/tasnim-ara.webp",
+    "bio": "Leading mental health awareness campaigns and providing counseling support to students.",
+    "skills": ["Psychology", "Counseling", "Workshop Facilitation", "Crisis Support"],
+    "joinedDate": "2024-04-22",
+    "featured": true,
+    "social": {
+      "linkedin": "https://linkedin.com/in/tasnimara"
+    }
+  },
+  {
+    "id": "SS202413",
+    "name": "রাফি আহমেদ",
+    "role": "Environmental Scientist",
+    "division": "Barisal",
+    "district": "Patuakhali",
+    "upazila": "Patuakhali Sadar",
+    "email": "rafi.ahmed@example.com",
+    "bio": "Working on environmental monitoring projects and climate change awareness initiatives.",
+    "skills": ["Environmental Science", "GIS", "Climate Research", "Data Collection"],
+    "joinedDate": "2024-05-01",
+    "featured": false,
+    "social": {
+      "researchgate": "https://researchgate.net/profile/rafi-ahmed"
+    }
+  },
+  {
+    "id": "SS202414",
+    "name": "সামিয়া রহমান",
+    "role": "Training Specialist",
+    "division": "Rangpur",
+    "district": "Kurigram",
+    "upazila": "Kurigram Sadar",
+    "email": "samia.rahman@example.com",
+    "avatar": "/assets/img/members/samia-rahman.webp",
+    "bio": "Designing and delivering training modules for technology education and skill development.",
+    "skills": ["Training Design", "Curriculum Development", "Adult Learning", "Assessment"],
+    "joinedDate": "2024-05-08",
+    "featured": false,
+    "social": {
+      "linkedin": "https://linkedin.com/in/samiarahman"
+    }
+  },
+  {
+    "id": "SS202415",
+    "name": "নাহিদ হাসান",
+    "role": "DevOps Engineer",
+    "division": "Dhaka",
+    "district": "Narayanganj",
+    "upazila": "Narayanganj Sadar",
+    "email": "nahid.hasan@example.com",
+    "bio": "Managing infrastructure and deployment pipelines for ScriptySphere's digital platforms.",
+    "skills": ["Docker", "Kubernetes", "AWS", "CI/CD", "Monitoring"],
+    "joinedDate": "2024-05-15",
+    "featured": false,
+    "social": {
+      "github": "https://github.com/nahidhasan",
+      "linkedin": "https://linkedin.com/in/nahidhasan"
+    }
+  }
+]
