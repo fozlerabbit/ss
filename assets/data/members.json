@@ -443,214 +443,77 @@
       ]
     }
   ],
-  "divisions": [
+   "divisions": [
     {
       "name": "Dhaka",
       "name_bn": "ঢাকা",
       "districts": [
         {
-          "name": "Bogura",
-          "name_bn": "বগুড়া",
-          "upazilas": ["Bogura Sadar", "Sherpur", "Dhunat", "Shibganj"]
-        }
-      ]
-    },
-    {
-      "name": "Khulna",
-      "name_bn": "খুলনা",
-      "districts": [
-        {
-          "name": "Khulna",
-          "name_bn": "খুলনা",
-          "upazilas": ["Khulna Sadar", "Dumuria", "Batiaghata", "Dakop"]
-        },
-        {
-          "name": "Jessore",
-          "name_bn": "যশোর",
-          "upazilas": ["Jessore Sadar", "Manirampur", "Chaugachha", "Jhikargacha"]
-        }
-      ]
-    },
-    {
-      "name": "Rangpur",
-      "name_bn": "রংপুর",
-      "districts": [
-        {
-          "name": "Rangpur",
-          "name_bn": "রংপুর",
-          "upazilas": ["Rangpur Sadar", "Gangachara", "Mithapukur", "Pirganj"]
-        },
-        {
-          "name": "Dinajpur",
-          "name_bn": "দিনাজপুর",
-          "upazilas": ["Dinajpur Sadar", "Birganj", "Bochaganj", "Chirirbandar"]
-        }
-      ]
-    },
-    {
-      "name": "Barisal",
-      "name_bn": "বরিশাল",
-      "districts": [
-        {
-          "name": "Barisal",
-          "name_bn": "বরিশাল",
-          "upazilas": ["Barisal Sadar", "Bakerganj", "Babuganj", "Wazirpur"]
-        },
-        {
-          "name": "Patuakhali",
-          "name_bn": "পটুয়াখালী",
-          "upazilas": ["Patuakhali Sadar", "Bauphal", "Dashmina", "Galachipa"]
-        }
-      ]
-    },
-    {
-      "name": "Mymensingh",
-      "name_bn": "ময়মনসিংহ",
-      "districts": [
-        {
-          "name": "Mymensingh",
-          "name_bn": "ময়মনসিংহ",
-          "upazilas": ["Mymensingh Sadar", "Muktagacha", "Bhaluka", "Trishal"]
-        },
-        {
-          "name": "Jamalpur",
-          "name_bn": "জামালপুর",
-          "upazilas": ["Jamalpur Sadar", "Dewanganj", "Islampur", "Melandaha"]
-        }
-      ]
-    }
-  ],
-  "roles": [
-    "Founder & Executive Director",
-    "Programme Coordinator", 
-    "Technology Lead",
-    "Community Outreach Manager",
-    "Environmental Program Lead",
-    "Mental Health Coordinator",
-    "Student Volunteer",
-    "Content Creator & Trainer",
-    "Volunteer Coordinator",
-    "Digital Literacy Trainer",
-    "Environmental Activist",
-    "Graphic Designer",
-    "Web Developer",
-    "Mobile App Developer",
-    "Data Analyst",
-    "Social Media Manager",
-    "Event Coordinator",
-    "Research Assistant",
-    "Partnership Manager",
-    "Finance Coordinator"
-  ],
-  "skills": [
-    "Leadership",
-    "Technology Education", 
-    "Community Building",
-    "Public Speaking",
-    "Project Management",
-    "Education",
-    "Team Leadership",
-    "Communication",
-    "JavaScript",
-    "Python",
-    "React",
-    "Node.js",
-    "Mobile Development",
-    "Community Engagement",
-    "Social Media",
-    "Event Planning",
-    "Public Relations",
-    "Environmental Science",
-    "IoT",
-    "Data Analysis",
-    "Psychology",
-    "Counseling",
-    "Workshop Facilitation",
-    "Peer Support",
-    "Flutter",
-    "Firebase",
-    "UI/UX Design",
-    "Content Creation",
-    "Web Development",
-    "Video Editing",
-    "Volunteer Management",
-    "Event Organization",
-    "Teaching",
-    "Digital Literacy",
-    "Adult Education",
-    "Women Empowerment",
-    "Environmental Engineering",
-    "Sustainability",
-    "Project Planning",
-    "Graphic Design",
-    "Adobe Creative Suite",
-    "Branding",
-    "Illustration"
-  ],
-  "statistics": {
-    "total_members": 8,
-    "committee_members": 5,
-    "featured_members": 4,
-    "by_division": {
-      "Dhaka": 3,
-      "Chittagong": 2,
-      "Sylhet": 2,
-      "Rajshahi": 2,
-      "Khulna": 1,
-      "Rangpur": 1,
-      "Barisal": 1,
-      "Mymensingh": 1
-    },
-    "by_role": {
-      "Leadership": 3,
-      "Coordinators": 2,
-      "Trainers": 2,
-      "Students": 2,
-      "Developers": 2,
-      "Activists": 1
-    },
-    "recent_joins": {
-      "this_month": 0,
-      "this_quarter": 1,
-      "this_year": 4
-    }
-  },
-        
-         {
           "name": "Dhaka",
           "name_bn": "ঢাকা",
-          "upazilas": ["Dhanmondi", "Gulshan", "Uttara", "Old Dhaka", "Wari"]
+          "upazilas": [
+            "Dhanmondi",
+            "Gulshan",
+            "Uttara",
+            "Old Dhaka",
+            "Wari"
+          ]
         },
         {
-          "name": "Gazipur", 
+          "name": "Gazipur",
           "name_bn": "গাজীপুর",
-          "upazilas": ["Gazipur Sadar", "Savar", "Kaliakair", "Kapasia"]
+          "upazilas": [
+            "Gazipur Sadar",
+            "Savar",
+            "Kaliakair",
+            "Kapasia"
+          ]
         },
         {
           "name": "Manikganj",
           "name_bn": "মানিকগঞ্জ",
-          "upazilas": ["Manikganj Sadar", "Singair", "Shibalaya", "Harirampur"]
+          "upazilas": [
+            "Manikganj Sadar",
+            "Singair",
+            "Shibalaya",
+            "Harirampur"
+          ]
         }
       ]
     },
     {
       "name": "Chittagong",
-      "name_bn": "চট্টগ্রাম", 
+      "name_bn": "চট্টগ্রাম",
       "districts": [
         {
           "name": "Chittagong",
           "name_bn": "চট্টগ্রাম",
-          "upazilas": ["Kotwali", "Pahartali", "Chandgaon", "Bayazid"]
+          "upazilas": [
+            "Kotwali",
+            "Pahartali",
+            "Chandgaon",
+            "Bayazid"
+          ]
         },
         {
           "name": "Cox's Bazar",
           "name_bn": "কক্সবাজার",
-          "upazilas": ["Cox's Bazar Sadar", "Chakaria", "Teknaf", "Ramu"]
+          "upazilas": [
+            "Cox's Bazar Sadar",
+            "Chakaria",
+            "Teknaf",
+            "Ramu"
+          ]
         },
         {
           "name": "Comilla",
           "name_bn": "কুমিল্লা",
-          "upazilas": ["Comilla Sadar", "Brahmanpara", "Burichang", "Chandina"]
+          "upazilas": [
+            "Comilla Sadar",
+            "Brahmanpara",
+            "Burichang",
+            "Chandina"
+          ]
         }
       ]
     },
@@ -661,12 +524,22 @@
         {
           "name": "Sylhet",
           "name_bn": "সিলেট",
-          "upazilas": ["Sylhet Sadar", "Osmani Nagar", "Dakshin Surma", "Companiganj"]
+          "upazilas": [
+            "Sylhet Sadar",
+            "Osmani Nagar",
+            "Dakshin Surma",
+            "Companiganj"
+          ]
         },
         {
           "name": "Habiganj",
-          "name_bn": "হবিগঞ্জ", 
-          "upazilas": ["Habiganj Sadar", "Chunarughat", "Lakhai", "Nabiganj"]
+          "name_bn": "হবিগঞ্জ",
+          "upazilas": [
+            "Habiganj Sadar",
+            "Chunarughat",
+            "Lakhai",
+            "Nabiganj"
+          ]
         }
       ]
     },
@@ -677,8 +550,128 @@
         {
           "name": "Rajshahi",
           "name_bn": "রাজশাহী",
-          "upazilas": ["Rajshahi Sadar", "Poba", "Durgapur", "Mohanpur"]
+          "upazilas": [
+            "Rajshahi Sadar",
+            "Poba",
+            "Durgapur",
+            "Mohanpur"
+          ]
+        },
+        {
+          "name": "Bogura",
+          "name_bn": "বগুড়া",
+          "upazilas": [
+            "Bogura Sadar",
+            "Sherpur",
+            "Dhunat",
+            "Shibganj"
+          ]
         }
-    }      
+      ]
+    },
+    {
+      "name": "Khulna",
+      "name_bn": "খুলনা",
+      "districts": [
+        {
+          "name": "Khulna",
+          "name_bn": "খুলনা",
+          "upazilas": [
+            "Khulna Sadar",
+            "Dumuria",
+            "Batiaghata",
+            "Dakop"
+          ]
+        },
+        {
+          "name": "Jessore",
+          "name_bn": "যশোর",
+          "upazilas": [
+            "Jessore Sadar",
+            "Manirampur",
+            "Chaugachha",
+            "Jhikargacha"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rangpur",
+      "name_bn": "রংপুর",
+      "districts": [
+        {
+          "name": "Rangpur",
+          "name_bn": "রংপুর",
+          "upazilas": [
+            "Rangpur Sadar",
+            "Gangachara",
+            "Mithapukur",
+            "Pirganj"
+          ]
+        },
+        {
+          "name": "Dinajpur",
+          "name_bn": "দিনাজপুর",
+          "upazilas": [
+            "Dinajpur Sadar",
+            "Birganj",
+            "Bochaganj",
+            "Chirirbandar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Barisal",
+      "name_bn": "বরিশাল",
+      "districts": [
+        {
+          "name": "Barisal",
+          "name_bn": "বরিশাল",
+          "upazilas": [
+            "Barisal Sadar",
+            "Bakerganj",
+            "Babuganj",
+            "Wazirpur"
+          ]
+        },
+        {
+          "name": "Patuakhali",
+          "name_bn": "পটুয়াখালী",
+          "upazilas": [
+            "Patuakhali Sadar",
+            "Bauphal",
+            "Dashmina",
+            "Galachipa"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mymensingh",
+      "name_bn": "ময়মনসিংহ",
+      "districts": [
+        {
+          "name": "Mymensingh",
+          "name_bn": "ময়মনসিংহ",
+          "upazilas": [
+            "Mymensingh Sadar",
+            "Muktagacha",
+            "Bhaluka",
+            "Trishal"
+          ]
+        },
+        {
+          "name": "Jamalpur",
+          "name_bn": "জামালপুর",
+          "upazilas": [
+            "Jamalpur Sadar",
+            "Dewanganj",
+            "Islampur",
+            "Melandaha"
+          ]
+        }
+      ]
+    }
+  ]
 }
-    
