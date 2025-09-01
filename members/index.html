@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet the ScriptySphere community - talented members from across Bangladesh working together to advance technology education and social development.">
-    <meta name="keywords" content="ScriptySphere members, Bangladesh tech community, youth leaders, technology volunteers">
+    <meta name="description" content="Meet the passionate members of ScriptySphere community driving technological and social change across Bangladesh.">
+    <meta name="keywords" content="ScriptySphere members, Bangladesh youth, technology community, volunteers">
     <meta name="author" content="ScriptySphere">
     <meta name="robots" content="index, follow">
     
@@ -12,19 +12,20 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://scriptysphere.org/members/">
     <meta property="og:title" content="Members Directory - ScriptySphere Community">
-    <meta property="og:description" content="Discover our diverse community of members across Bangladesh working to advance technology education.">
+    <meta property="og:description" content="Meet the passionate members of ScriptySphere community driving change across Bangladesh.">
     <meta property="og:image" content="https://scriptysphere.org/assets/img/og-members.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://scriptysphere.org/members/">
     <meta property="twitter:title" content="Members Directory - ScriptySphere Community">
-    <meta property="twitter:description" content="Discover our diverse community of members across Bangladesh working to advance technology education.">
+    <meta property="twitter:description" content="Meet the passionate members of ScriptySphere community.">
+    <meta property="twitter:image" content="https://scriptysphere.org/assets/img/og-members.jpg">
     
     <link rel="canonical" href="https://scriptysphere.org/members/">
     <link rel="icon" href="/assets/img/favicon.ico">
     
     <!-- CSS -->
+    <link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/utilities.css">
@@ -42,181 +43,94 @@
     
     <!-- Main Content -->
     <main id="main-content">
-        <!-- Page Hero -->
-        <section class="page-hero">
+        <!-- Hero Section -->
+        <section class="page-hero" aria-labelledby="members-hero-title">
             <div class="container">
-                <h1 class="page-hero__title" data-i18n="members.hero.title">Our Community</h1>
-                <p class="page-hero__subtitle" data-i18n="members.hero.subtitle">Meet the passionate individuals building tomorrow's Bangladesh through technology</p>
-                
-                <!-- Stats Summary -->
-                <div class="hero-stats" data-aos="fade-up">
-                    <div class="stat-item">
-                        <span class="stat-number" id="total-members-count">0</span>
-                        <span class="stat-label" data-i18n="members.stats.total">Total Members</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="divisions-count">0</span>
-                        <span class="stat-label" data-i18n="members.stats.divisions">Divisions</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="districts-count">0</span>
-                        <span class="stat-label" data-i18n="members.stats.districts">Districts</span>
-                    </div>
+                <div class="page-hero__content">
+                    <h1 id="members-hero-title" class="page-hero__title" data-i18n="members.hero.title">Our Members</h1>
+                    <p class="page-hero__subtitle" data-i18n="members.hero.subtitle">Meet the passionate youth driving change across Bangladesh</p>
                 </div>
             </div>
         </section>
         
         <!-- Members Directory -->
-        <section class="members-directory">
+        <section class="members-directory" aria-labelledby="members-title">
             <div class="container">
-                <!-- Search and Filters -->
-                <div class="directory-controls" data-aos="fade-up">
-                    <div class="controls-row">
-                        <!-- Search Box -->
-                        <div class="search-container">
-                            <label for="member-search" class="sr-only" data-i18n="members.search.label">Search members</label>
-                            <input 
-                                type="search" 
-                                id="member-search" 
-                                class="search-input"
-                                placeholder="Search members by name or keyword..."
-                                data-i18n-placeholder="members.search.placeholder"
-                                aria-describedby="search-help"
-                            >
-                            <div class="search-icon">
-                                <svg><use href="/assets/img/icons.svg#search"></use></svg>
-                            </div>
-                            <div id="search-help" class="sr-only" data-i18n="members.search.help">Type to search members by name, role, or skills</div>
-                        </div>
-                        
-                        <!-- Action Buttons -->
-                        <div class="action-buttons">
-                            <button class="btn btn--outline btn--small" onclick="downloadMembersList()" data-i18n="members.actions.download">
-                                <svg><use href="/assets/img/icons.svg#download"></use></svg>
-                                Download CSV
-                            </button>
-                            <button class="btn btn--outline btn--small" onclick="toggleFavoritesView()" data-i18n="members.actions.favorites">
-                                <svg><use href="/assets/img/icons.svg#heart"></use></svg>
-                                Favorites
-                            </button>
-                        </div>
+                <!-- Filters and Search -->
+                <div class="members-filters" role="search" aria-label="Member filters">
+                    <div class="members-filters__search">
+                        <input type="search" id="member-search" class="search-input" 
+                               placeholder="Search members by name..." 
+                               data-i18n-placeholder="members.filters.search_placeholder"
+                               aria-label="Search members">
+                        <svg class="search-input__icon">
+                            <use href="/assets/img/icons.svg#search"></use>
+                        </svg>
                     </div>
                     
-                    <!-- Filters Row -->
-                    <div class="filters-row">
+                    <div class="members-filters__controls">
                         <!-- Division Filter -->
-                        <div class="filter-group">
-                            <label for="division-filter" data-i18n="members.filters.division">Division</label>
-                            <select id="division-filter" class="filter-select" aria-describedby="division-help">
-                                <option value="" data-i18n="members.filters.all_divisions">All Divisions</option>
-                            </select>
-                            <div id="division-help" class="sr-only" data-i18n="members.filters.division_help">Filter members by administrative division</div>
-                        </div>
+                        <select id="division-filter" class="filter-select" aria-label="Filter by division">
+                            <option value="" data-i18n="members.filters.division">Division</option>
+                        </select>
                         
                         <!-- District Filter -->
-                        <div class="filter-group">
-                            <label for="district-filter" data-i18n="members.filters.district">District</label>
-                            <select id="district-filter" class="filter-select" disabled aria-describedby="district-help">
-                                <option value="" data-i18n="members.filters.all_districts">All Districts</option>
-                            </select>
-                            <div id="district-help" class="sr-only" data-i18n="members.filters.district_help">Filter members by district (select division first)</div>
-                        </div>
+                        <select id="district-filter" class="filter-select" aria-label="Filter by district" disabled>
+                            <option value="" data-i18n="members.filters.district">District</option>
+                        </select>
                         
                         <!-- Upazila Filter -->
-                        <div class="filter-group">
-                            <label for="upazila-filter" data-i18n="members.filters.upazila">Sub-district</label>
-                            <select id="upazila-filter" class="filter-select" disabled aria-describedby="upazila-help">
-                                <option value="" data-i18n="members.filters.all_upazilas">All Sub-districts</option>
-                            </select>
-                            <div id="upazila-help" class="sr-only" data-i18n="members.filters.upazila_help">Filter members by sub-district (select district first)</div>
-                        </div>
+                        <select id="upazila-filter" class="filter-select" aria-label="Filter by sub-district" disabled>
+                            <option value="" data-i18n="members.filters.upazila">Sub-district</option>
+                        </select>
                         
                         <!-- Role Filter -->
-                        <div class="filter-group">
-                            <label for="role-filter" data-i18n="members.filters.role">Role</label>
-                            <select id="role-filter" class="filter-select" aria-describedby="role-help">
-                                <option value="" data-i18n="members.filters.all_roles">All Roles</option>
-                            </select>
-                            <div id="role-help" class="sr-only" data-i18n="members.filters.role_help">Filter members by their role or position</div>
-                        </div>
+                        <select id="role-filter" class="filter-select" aria-label="Filter by role">
+                            <option value="" data-i18n="members.filters.role">Role</option>
+                        </select>
                         
-                        <!-- Sort Options -->
-                        <div class="filter-group">
-                            <label for="sort-filter" data-i18n="members.filters.sort">Sort By</label>
-                            <select id="sort-filter" class="filter-select" aria-describedby="sort-help">
-                                <option value="name" data-i18n="members.sort.name">Name (A-Z)</option>
-                                <option value="role" data-i18n="members.sort.role">Role</option>
-                                <option value="joined" data-i18n="members.sort.joined">Recently Joined</option>
-                                <option value="featured" data-i18n="members.sort.featured">Featured First</option>
-                            </select>
-                            <div id="sort-help" class="sr-only" data-i18n="members.filters.sort_help">Change the order of member display</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Clear Filters -->
-                    <div class="filter-actions">
-                        <button class="btn btn--ghost btn--small" onclick="clearAllFilters()" data-i18n="members.filters.clear">
-                            <svg><use href="/assets/img/icons.svg#x"></use></svg>
+                        <!-- Sort -->
+                        <select id="sort-filter" class="filter-select" aria-label="Sort members">
+                            <option value="name" data-i18n="members.sort.name">Name (A-Z)</option>
+                            <option value="recent" data-i18n="members.sort.recent">Recently Joined</option>
+                            <option value="role" data-i18n="members.sort.role">Role</option>
+                        </select>
+                        
+                        <!-- Clear Filters -->
+                        <button id="clear-filters" class="btn btn--outline btn--small" data-i18n="members.filters.clear">
                             Clear Filters
                         </button>
-                        <span class="active-filters" id="active-filters-count" aria-live="polite"></span>
                     </div>
                 </div>
                 
-                <!-- Featured Members -->
-                <div class="featured-members" id="featured-section" data-aos="fade-up">
-                    <h2 class="section-title" data-i18n="members.featured.title">Featured Members</h2>
-                    <div class="featured-grid" id="featured-members-grid">
-                        <!-- Featured members will be populated here -->
-                    </div>
+                <!-- Results Summary -->
+                <div class="members-summary">
+                    <p class="members-count" id="members-count" data-i18n="members.member_count">0 members found</p>
+                </div>
+                
+                <!-- Loading State -->
+                <div id="members-loading" class="members-loading">
+                    <div class="loading-spinner"></div>
+                    <p data-i18n="members.loading">Loading members...</p>
                 </div>
                 
                 <!-- Members Grid -->
-                <div class="members-section" data-aos="fade-up">
-                    <div class="section-header">
-                        <h2 class="section-title" data-i18n="members.directory.title">All Members</h2>
-                        <div class="view-toggle">
-                            <button class="view-btn view-btn--active" data-view="grid" aria-label="Grid view">
-                                <svg><use href="/assets/img/icons.svg#grid"></use></svg>
-                            </button>
-                            <button class="view-btn" data-view="list" aria-label="List view">
-                                <svg><use href="/assets/img/icons.svg#list"></use></svg>
-                            </button>
-                        </div>
+                <div id="members-grid" class="members-grid" role="grid" aria-label="Members directory">
+                    <!-- Members will be populated here via JavaScript -->
+                </div>
+                
+                <!-- No Results State -->
+                <div id="no-results" class="no-results" style="display: none;">
+                    <div class="no-results__icon">
+                        <svg><use href="/assets/img/icons.svg#users"></use></svg>
                     </div>
-                    
-                    <!-- Loading State -->
-                    <div class="loading-state" id="loading-state">
-                        <div class="loading-spinner"></div>
-                        <p data-i18n="members.loading">Loading members...</p>
-                    </div>
-                    
-                    <!-- Members Grid -->
-                    <div class="members-grid" id="members-grid" style="display: none;">
-                        <!-- Members will be populated here -->
-                    </div>
-                    
-                    <!-- No Results State -->
-                    <div class="no-results" id="no-results" style="display: none;">
-                        <div class="no-results__icon">
-                            <svg><use href="/assets/img/icons.svg#users"></use></svg>
-                        </div>
-                        <h3 data-i18n="members.no_results.title">It looks like there's no member yet.</h3>
-                        <p data-i18n="members.no_results.subtitle">Be the first one.</p>
-                        <a href="/community/" class="btn btn--primary" data-i18n="members.no_results.cta">Join Our Community</a>
-                    </div>
-                    
-                    <!-- Pagination -->
-                    <div class="pagination" id="pagination" style="display: none;">
-                        <button class="btn btn--outline" id="load-more-btn" data-i18n="members.pagination.load_more">Load More Members</button>
-                        <p class="pagination-info">
-                            <span data-i18n="members.pagination.showing">Showing</span> 
-                            <span id="showing-count">0</span> 
-                            <span data-i18n="members.pagination.of">of</span> 
-                            <span id="total-count">0</span> 
-                            <span data-i18n="members.pagination.members">members</span>
-                        </p>
-                    </div>
+                    <h3 class="no-results__title" data-i18n="members.no_results">It looks like there's no member yet. Be the first one.</h3>
+                    <a href="/community/" class="btn btn--primary" data-i18n="cta.join_us">Join Us Today</a>
+                </div>
+                
+                <!-- Pagination -->
+                <div id="pagination" class="pagination" role="navigation" aria-label="Members pagination">
+                    <!-- Pagination will be populated here -->
                 </div>
             </div>
         </section>
@@ -228,600 +142,23 @@
     <!-- Cookie Banner -->
     <div data-include="cookie"></div>
     
-    <!-- Member Profile Modal -->
+    <!-- Modal -->
     <div data-include="modal"></div>
     
     <!-- Scripts -->
     <script src="/assets/js/partials.js" defer></script>
     <script src="/assets/js/i18n.js" defer></script>
     <script src="/assets/js/theme.js" defer></script>
-    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/members.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js" defer></script>
-    
     <script>
-        // Members Directory Application
-        class MembersDirectory {
-            constructor() {
-                this.members = [];
-                this.filteredMembers = [];
-                this.displayedMembers = [];
-                this.divisionsData = [];
-                this.currentPage = 1;
-                this.membersPerPage = 12;
-                this.currentView = 'grid';
-                this.favorites = JSON.parse(localStorage.getItem('ss-favorite-members') || '[]');
-                this.fuse = null;
-                this.filters = {
-                    search: '',
-                    division: '',
-                    district: '',
-                    upazila: '',
-                    role: '',
-                    sort: 'name'
-                };
-            }
-
-            async init() {
-                try {
-                    await this.loadMembersData();
-                    this.initializeFilters();
-                    this.bindEvents();
-                    this.renderFeaturedMembers();
-                    this.applyFilters();
-                    this.updateStats();
-                } catch (error) {
-                    console.error('Failed to initialize members directory:', error);
-                    this.showError('Failed to load members data. Please try refreshing the page.');
-                }
-            }
-
-            async loadMembersData() {
-                const response = await fetch('/assets/data/members.json');
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-                
-                const data = await response.json();
-                this.members = data.members || [];
-                this.divisionsData = data.divisions || [];
-                
-                // Initialize Fuse.js for fuzzy search
-                this.fuse = new Fuse(this.members, {
-                    keys: ['name', 'name_bn', 'role', 'role_bn', 'skills', 'bio', 'bio_bn'],
-                    threshold: 0.3,
-                    includeScore: true
-                });
-                
-                // Hide loading state
-                document.getElementById('loading-state').style.display = 'none';
-                document.getElementById('members-grid').style.display = 'block';
-            }
-
-            initializeFilters() {
-                // Populate division filter
-                const divisionSelect = document.getElementById('division-filter');
-                this.divisionsData.forEach(division => {
-                    const option = document.createElement('option');
-                    option.value = division.name;
-                    option.textContent = division.name;
-                    option.setAttribute('data-bn', division.name_bn);
-                    divisionSelect.appendChild(option);
-                });
-
-                // Populate role filter
-                const roleSelect = document.getElementById('role-filter');
-                const roles = [...new Set(this.members.map(m => m.role))].sort();
-                roles.forEach(role => {
-                    const option = document.createElement('option');
-                    option.value = role;
-                    option.textContent = role;
-                    roleSelect.appendChild(option);
-                });
-            }
-
-            bindEvents() {
-                // Search input
-                const searchInput = document.getElementById('member-search');
-                searchInput.addEventListener('input', this.debounce((e) => {
-                    this.filters.search = e.target.value;
-                    this.applyFilters();
-                }, 300));
-
-                // Filter selects
-                document.getElementById('division-filter').addEventListener('change', (e) => {
-                    this.filters.division = e.target.value;
-                    this.updateDistrictFilter();
-                    this.applyFilters();
-                });
-
-                document.getElementById('district-filter').addEventListener('change', (e) => {
-                    this.filters.district = e.target.value;
-                    this.updateUpazilaFilter();
-                    this.applyFilters();
-                });
-
-                document.getElementById('upazila-filter').addEventListener('change', (e) => {
-                    this.filters.upazila = e.target.value;
-                    this.applyFilters();
-                });
-
-                document.getElementById('role-filter').addEventListener('change', (e) => {
-                    this.filters.role = e.target.value;
-                    this.applyFilters();
-                });
-
-                document.getElementById('sort-filter').addEventListener('change', (e) => {
-                    this.filters.sort = e.target.value;
-                    this.applyFilters();
-                });
-
-                // View toggle
-                document.querySelectorAll('.view-btn').forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        this.currentView = btn.dataset.view;
-                        this.updateViewButtons();
-                        this.renderMembers();
-                    });
-                });
-
-                // Load more button
-                document.getElementById('load-more-btn').addEventListener('click', () => {
-                    this.loadMoreMembers();
-                });
-
-                // Keyboard shortcuts
-                document.addEventListener('keydown', (e) => {
-                    if (e.key === '/' && !e.target.matches('input, textarea')) {
-                        e.preventDefault();
-                        searchInput.focus();
-                    }
-                });
-            }
-
-            updateDistrictFilter() {
-                const districtSelect = document.getElementById('district-filter');
-                const upazilaSelect = document.getElementById('upazila-filter');
-                
-                // Clear existing options
-                districtSelect.innerHTML = '<option value="">All Districts</option>';
-                upazilaSelect.innerHTML = '<option value="">All Sub-districts</option>';
-                
-                if (!this.filters.division) {
-                    districtSelect.disabled = true;
-                    upazilaSelect.disabled = true;
-                    this.filters.district = '';
-                    this.filters.upazila = '';
-                    return;
-                }
-
-                const selectedDivision = this.divisionsData.find(d => d.name === this.filters.division);
-                if (selectedDivision) {
-                    districtSelect.disabled = false;
-                    selectedDivision.districts.forEach(district => {
-                        const option = document.createElement('option');
-                        option.value = district.name;
-                        option.textContent = district.name;
-                        districtSelect.appendChild(option);
-                    });
-                }
-                
-                this.filters.district = '';
-                this.filters.upazila = '';
-            }
-
-            updateUpazilaFilter() {
-                const upazilaSelect = document.getElementById('upazila-filter');
-                
-                // Clear existing options
-                upazilaSelect.innerHTML = '<option value="">All Sub-districts</option>';
-                
-                if (!this.filters.district) {
-                    upazilaSelect.disabled = true;
-                    this.filters.upazila = '';
-                    return;
-                }
-
-                const selectedDivision = this.divisionsData.find(d => d.name === this.filters.division);
-                const selectedDistrict = selectedDivision?.districts.find(d => d.name === this.filters.district);
-                
-                if (selectedDistrict) {
-                    upazilaSelect.disabled = false;
-                    selectedDistrict.upazilas.forEach(upazila => {
-                        const option = document.createElement('option');
-                        option.value = upazila;
-                        option.textContent = upazila;
-                        upazilaSelect.appendChild(option);
-                    });
-                }
-                
-                this.filters.upazila = '';
-            }
-
-            applyFilters() {
-                let filtered = [...this.members];
-
-                // Apply search filter
-                if (this.filters.search) {
-                    const searchResults = this.fuse.search(this.filters.search);
-                    filtered = searchResults.map(result => result.item);
-                }
-
-                // Apply location filters
-                if (this.filters.division) {
-                    filtered = filtered.filter(m => m.division === this.filters.division);
-                }
-                if (this.filters.district) {
-                    filtered = filtered.filter(m => m.district === this.filters.district);
-                }
-                if (this.filters.upazila) {
-                    filtered = filtered.filter(m => m.upazila === this.filters.upazila);
-                }
-
-                // Apply role filter
-                if (this.filters.role) {
-                    filtered = filtered.filter(m => m.role === this.filters.role);
-                }
-
-                // Apply sorting
-                filtered.sort((a, b) => {
-                    switch (this.filters.sort) {
-                        case 'name':
-                            return a.name.localeCompare(b.name);
-                        case 'role':
-                            return a.role.localeCompare(b.role);
-                        case 'joined':
-                            return new Date(b.joinedDate) - new Date(a.joinedDate);
-                        case 'featured':
-                            return (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
-                        default:
-                            return 0;
-                    }
-                });
-
-                this.filteredMembers = filtered;
-                this.currentPage = 1;
-                this.renderMembers();
-                this.updateActiveFiltersDisplay();
-            }
-
-            renderFeaturedMembers() {
-                const featuredGrid = document.getElementById('featured-members-grid');
-                const featuredMembers = this.members.filter(m => m.featured);
-                
-                if (featuredMembers.length === 0) {
-                    document.getElementById('featured-section').style.display = 'none';
-                    return;
-                }
-
-                featuredGrid.innerHTML = featuredMembers.map(member => 
-                    this.createMemberCard(member, true)
-                ).join('');
-            }
-
-            renderMembers() {
-                const membersGrid = document.getElementById('members-grid');
-                const noResults = document.getElementById('no-results');
-                const pagination = document.getElementById('pagination');
-
-                if (this.filteredMembers.length === 0) {
-                    membersGrid.style.display = 'none';
-                    pagination.style.display = 'none';
-                    noResults.style.display = 'block';
-                    return;
-                }
-
-                noResults.style.display = 'none';
-                membersGrid.style.display = 'block';
-
-                // Update grid class based on view
-                membersGrid.className = `members-grid members-grid--${this.currentView}`;
-
-                // Calculate members to display
-                const startIndex = 0;
-                const endIndex = this.currentPage * this.membersPerPage;
-                this.displayedMembers = this.filteredMembers.slice(startIndex, endIndex);
-
-                // Render members
-                membersGrid.innerHTML = this.displayedMembers.map(member => 
-                    this.createMemberCard(member, false)
-                ).join('');
-
-                // Update pagination
-                this.updatePagination();
-            }
-
-            createMemberCard(member, isFeatured = false) {
-                const cardClass = isFeatured ? 'member-card member-card--featured' : 'member-card';
-                const isFavorite = this.favorites.includes(member.id);
-                
-                return `
-                    <article class="${cardClass}" data-member-id="${member.id}" onclick="openMemberModal('${member.id}')">
-                        <div class="member-card__header">
-                            <div class="member-card__avatar">
-                                <img 
-                                    src="${member.avatar || '/assets/img/default-avatar.svg'}" 
-                                    alt="${member.name}"
-                                    loading="lazy"
-                                    onerror="this.src='/assets/img/default-avatar.svg'"
-                                >
-                                ${member.featured ? '<div class="member-badge member-badge--featured">Featured</div>' : ''}
-                                ${member.committee ? '<div class="member-badge member-badge--committee">Committee</div>' : ''}
-                            </div>
-                            <button 
-                                class="favorite-btn ${isFavorite ? 'favorite-btn--active' : ''}"
-                                onclick="event.stopPropagation(); toggleFavorite('${member.id}')"
-                                aria-label="Toggle favorite"
-                            >
-                                <svg><use href="/assets/img/icons.svg#heart"></use></svg>
-                            </button>
-                        </div>
-                        
-                        <div class="member-card__content">
-                            <h3 class="member-card__name">${member.name}</h3>
-                            <p class="member-card__role">${member.role}</p>
-                            <p class="member-card__location">
-                                <svg><use href="/assets/img/icons.svg#location"></use></svg>
-                                ${member.upazila}, ${member.district}, ${member.division}
-                            </p>
-                            <p class="member-card__id">ID: ${member.id}</p>
-                            
-                            ${member.skills ? `
-                                <div class="member-card__skills">
-                                    ${member.skills.slice(0, 3).map(skill => 
-                                        `<span class="skill-tag">${skill}</span>`
-                                    ).join('')}
-                                    ${member.skills.length > 3 ? `<span class="skill-tag skill-tag--more">+${member.skills.length - 3}</span>` : ''}
-                                </div>
-                            ` : ''}
-                            
-                            ${member.social ? `
-                                <div class="member-card__social">
-                                    ${Object.entries(member.social).map(([platform, url]) => 
-                                        `<a href="${url}" target="_blank" rel="noopener" aria-label="${member.name} on ${platform}" onclick="event.stopPropagation()">
-                                            <svg><use href="/assets/img/icons.svg#${platform}"></use></svg>
-                                        </a>`
-                                    ).join('')}
-                                </div>
-                            ` : ''}
-                        </div>
-                        
-                        <div class="member-card__footer">
-                            <span class="member-card__joined">
-                                <svg><use href="/assets/img/icons.svg#calendar"></use></svg>
-                                Joined ${new Date(member.joinedDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
-                            </span>
-                            <button class="btn btn--ghost btn--small" onclick="event.stopPropagation(); openMemberModal('${member.id}')">
-                                View Profile
-                            </button>
-                        </div>
-                    </article>
-                `;
-            }
-
-            updatePagination() {
-                const pagination = document.getElementById('pagination');
-                const loadMoreBtn = document.getElementById('load-more-btn');
-                const showingCount = document.getElementById('showing-count');
-                const totalCount = document.getElementById('total-count');
-
-                showingCount.textContent = this.displayedMembers.length;
-                totalCount.textContent = this.filteredMembers.length;
-
-                if (this.displayedMembers.length < this.filteredMembers.length) {
-                    pagination.style.display = 'block';
-                    loadMoreBtn.style.display = 'block';
-                } else {
-                    loadMoreBtn.style.display = 'none';
-                    if (this.filteredMembers.length > 0) {
-                        pagination.style.display = 'block';
-                    } else {
-                        pagination.style.display = 'none';
-                    }
-                }
-            }
-
-            loadMoreMembers() {
-                this.currentPage++;
-                this.renderMembers();
-            }
-
-            updateViewButtons() {
-                document.querySelectorAll('.view-btn').forEach(btn => {
-                    btn.classList.toggle('view-btn--active', btn.dataset.view === this.currentView);
-                });
-            }
-
-            updateStats() {
-                // Update hero stats
-                document.getElementById('total-members-count').textContent = this.members.length;
-                document.getElementById('divisions-count').textContent = this.divisionsData.length;
-                
-                const uniqueDistricts = [...new Set(this.members.map(m => m.district))];
-                document.getElementById('districts-count').textContent = uniqueDistricts.length;
-                
-                // Animate counters
-                this.animateCounters();
-            }
-
-            animateCounters() {
-                document.querySelectorAll('.stat-number').forEach(counter => {
-                    const target = parseInt(counter.textContent);
-                    const duration = 2000;
-                    const step = target / (duration / 16);
-                    let current = 0;
-                    
-                    const timer = setInterval(() => {
-                        current += step;
-                        if (current >= target) {
-                            counter.textContent = target;
-                            clearInterval(timer);
-                        } else {
-                            counter.textContent = Math.floor(current);
-                        }
-                    }, 16);
-                });
-            }
-
-            updateActiveFiltersDisplay() {
-                const activeFiltersCount = document.getElementById('active-filters-count');
-                const activeCount = Object.values(this.filters).filter(v => v && v !== 'name').length;
-                
-                if (activeCount > 0) {
-                    activeFiltersCount.textContent = `${activeCount} filter${activeCount > 1 ? 's' : ''} active`;
-                    activeFiltersCount.style.display = 'inline';
-                } else {
-                    activeFiltersCount.style.display = 'none';
-                }
-            }
-
-            toggleFavorite(memberId) {
-                if (this.favorites.includes(memberId)) {
-                    this.favorites = this.favorites.filter(id => id !== memberId);
-                } else {
-                    this.favorites.push(memberId);
-                }
-                
-                localStorage.setItem('ss-favorite-members', JSON.stringify(this.favorites));
-                
-                // Update UI
-                const favoriteBtn = document.querySelector(`[data-member-id="${memberId}"] .favorite-btn`);
-                if (favoriteBtn) {
-                    favoriteBtn.classList.toggle('favorite-btn--active');
-                }
-            }
-
-            downloadMembersList() {
-                const csvContent = this.generateCSV(this.filteredMembers);
-                const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-                const link = document.createElement('a');
-                
-                if (link.download !== undefined) {
-                    const url = URL.createObjectURL(blob);
-                    link.setAttribute('href', url);
-                    link.setAttribute('download', `scriptysphere-members-${new Date().toISOString().split('T')[0]}.csv`);
-                    link.style.visibility = 'hidden';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                }
-            }
-
-            generateCSV(members) {
-                const headers = ['ID', 'Name', 'Role', 'Division', 'District', 'Upazila', 'Email', 'Joined Date'];
-                const csvRows = [
-                    headers.join(','),
-                    ...members.map(member => [
-                        member.id,
-                        `"${member.name}"`,
-                        `"${member.role}"`,
-                        member.division,
-                        member.district,
-                        member.upazila,
-                        member.email || '',
-                        member.joinedDate
-                    ].join(','))
-                ];
-                
-                return csvRows.join('\n');
-            }
-
-            showError(message) {
-                const errorDiv = document.createElement('div');
-                errorDiv.className = 'error-message';
-                errorDiv.innerHTML = `
-                    <div class="error-content">
-                        <svg><use href="/assets/img/icons.svg#alert-circle"></use></svg>
-                        <p>${message}</p>
-                        <button onclick="location.reload()" class="btn btn--small">Retry</button>
-                    </div>
-                `;
-                
-                document.getElementById('loading-state').replaceWith(errorDiv);
-            }
-
-            debounce(func, wait) {
-                let timeout;
-                return function executedFunction(...args) {
-                    const later = () => {
-                        clearTimeout(timeout);
-                        func(...args);
-                    };
-                    clearTimeout(timeout);
-                    timeout = setTimeout(later, wait);
-                };
-            }
-        }
-
-        // Global functions for member interactions
-        window.membersDirectory = new MembersDirectory();
-
-        window.openMemberModal = function(memberId) {
-            const member = membersDirectory.members.find(m => m.id === memberId);
-            if (member && window.openModal) {
-                window.openModal('member-modal', member);
-            }
-        };
-
-        window.toggleFavorite = function(memberId) {
-            membersDirectory.toggleFavorite(memberId);
-        };
-
-        window.clearAllFilters = function() {
-            // Reset all filters
-            document.getElementById('member-search').value = '';
-            document.getElementById('division-filter').value = '';
-            document.getElementById('district-filter').value = '';
-            document.getElementById('upazila-filter').value = '';
-            document.getElementById('role-filter').value = '';
-            document.getElementById('sort-filter').value = 'name';
-            
-            // Reset filter state
-            membersDirectory.filters = {
-                search: '',
-                division: '',
-                district: '',
-                upazila: '',
-                role: '',
-                sort: 'name'
-            };
-            
-            // Update dependent filters
-            membersDirectory.updateDistrictFilter();
-            membersDirectory.applyFilters();
-        };
-
-        window.downloadMembersList = function() {
-            membersDirectory.downloadMembersList();
-        };
-
-        window.toggleFavoritesView = function() {
-            const favoriteIds = membersDirectory.favorites;
-            if (favoriteIds.length === 0) {
-                alert('No favorite members selected yet. Click the heart icon on member cards to add favorites.');
-                return;
-            }
-            
-            // Filter to show only favorites
-            membersDirectory.filteredMembers = membersDirectory.members.filter(m => favoriteIds.includes(m.id));
-            membersDirectory.currentPage = 1;
-            membersDirectory.renderMembers();
-            
-            // Update filters display
-            document.getElementById('active-filters-count').textContent = 'Showing favorites only';
-            document.getElementById('active-filters-count').style.display = 'inline';
-        };
-
-        // Initialize when DOM is ready
         document.addEventListener('DOMContentLoaded', function() {
             if (typeof AOS !== 'undefined') {
-                AOS.init({ duration: 800, once: true });
+                AOS.init({
+                    duration: 600,
+                    once: true
+                });
             }
-            
-            // Initialize members directory after partials are loaded
-            setTimeout(() => {
-                membersDirectory.init();
-            }, 500);
         });
     </script>
     
@@ -829,858 +166,33 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Members Directory",
+        "@type": "CollectionPage",
+        "name": "ScriptySphere Members",
         "description": "Directory of ScriptySphere community members across Bangladesh",
         "url": "https://scriptysphere.org/members/",
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "ScriptySphere",
-            "url": "https://scriptysphere.org"
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "ScriptySphere Members",
+            "description": "Active members of ScriptySphere organization"
         },
-        "publisher": {
-            "@type": "Organization",
-            "name": "ScriptySphere",
-            "url": "https://scriptysphere.org"
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://scriptysphere.org/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Members",
+                    "item": "https://scriptysphere.org/members/"
+                }
+            ]
         }
     }
     </script>
-    
-    <style>
-        /* ===== MEMBERS DIRECTORY STYLES ===== */
-        
-        .members-directory {
-            padding: var(--space-16) 0;
-            background: var(--color-background);
-        }
-        
-        /* Hero Stats */
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: var(--space-8);
-            margin-top: var(--space-8);
-            flex-wrap: wrap;
-        }
-        
-        .stat-item {
-            text-align: center;
-            padding: var(--space-4);
-            background: var(--color-surface);
-            border-radius: var(--radius-lg);
-            min-width: 120px;
-        }
-        
-        .stat-number {
-            display: block;
-            font-size: var(--font-size-3xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary);
-            line-height: 1;
-        }
-        
-        .stat-label {
-            font-size: var(--font-size-sm);
-            color: var(--color-text-muted);
-            margin-top: var(--space-1);
-        }
-        
-        /* Directory Controls */
-        .directory-controls {
-            background: var(--color-surface);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-12);
-            border: 1px solid var(--color-border);
-        }
-        
-        .controls-row {
-            display: flex;
-            gap: var(--space-4);
-            margin-bottom: var(--space-6);
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .search-container {
-            flex: 1;
-            min-width: 300px;
-            position: relative;
-        }
-        
-        .search-input {
-            width: 100%;
-            padding: var(--space-3) var(--space-4) var(--space-3) var(--space-10);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-lg);
-            font-size: var(--font-size-base);
-            background: var(--color-background);
-            color: var(--color-text);
-            transition: all var(--transition-fast);
-        }
-        
-        .search-input:focus {
-            outline: none;
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 3px var(--color-primary-light);
-        }
-        
-        .search-icon {
-            position: absolute;
-            left: var(--space-3);
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--color-text-muted);
-            pointer-events: none;
-        }
-        
-        .search-icon svg {
-            width: 20px;
-            height: 20px;
-        }
-        
-        .action-buttons {
-            display: flex;
-            gap: var(--space-2);
-        }
-        
-        .filters-row {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: var(--space-4);
-            margin-bottom: var(--space-4);
-        }
-        
-        .filter-group {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .filter-group label {
-            font-size: var(--font-size-sm);
-            font-weight: var(--font-weight-medium);
-            color: var(--color-text);
-            margin-bottom: var(--space-2);
-        }
-        
-        .filter-select {
-            padding: var(--space-2) var(--space-3);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-md);
-            background: var(--color-background);
-            color: var(--color-text);
-            font-size: var(--font-size-sm);
-            transition: border-color var(--transition-fast);
-        }
-        
-        .filter-select:focus {
-            outline: none;
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 2px var(--color-primary-light);
-        }
-        
-        .filter-select:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-        
-        .filter-actions {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: var(--space-4);
-            border-top: 1px solid var(--color-border);
-        }
-        
-        .active-filters {
-            font-size: var(--font-size-sm);
-            color: var(--color-primary);
-            font-weight: var(--font-weight-medium);
-        }
-        
-        /* Featured Members */
-        .featured-members {
-            margin-bottom: var(--space-16);
-        }
-        
-        .featured-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-6);
-            margin-top: var(--space-8);
-        }
-        
-        /* Members Section */
-        .members-section {
-            margin-bottom: var(--space-16);
-        }
-        
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: var(--space-8);
-        }
-        
-        .section-title {
-            font-size: var(--font-size-2xl);
-            color: var(--color-text);
-            margin: 0;
-        }
-        
-        .view-toggle {
-            display: flex;
-            gap: var(--space-1);
-            background: var(--color-surface);
-            padding: var(--space-1);
-            border-radius: var(--radius-md);
-            border: 1px solid var(--color-border);
-        }
-        
-        .view-btn {
-            padding: var(--space-2);
-            background: none;
-            border: none;
-            border-radius: var(--radius-sm);
-            color: var(--color-text-muted);
-            transition: all var(--transition-fast);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .view-btn svg {
-            width: 18px;
-            height: 18px;
-        }
-        
-        .view-btn:hover {
-            background: var(--color-background);
-            color: var(--color-text);
-        }
-        
-        .view-btn--active {
-            background: var(--color-primary);
-            color: white;
-        }
-        
-        /* Loading State */
-        .loading-state {
-            text-align: center;
-            padding: var(--space-16);
-        }
-        
-        .loading-spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid var(--color-border);
-            border-top: 3px solid var(--color-primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto var(--space-4);
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        /* Members Grid */
-        .members-grid {
-            display: grid;
-            gap: var(--space-6);
-            margin-bottom: var(--space-8);
-        }
-        
-        .members-grid--grid {
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        }
-        
-        .members-grid--list {
-            grid-template-columns: 1fr;
-            gap: var(--space-4);
-        }
-        
-        /* Member Cards */
-        .member-card {
-            background: var(--color-surface);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            transition: all var(--transition-fast);
-            cursor: pointer;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .member-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--color-primary);
-        }
-        
-        .member-card--featured {
-            border: 2px solid var(--color-primary);
-            background: var(--color-primary-light);
-        }
-        
-        .member-card__header {
-            position: relative;
-            margin-bottom: var(--space-4);
-            text-align: center;
-        }
-        
-        .member-card__avatar {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .member-card__avatar img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--color-background);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .member-badge {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: var(--color-primary);
-            color: white;
-            font-size: var(--font-size-xs);
-            padding: var(--space-1) var(--space-2);
-            border-radius: var(--radius-full);
-            font-weight: var(--font-weight-medium);
-        }
-        
-        .member-badge--featured {
-            background: var(--color-accent);
-        }
-        
-        .member-badge--committee {
-            background: var(--color-secondary);
-            top: 8px;
-            right: -8px;
-        }
-        
-        .favorite-btn {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: var(--color-background);
-            border: 1px solid var(--color-border);
-            border-radius: 50%;
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-text-muted);
-            transition: all var(--transition-fast);
-        }
-        
-        .favorite-btn:hover {
-            background: var(--color-error-light);
-            color: var(--color-error);
-            border-color: var(--color-error);
-        }
-        
-        .favorite-btn--active {
-            background: var(--color-error);
-            color: white;
-            border-color: var(--color-error);
-        }
-        
-        .favorite-btn svg {
-            width: 16px;
-            height: 16px;
-        }
-        
-        .member-card__content {
-            flex: 1;
-            text-align: center;
-        }
-        
-        .member-card__name {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-text);
-            margin-bottom: var(--space-2);
-        }
-        
-        .member-card__role {
-            font-size: var(--font-size-sm);
-            color: var(--color-primary);
-            font-weight: var(--font-weight-medium);
-            margin-bottom: var(--space-3);
-        }
-        
-        .member-card__location {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--space-1);
-            font-size: var(--font-size-sm);
-            color: var(--color-text-muted);
-            margin-bottom: var(--space-2);
-        }
-        
-        .member-card__location svg {
-            width: 14px;
-            height: 14px;
-        }
-        
-        .member-card__id {
-            font-size: var(--font-size-xs);
-            color: var(--color-text-muted);
-            font-family: var(--font-family-mono);
-            margin-bottom: var(--space-4);
-        }
-        
-        .member-card__skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-1);
-            justify-content: center;
-            margin-bottom: var(--space-4);
-        }
-        
-        .skill-tag {
-            background: var(--color-background);
-            color: var(--color-text-muted);
-            font-size: var(--font-size-xs);
-            padding: var(--space-1) var(--space-2);
-            border-radius: var(--radius-full);
-            border: 1px solid var(--color-border);
-        }
-        
-        .skill-tag--more {
-            background: var(--color-primary-light);
-            color: var(--color-primary);
-            border-color: var(--color-primary);
-        }
-        
-        .member-card__social {
-            display: flex;
-            justify-content: center;
-            gap: var(--space-2);
-            margin-bottom: var(--space-4);
-        }
-        
-        .member-card__social a {
-            width: 32px;
-            height: 32px;
-            background: var(--color-background);
-            border: 1px solid var(--color-border);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-text-muted);
-            transition: all var(--transition-fast);
-        }
-        
-        .member-card__social a:hover {
-            background: var(--color-primary);
-            color: white;
-            border-color: var(--color-primary);
-            text-decoration: none;
-        }
-        
-        .member-card__social svg {
-            width: 16px;
-            height: 16px;
-        }
-        
-        .member-card__footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-            padding-top: var(--space-4);
-            border-top: 1px solid var(--color-border);
-        }
-        
-        .member-card__joined {
-            display: flex;
-            align-items: center;
-            gap: var(--space-1);
-            font-size: var(--font-size-xs);
-            color: var(--color-text-muted);
-        }
-        
-        .member-card__joined svg {
-            width: 12px;
-            height: 12px;
-        }
-        
-        /* List View Styles */
-        .members-grid--list .member-card {
-            flex-direction: row;
-            align-items: center;
-            padding: var(--space-4);
-        }
-        
-        .members-grid--list .member-card__header {
-            margin-bottom: 0;
-            margin-right: var(--space-4);
-        }
-        
-        .members-grid--list .member-card__avatar img {
-            width: 60px;
-            height: 60px;
-        }
-        
-        .members-grid--list .member-card__content {
-            flex: 1;
-            text-align: left;
-        }
-        
-        .members-grid--list .member-card__footer {
-            margin-top: 0;
-            padding-top: 0;
-            border-top: none;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-        
-        /* No Results State */
-        .no-results {
-            text-align: center;
-            padding: var(--space-16);
-            background: var(--color-surface);
-            border-radius: var(--radius-lg);
-            border: 2px dashed var(--color-border);
-        }
-        
-        .no-results__icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto var(--space-6);
-            background: var(--color-primary-light);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-primary);
-        }
-        
-        .no-results__icon svg {
-            width: 40px;
-            height: 40px;
-        }
-        
-        .no-results h3 {
-            font-size: var(--font-size-xl);
-            color: var(--color-text);
-            margin-bottom: var(--space-2);
-        }
-        
-        .no-results p {
-            color: var(--color-text-muted);
-            margin-bottom: var(--space-6);
-        }
-        
-        /* Pagination */
-        .pagination {
-            text-align: center;
-            padding: var(--space-8) 0;
-        }
-        
-        .pagination-info {
-            margin-top: var(--space-4);
-            font-size: var(--font-size-sm);
-            color: var(--color-text-muted);
-        }
-        
-        /* Error Message */
-        .error-message {
-            text-align: center;
-            padding: var(--space-16);
-            background: var(--color-error-light);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--color-error);
-        }
-        
-        .error-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--space-4);
-        }
-        
-        .error-content svg {
-            width: 48px;
-            height: 48px;
-            color: var(--color-error);
-        }
-        
-        .error-content p {
-            color: var(--color-error);
-            font-weight: var(--font-weight-medium);
-        }
-        
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero-stats {
-                gap: var(--space-4);
-            }
-            
-            .stat-item {
-                min-width: 100px;
-                padding: var(--space-3);
-            }
-            
-            .stat-number {
-                font-size: var(--font-size-2xl);
-            }
-            
-            .controls-row {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .search-container {
-                min-width: auto;
-            }
-            
-            .action-buttons {
-                justify-content: center;
-            }
-            
-            .filters-row {
-                grid-template-columns: 1fr 1fr;
-                gap: var(--space-3);
-            }
-            
-            .section-header {
-                flex-direction: column;
-                gap: var(--space-4);
-                align-items: center;
-            }
-            
-            .featured-grid,
-            .members-grid--grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .members-grid--list .member-card {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .members-grid--list .member-card__header {
-                margin-right: 0;
-                margin-bottom: var(--space-4);
-            }
-            
-            .members-grid--list .member-card__content {
-                text-align: center;
-            }
-            
-            .members-grid--list .member-card__footer {
-                align-items: center;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .filters-row {
-                grid-template-columns: 1fr;
-            }
-            
-            .filter-actions {
-                flex-direction: column;
-                gap: var(--space-2);
-                align-items: center;
-            }
-        }
-        
-        /* Tablet Responsive */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .featured-grid,
-            .members-grid--grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        /* Desktop Responsive */
-        @media (min-width: 1025px) {
-            .featured-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .members-grid--grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-        
-        /* Large Desktop */
-        @media (min-width: 1280px) {
-            .members-grid--grid {
-                grid-template-columns: repeat(5, 1fr);
-            }
-        }
-        
-        /* Animation for filtering */
-        .member-card {
-            opacity: 1;
-            transform: scale(1);
-            transition: opacity var(--transition-normal), transform var(--transition-normal);
-        }
-        
-        .member-card--filtering {
-            opacity: 0;
-            transform: scale(0.95);
-        }
-        
-        /* High contrast mode support */
-        @media (prefers-contrast: high) {
-            .member-card {
-                border-width: 2px;
-            }
-            
-            .member-card:hover {
-                border-width: 3px;
-            }
-        }
-        
-        /* Reduced motion support */
-        @media (prefers-reduced-motion: reduce) {
-            .member-card,
-            .loading-spinner {
-                animation: none;
-                transition: none;
-            }
-            
-            .member-card:hover {
-                transform: none;
-            }
-        }
-        
-        /* Print styles */
-        @media print {
-            .directory-controls,
-            .view-toggle,
-            .pagination,
-            .favorite-btn {
-                display: none;
-            }
-            
-            .members-grid {
-                display: block;
-                columns: 2;
-                column-gap: var(--space-6);
-            }
-            
-            .member-card {
-                break-inside: avoid;
-                margin-bottom: var(--space-4);
-                box-shadow: none;
-                border: 1px solid #ccc;
-            }
-        }
-        
-        /* Focus management for accessibility */
-        .member-card:focus {
-            outline: 3px solid var(--color-primary);
-            outline-offset: 2px;
-        }
-        
-        .search-input:focus,
-        .filter-select:focus {
-            outline: none;
-        }
-        
-        /* Custom scrollbar for filter dropdowns */
-        .filter-select {
-            scrollbar-width: thin;
-            scrollbar-color: var(--color-primary) var(--color-surface);
-        }
-        
-        .filter-select::-webkit-scrollbar {
-            width: 6px;
-        }
-        
-        .filter-select::-webkit-scrollbar-track {
-            background: var(--color-surface);
-        }
-        
-        .filter-select::-webkit-scrollbar-thumb {
-            background: var(--color-primary);
-            border-radius: var(--radius-full);
-        }
-        
-        /* Smooth transitions for filter changes */
-        .members-grid {
-            transition: opacity var(--transition-normal);
-        }
-        
-        .members-grid--filtering {
-            opacity: 0.7;
-        }
-        
-        /* Empty state illustrations */
-        .no-results {
-            background-image: radial-gradient(circle at 20% 80%, var(--color-primary-light) 0%, transparent 50%),
-                            radial-gradient(circle at 80% 20%, var(--color-secondary-light) 0%, transparent 50%);
-        }
-        
-        /* Loading state improvements */
-        .loading-state {
-            background: var(--color-surface);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--color-border);
-        }
-        
-        /* Enhanced member card hover effects */
-        .member-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-            opacity: 0;
-            border-radius: var(--radius-lg);
-            transition: opacity var(--transition-fast);
-            z-index: -1;
-        }
-        
-        .member-card:hover::before {
-            opacity: 0.03;
-        }
-        
-        .member-card--featured::before {
-            opacity: 0.05;
-        }
-        
-        /* Keyboard navigation enhancements */
-        .member-card[tabindex="0"]:focus {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        /* Status indicators */
-        .member-status {
-            position: absolute;
-            top: var(--space-2);
-            left: var(--space-2);
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: var(--color-secondary);
-            border: 2px solid var(--color-background);
-        }
-        
-        .member-status--inactive {
-            background: var(--color-gray-400);
-        }
-    </style>
 </body>
 </html>
