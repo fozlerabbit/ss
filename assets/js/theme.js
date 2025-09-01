@@ -1,358 +1,304 @@
 /**
- * Theme Management System
- * Handles dark/light theme switching with system preference detection
+ * Internationalization (i18n) System
+ * Handles bilingual support for English and Bengali
  */
 
-class ThemeManager {
+class I18n {
     constructor() {
-        this.currentTheme = 'light';
-        this.storageKey = 'ss-theme';
-        this.mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        this.transitionDuration = 300;
+        this.currentLang = this.getStoredLanguage() || this.detectLanguage();
+        this.translations = {};
+        this.fallbackLang = 'en';
+        this.init();
     }
 
-    /**
-     * Initialize the theme system
-     */
-    init() {
+    async init() {
         try {
-            // Get saved theme or detect system preference
-            this.currentTheme = this.getSavedTheme() || this.getSystemTheme();
-            
-            // Apply theme immediately to prevent flash
-            this.applyTheme(this.currentTheme, false);
-            
-            // Initialize theme toggle functionality
-            this.initializeThemeToggle();
-            
-            // Listen for system theme changes
-            this.listenForSystemThemeChanges();
-            
-            // Update UI
-            this.updateThemeToggleUI();
-            
+            await this.loadTranslations();
+            this.applyLanguage();
+            this.setupEventListeners();
+            this.updateLanguageDisplay();
         } catch (error) {
-            console.error('Failed to initialize theme manager:', error);
-            // Fallback to light theme
-            this.applyTheme('light', false);
+            console.error('Failed to initialize i18n:', error);
         }
     }
 
-    /**
-     * Apply theme to the document
-     */
-    applyTheme(theme, withTransition = true) {
-        const html = document.documentElement;
-        
-        // Add transition class for smooth theme switching
-        if (withTransition) {
-            html.classList.add('theme-transitioning');
-            
-            // Remove transition class after animation
-            setTimeout(() => {
-                html.classList.remove('theme-transitioning');
-            }, this.transitionDuration);
+    detectLanguage() {
+        // Check URL parameter first
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        if (urlLang && ['en', 'bn'].includes(urlLang)) {
+            return urlLang;
         }
 
-        // Set theme attribute
-        html.setAttribute('data-theme', theme);
-        
-        // Update meta theme-color for mobile browsers
-        this.updateMetaThemeColor(theme);
-        
-        // Update current theme
-        this.currentTheme = theme;
-        
-        // Save theme preference
-        this.saveTheme();
-        
-        // Dispatch theme change event
-        this.dispatchThemeChangeEvent(theme);
-    }
-
-    /**
-     * Toggle between light and dark themes
-     */
-    toggleTheme() {
-        const newTheme = this.currentTheme === 'light' ? 'dark' : 'light';
-        this.applyTheme(newTheme, true);
-        this.updateThemeToggleUI();
-    }
-
-    /**
-     * Initialize theme toggle button functionality
-     */
-    initializeThemeToggle() {
-        const toggleBtn = document.querySelector('[data-theme-toggle]');
-        
-        if (toggleBtn) {
-            toggleBtn.addEventListener('click', () => {
-                this.toggleTheme();
-            });
-
-            // Keyboard support
-            toggleBtn.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    this.toggleTheme();
-                }
-            });
+        // Check browser language
+        const browserLang = navigator.language || navigator.languages[0];
+        if (browserLang.startsWith('bn')) {
+            return 'bn';
         }
 
-        // Global keyboard shortcut (T key)
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 't' && !e.ctrlKey && !e.metaKey && !e.target.matches('input, textarea')) {
-                e.preventDefault();
-                this.toggleTheme();
-            }
-        });
+        return 'en'; // Default to English
     }
 
-    /**
-     * Update theme toggle button UI
-     */
-    updateThemeToggleUI() {
-        const toggleBtn = document.querySelector('[data-theme-toggle]');
-        if (!toggleBtn) return;
-
-        // Update aria-label
-        const isDark = this.currentTheme === 'dark';
-        const label = isDark ? 'Switch to light theme' : 'Switch to dark theme';
-        toggleBtn.setAttribute('aria-label', label);
-        
-        // Update button state
-        toggleBtn.classList.toggle('theme-toggle--dark', isDark);
-        
-        // Update icon visibility (handled by CSS)
-        const lightIcon = toggleBtn.querySelector('.theme-toggle__icon--light');
-        const darkIcon = toggleBtn.querySelector('.theme-toggle__icon--dark');
-        
-        if (lightIcon && darkIcon) {
-            lightIcon.style.opacity = isDark ? '0' : '1';
-            darkIcon.style.opacity = isDark ? '1' : '0';
-        }
-    }
-
-    /**
-     * Listen for system theme changes
-     */
-    listenForSystemThemeChanges() {
-        this.mediaQuery.addEventListener('change', (e) => {
-            // Only auto-switch if user hasn't manually set a preference
-            if (!this.hasSavedTheme()) {
-                const systemTheme = e.matches ? 'dark' : 'light';
-                this.applyTheme(systemTheme, true);
-                this.updateThemeToggleUI();
-            }
-        });
-    }
-
-    /**
-     * Get system theme preference
-     */
-    getSystemTheme() {
-        return this.mediaQuery.matches ? 'dark' : 'light';
-    }
-
-    /**
-     * Get saved theme from localStorage
-     */
-    getSavedTheme() {
+    getStoredLanguage() {
         try {
-            const saved = localStorage.getItem(this.storageKey);
-            return this.isValidTheme(saved) ? saved : null;
+            return localStorage.getItem('preferred-language');
         } catch (error) {
-            console.warn('Failed to get saved theme:', error);
             return null;
         }
     }
 
-    /**
-     * Save theme preference to localStorage
-     */
-    saveTheme() {
+    setStoredLanguage(lang) {
         try {
-            localStorage.setItem(this.storageKey, this.currentTheme);
+            localStorage.setItem('preferred-language', lang);
         } catch (error) {
-            console.warn('Failed to save theme preference:', error);
+            console.warn('Could not store language preference');
         }
     }
 
-    /**
-     * Check if user has manually saved a theme preference
-     */
-    hasSavedTheme() {
-        return this.getSavedTheme() !== null;
-    }
-
-    /**
-     * Check if theme is valid
-     */
-    isValidTheme(theme) {
-        return ['light', 'dark'].includes(theme);
-    }
-
-    /**
-     * Update meta theme-color for mobile browsers
-     */
-    updateMetaThemeColor(theme) {
-        let metaThemeColor = document.querySelector('meta[name="theme-color"]');
-        
-        if (!metaThemeColor) {
-            metaThemeColor = document.createElement('meta');
-            metaThemeColor.name = 'theme-color';
-            document.head.appendChild(metaThemeColor);
-        }
-        
-        const colors = {
-            light: '#2563eb', // Primary blue
-            dark: '#1f2937'   // Dark gray
-        };
-        
-        metaThemeColor.content = colors[theme];
-    }
-
-    /**
-     * Dispatch theme change event
-     */
-    dispatchThemeChangeEvent(theme) {
-        const event = new CustomEvent('themechange', {
-            detail: {
-                theme: theme,
-                isDark: theme === 'dark'
+    async loadTranslations() {
+        const languages = ['en', 'bn'];
+        const loadPromises = languages.map(async (lang) => {
+            try {
+                const response = await fetch(`/assets/i18n/${lang}.json`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${lang} translations`);
+                }
+                const translations = await response.json();
+                this.translations[lang] = translations;
+            } catch (error) {
+                console.error(`Error loading ${lang} translations:`, error);
+                this.translations[lang] = {};
             }
         });
-        
-        document.dispatchEvent(event);
+
+        await Promise.all(loadPromises);
     }
 
-    /**
-     * Get current theme
-     */
-    getCurrentTheme() {
-        return this.currentTheme;
-    }
+    translate(key, lang = this.currentLang) {
+        const keys = key.split('.');
+        let translation = this.translations[lang];
 
-    /**
-     * Check if current theme is dark
-     */
-    isDarkTheme() {
-        return this.currentTheme === 'dark';
-    }
-
-    /**
-     * Set theme programmatically
-     */
-    setTheme(theme) {
-        if (this.isValidTheme(theme)) {
-            this.applyTheme(theme, true);
-            this.updateThemeToggleUI();
+        for (const k of keys) {
+            if (translation && typeof translation === 'object' && k in translation) {
+                translation = translation[k];
+            } else {
+                // Fallback to other language
+                translation = this.translations[this.fallbackLang];
+                for (const fallbackKey of keys) {
+                    if (translation && typeof translation === 'object' && fallbackKey in translation) {
+                        translation = translation[fallbackKey];
+                    } else {
+                        return key; // Return key if no translation found
+                    }
+                }
+                break;
+            }
         }
+
+        return typeof translation === 'string' ? translation : key;
     }
 
-    /**
-     * Reset theme to system preference
-     */
-    resetToSystemTheme() {
-        // Clear saved preference
-        try {
-            localStorage.removeItem(this.storageKey);
-        } catch (error) {
-            console.warn('Failed to clear theme preference:', error);
+    applyLanguage() {
+        // Update document language and direction
+        document.documentElement.lang = this.currentLang;
+        document.documentElement.dir = this.currentLang === 'bn' ? 'ltr' : 'ltr'; // Both are LTR
+
+        // Update page title
+        const titleElement = document.querySelector('title[data-i18n]');
+        if (titleElement) {
+            const key = titleElement.getAttribute('data-i18n');
+            titleElement.textContent = this.translate(key);
         }
-        
-        // Apply system theme
-        const systemTheme = this.getSystemTheme();
-        this.applyTheme(systemTheme, true);
-        this.updateThemeToggleUI();
+
+        // Update meta description
+        const metaDesc = document.querySelector('meta[name="description"][data-i18n]');
+        if (metaDesc) {
+            const key = metaDesc.getAttribute('data-i18n');
+            metaDesc.content = this.translate(key);
+        }
+
+        // Update all elements with data-i18n
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const translation = this.translate(key);
+            
+            // Handle different element types
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                if (element.type === 'submit' || element.type === 'button') {
+                    element.value = translation;
+                } else {
+                    element.placeholder = translation;
+                }
+            } else {
+                element.textContent = translation;
+            }
+        });
+
+        // Update placeholder attributes
+        const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+        placeholderElements.forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            element.placeholder = this.translate(key);
+        });
+
+        // Update aria-label attributes
+        const ariaElements = document.querySelectorAll('[data-i18n-aria]');
+        ariaElements.forEach(element => {
+            const key = element.getAttribute('data-i18n-aria');
+            element.setAttribute('aria-label', this.translate(key));
+        });
+
+        // Apply language-specific font styles
+        document.body.classList.toggle('lang-bengali', this.currentLang === 'bn');
+
+        // Trigger custom event for other components
+        document.dispatchEvent(new CustomEvent('languageChanged', {
+            detail: { language: this.currentLang }
+        }));
     }
 
-    /**
-     * Get theme colors for dynamic styling
-     */
-    getThemeColors() {
-        const isDark = this.currentTheme === 'dark';
-        
-        return {
-            primary: '#2563eb',
-            secondary: '#10b981',
-            accent: '#f59e0b',
-            background: isDark ? '#111827' : '#ffffff',
-            surface: isDark ? '#1f2937' : '#f9fafb',
-            text: isDark ? '#f9fafb' : '#111827',
-            textMuted: isDark ? '#d1d5db' : '#6b7280',
-            border: isDark ? '#374151' : '#e5e7eb'
-        };
+    changeLanguage(lang) {
+        if (!['en', 'bn'].includes(lang) || lang === this.currentLang) {
+            return;
+        }
+
+        this.currentLang = lang;
+        this.setStoredLanguage(lang);
+        this.applyLanguage();
+        this.updateLanguageDisplay();
+
+        // Update URL without reload
+        const url = new URL(window.location);
+        url.searchParams.set('lang', lang);
+        window.history.replaceState({}, '', url);
     }
 
-    /**
-     * Apply custom theme colors
-     */
-    applyCustomColors(colors) {
-        const root = document.documentElement;
-        
-        Object.entries(colors).forEach(([property, value]) => {
-            root.style.setProperty(`--color-${property}`, value);
+    updateLanguageDisplay() {
+        const currentLangElements = document.querySelectorAll('[data-current-lang]');
+        currentLangElements.forEach(element => {
+            element.textContent = this.currentLang.toUpperCase();
+        });
+
+        // Update language option active state
+        const langOptions = document.querySelectorAll('[data-lang]');
+        langOptions.forEach(option => {
+            const lang = option.getAttribute('data-lang');
+            option.classList.toggle('language-toggle__option--active', lang === this.currentLang);
         });
     }
-}
 
-// Global theme manager instance
-window.themeManager = new ThemeManager();
+    setupEventListeners() {
+        // Language toggle buttons
+        document.addEventListener('click', (e) => {
+            const langToggle = e.target.closest('[data-language-toggle]');
+            if (langToggle) {
+                const dropdown = document.querySelector('[data-language-dropdown]');
+                if (dropdown) {
+                    dropdown.classList.toggle('language-toggle__dropdown--active');
+                }
+                return;
+            }
 
-// Auto-initialize when DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        window.themeManager.init();
-    });
-} else {
-    window.themeManager.init();
-}
+            const langOption = e.target.closest('[data-lang]');
+            if (langOption) {
+                const lang = langOption.getAttribute('data-lang');
+                this.changeLanguage(lang);
+                
+                // Close dropdown
+                const dropdown = document.querySelector('[data-language-dropdown]');
+                if (dropdown) {
+                    dropdown.classList.remove('language-toggle__dropdown--active');
+                }
+                return;
+            }
+        });
 
-// Expose useful functions globally
-window.toggleTheme = () => window.themeManager.toggleTheme();
-window.setTheme = (theme) => window.themeManager.setTheme(theme);
+        // Close language dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            const languageToggle = e.target.closest('.language-toggle');
+            if (!languageToggle) {
+                const dropdown = document.querySelector('[data-language-dropdown]');
+                if (dropdown) {
+                    dropdown.classList.remove('language-toggle__dropdown--active');
+                }
+            }
+        });
 
-// CSS for smooth theme transitions
-const themeTransitionCSS = `
-.theme-transitioning,
-.theme-transitioning *,
-.theme-transitioning *:before,
-.theme-transitioning *:after {
-    transition: background-color 300ms ease,
-                border-color 300ms ease,
-                color 300ms ease,
-                fill 300ms ease,
-                stroke 300ms ease,
-                opacity 300ms ease,
-                box-shadow 300ms ease !important;
-}
-`;
-
-// Inject transition CSS
-const style = document.createElement('style');
-style.textContent = themeTransitionCSS;
-document.head.appendChild(style);
-
-// Listen for theme change events to update other components
-document.addEventListener('themechange', (e) => {
-    const { theme, isDark } = e.detail;
-    
-    // Update any theme-dependent components
-    // For example, charts, maps, or third-party widgets
-    if (window.Chart) {
-        // Update Chart.js default colors if used
-        Chart.defaults.color = isDark ? '#f9fafb' : '#111827';
-        Chart.defaults.borderColor = isDark ? '#374151' : '#e5e7eb';
+        // Keyboard shortcut (L key)
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'l' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+                // Only if not in input field
+                const activeElement = document.activeElement;
+                if (activeElement.tagName !== 'INPUT' && 
+                    activeElement.tagName !== 'TEXTAREA' && 
+                    !activeElement.isContentEditable) {
+                    e.preventDefault();
+                    this.toggleLanguage();
+                }
+            }
+        });
     }
+
+    toggleLanguage() {
+        const newLang = this.currentLang === 'en' ? 'bn' : 'en';
+        this.changeLanguage(newLang);
+    }
+
+    // Utility method for dynamic content
+    t(key, interpolations = {}) {
+        let translation = this.translate(key);
+        
+        // Handle interpolations
+        Object.keys(interpolations).forEach(placeholder => {
+            const value = interpolations[placeholder];
+            translation = translation.replace(`{{${placeholder}}}`, value);
+        });
+
+        return translation;
+    }
+
+    // Format numbers based on locale
+    formatNumber(number, options = {}) {
+        const locale = this.currentLang === 'bn' ? 'bn-BD' : 'en-US';
+        return new Intl.NumberFormat(locale, options).format(number);
+    }
+
+    // Format dates based on locale
+    formatDate(date, options = {}) {
+        const locale = this.currentLang === 'bn' ? 'bn-BD' : 'en-US';
+        return new Intl.DateTimeFormat(locale, options).format(date);
+    }
+
+    // Get current language
+    getCurrentLanguage() {
+        return this.currentLang;
+    }
+
+    // Check if current language is RTL (future-proofing)
+    isRTL() {
+        return false; // Both Bengali and English are LTR
+    }
+}
+
+// Initialize i18n system
+let i18nInstance;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    i18nInstance = new I18n();
     
-    // Update any other theme-sensitive components
-    document.querySelectorAll('[data-theme-sensitive]').forEach(element => {
-        element.classList.toggle('dark-theme', isDark);
-    });
+    // Make available globally for other scripts
+    window.i18n = i18nInstance;
 });
 
-// Export for module use
+// Re-apply translations when partials are loaded
+document.addEventListener('partialsLoaded', () => {
+    if (i18nInstance) {
+        i18nInstance.applyLanguage();
+    }
+});
+
+// Export for potential module use
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = ThemeManager;
+    module.exports = I18n;
 }
