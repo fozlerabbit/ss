@@ -614,8 +614,10 @@
       "this_quarter": 1,
       "this_year": 4
     }
-  }
-}Dhaka",
+  },
+        
+         {
+          "name": "Dhaka",
           "name_bn": "ঢাকা",
           "upazilas": ["Dhanmondi", "Gulshan", "Uttara", "Old Dhaka", "Wari"]
         },
@@ -676,6 +678,7 @@
           "name": "Rajshahi",
           "name_bn": "রাজশাহী",
           "upazilas": ["Rajshahi Sadar", "Poba", "Durgapur", "Mohanpur"]
-        },
-        {
-          "name": "
+        }
+    }      
+}
+    
